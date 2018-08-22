@@ -40,27 +40,30 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Rock
+  - name: Base Tile
     uniqueID: 2882930843
     locked: 0
-  - name: Ground
+  - name: Tile Decoration 1
     uniqueID: 1283054153
     locked: 0
-  - name: Level 1
+  - name: Tile Decoration 2
+    uniqueID: 256474857
+    locked: 0
+  - name: Object 1
     uniqueID: 1888376217
     locked: 0
-  - name: Level 2
+  - name: Object 2
     uniqueID: 1621509931
     locked: 0
-  - name: Level 3
+  - name: Object 3
     uniqueID: 4143552039
     locked: 0
-  - name: Transparent_Behind
+  - name: Object Decoration
     uniqueID: 3268669847
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Transparent_Front
+  - name: Foreground
     uniqueID: 3595516731
     locked: 0
