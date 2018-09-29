@@ -8,57 +8,69 @@ public class Player : MonoBehaviour {
     private float speed;
     [SerializeField]
     private Joystick joystick;
-
+    [SerializeField]
+    private GameObject screenFader;
+    [SerializeField]
+    private GameObject dialogueBox;
 
     private Animator animator;
     private Rigidbody2D rigidbody;
+    
+    private bool isWalking = false;
 
-
-    // Use this for initialization
     void Start () {
         animator = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody2D>();
 	}
 	
-	// Update is called once per frame
 	void Update () {
-        bool isWalking = false;
+        isWalking = false;
 
+        // Checks if screen fader is not currently active
+        if (!screenFader.GetComponent<ScreenFader>().GetIsFading() && !dialogueBox.GetComponent<DialogueBox>().IsDialogueActive()) {
+            GetKeyboardInput();
+
+            GetJoystickInput();
+        } else {
+            rigidbody.velocity = Vector2.zero;
+        }
+
+        // Update animator with walking status
+        animator.SetBool("isWalking", isWalking);
+    }
+
+    void GetKeyboardInput() {
         // Get user input
         float inputX = Input.GetAxisRaw("Horizontal");
         float inputY = Input.GetAxisRaw("Vertical");
 
         // If user is pressing at least one key, set isWalking and the animator values
-        if ((Mathf.Abs(inputX) + Mathf.Abs(inputY)) > 0) {
+        if ((Mathf.Abs(inputX) + Mathf.Abs(inputY)) > 0)
+        {
             isWalking = true;
 
             animator.SetFloat("x", inputX);
             animator.SetFloat("y", inputY);
-
-            
         }
 
-        //
+        // Apply a velocity to the rigidbody based on the user input * speed
+        rigidbody.velocity = new Vector2(inputX, inputY).normalized * speed;
+    }
+
+    void GetJoystickInput() {
+        // Get user input
         Vector3 moveVector = (Vector3.right * joystick.Horizontal + Vector3.up * joystick.Vertical);
 
-        if (moveVector != Vector3.zero) {
+        // If user is moving, set isWalking and the animator values
+        if (moveVector != Vector3.zero)
+        {
             isWalking = true;
 
             animator.SetFloat("x", moveVector.x);
             animator.SetFloat("y", moveVector.y);
         }
-        //
 
-        animator.SetBool("isWalking", isWalking);
-
-        // Apply a velocity to the rigidbody based on the user input * speed
-        rigidbody.velocity = new Vector2(inputX, inputY).normalized * speed;
-
-        //
-        //transform.rotation = Quaternion.LookRotation(Vector3.forward, moveVector);
-        //transform.Translate(moveVector * speed * Time.deltaTime, Space.World);
-
+        // Apply a velocity to the rigidbody based on the movement vector * speed
         rigidbody.velocity = moveVector * speed;
-        //
     }
 }

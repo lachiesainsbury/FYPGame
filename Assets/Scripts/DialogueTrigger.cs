@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour {
 
-    private DialogueManager dialogueManager;
+    [SerializeField]
+    private GameObject dialogueBox;
 
 	// Use this for initialization
 	void Start () {
-        dialogueManager = FindObjectOfType<DialogueManager>();
+        
 	}
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        dialogueManager.StartDialogue();
+        dialogueBox.GetComponent<DialogueBox>().StartDialogue();
     }
 }

@@ -13,6 +13,4 @@ public class NutrientList : UIWindow {
 	void Update () {
 		
 	}
-
-
 }
