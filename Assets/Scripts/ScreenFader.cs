@@ -37,4 +37,8 @@ public class ScreenFader : MonoBehaviour {
     void AnimationComplete() {
         isFading = false;
     }
+
+    public bool GetIsFading() {
+        return isFading;
+    }
 }
