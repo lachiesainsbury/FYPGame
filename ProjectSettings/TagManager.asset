@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fader
   - DialogueBox
+  - ActionButton
   layers:
   - Default
   - TransparentFX
