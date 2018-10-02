@@ -10,11 +10,9 @@ public class Player : MonoBehaviour {
     private Joystick joystick;
     [SerializeField]
     private GameObject screenFader;
-    [SerializeField]
-    private GameObject dialogueBox;
 
     private Animator animator;
-    private Rigidbody2D rigidbody;
+    private new Rigidbody2D rigidbody;
     
     private bool isWalking = false;
 
@@ -27,9 +25,7 @@ public class Player : MonoBehaviour {
         isWalking = false;
 
         // Checks if screen fader is not currently active
-        if (!screenFader.GetComponent<ScreenFader>().GetIsFading() && !dialogueBox.GetComponent<DialogueBox>().IsDialogueActive()) {
-            GetKeyboardInput();
-
+        if (!screenFader.GetComponent<ScreenFader>().GetIsFading() && !AreUIWindowsActive()) {
             GetJoystickInput();
         } else {
             rigidbody.velocity = Vector2.zero;
@@ -39,25 +35,7 @@ public class Player : MonoBehaviour {
         animator.SetBool("isWalking", isWalking);
     }
 
-    void GetKeyboardInput() {
-        // Get user input
-        float inputX = Input.GetAxisRaw("Horizontal");
-        float inputY = Input.GetAxisRaw("Vertical");
-
-        // If user is pressing at least one key, set isWalking and the animator values
-        if ((Mathf.Abs(inputX) + Mathf.Abs(inputY)) > 0)
-        {
-            isWalking = true;
-
-            animator.SetFloat("x", inputX);
-            animator.SetFloat("y", inputY);
-        }
-
-        // Apply a velocity to the rigidbody based on the user input * speed
-        rigidbody.velocity = new Vector2(inputX, inputY).normalized * speed;
-    }
-
-    void GetJoystickInput() {
+    private void GetJoystickInput() {
         // Get user input
         Vector3 moveVector = (Vector3.right * joystick.Horizontal + Vector3.up * joystick.Vertical);
 
@@ -72,5 +50,13 @@ public class Player : MonoBehaviour {
 
         // Apply a velocity to the rigidbody based on the movement vector * speed
         rigidbody.velocity = moveVector * speed;
+    }
+
+    private bool AreUIWindowsActive() {
+        if (GameObject.FindObjectsOfType<UIWindow>().Length > 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

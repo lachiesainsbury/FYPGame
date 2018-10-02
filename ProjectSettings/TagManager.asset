@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Fader
   - DialogueBox
-  - Inventory
   layers:
   - Default
   - TransparentFX
