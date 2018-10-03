@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
+    /* MOVEMENT */
     [SerializeField]
     private float speed;
     [SerializeField]
     private Joystick joystick;
-    [SerializeField]
-    private GameObject screenFader;
 
     private Animator animator;
     private new Rigidbody2D rigidbody;
     
     private bool isWalking = false;
+
+    /* QUESTS */
+    private Quest quest;
 
     void Start () {
         animator = GetComponent<Animator>();
@@ -25,7 +27,7 @@ public class Player : MonoBehaviour {
         isWalking = false;
 
         // Checks if screen fader is not currently active
-        if (!screenFader.GetComponent<ScreenFader>().GetIsFading() && !AreUIWindowsActive()) {
+        if (!GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>().GetIsFading() && !AreUIWindowsActive()) {
             GetJoystickInput();
         } else {
             rigidbody.velocity = Vector2.zero;
