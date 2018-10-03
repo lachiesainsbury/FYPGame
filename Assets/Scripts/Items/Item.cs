@@ -5,11 +5,16 @@ using UnityEngine.UI;
 
 public abstract class Item {
 
+    // Item paths within the Resources folder
     protected const string path = "Items/";
 
-    protected Image icon;
+    protected Sprite icon;
 
-    public Image GetIcon() {
+    public Item() {
+        icon = null;
+    }
+
+    public Sprite GetIcon() {
         return icon;
     }
 }

@@ -7,8 +7,8 @@ public class Inventory : MonoBehaviour {
     [SerializeField]
     private InventorySlot[] inventorySlots = new InventorySlot[1];
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         
 	}
 	
