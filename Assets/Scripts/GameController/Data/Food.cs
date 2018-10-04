@@ -14,7 +14,14 @@ public class Food {
     [XmlElement("SeedIcon")]
     public string seedIcon;
 
-    // Nutritional Info
+    [XmlElement("Per100g")]
+    public string per100g;
+
+    [XmlElement("PerServe")]
+    public string perServe;
+
+    [XmlElement("RDI")]
+    public string RDI;
 
     [XmlElement("Description")]
     public string description;

@@ -6,11 +6,22 @@
       <FoodIcon>carrot</FoodIcon>
       <SeedIcon>carrot_seeds</SeedIcon>
 
-      <!--<NutritionalInfo>
-        
-      </NutritionalInfo>-->
+       <Per100g>16706 IU</Per100g>
+       <PerServe>12530 IU</PerServe>
+       <RDI>375%</RDI>
 
-      <Description>The carrot is a root vegetable, usually orange in colour but also a red-white blend, with a crisp texture when fresh. Carrots make a satisfying snack eaten raw and a tasty addition to a variety of cooked dishes.</Description>
+       <Description>The carrot is a root vegetable, usually orange in colour but also a red-white blend, with a crisp texture when fresh. Carrots make a satisfying snack eaten raw and a tasty addition to a variety of cooked dishes.</Description>
+    </Food>
+
+    <Food name="Broccoli">
+      <FoodIcon>broccoli</FoodIcon>
+      <SeedIcon>broccoli_seeds</SeedIcon>
+
+      <Per100g>0.195 mcg</Per100g>
+      <PerServe>0.15 mcg</PerServe>
+      <RDI>22%</RDI>
+
+      <Description>Broccoli broccoli broccoli</Description>
     </Food>
   </Foods>
 </FoodCollection>

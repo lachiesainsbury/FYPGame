@@ -15,7 +15,10 @@ public class GameController : MonoBehaviour {
     private Transform nutrientListContent;
 
     /* NUTRIENT VIEW */
-
+    [SerializeField]
+    private GameObject nutrientInfo, foodPrefab;
+    [SerializeField]
+    private Transform nutrientViewContent;
 
     /* CONTAINERS */
     private NutrientContainer nutrientContainer;
@@ -26,7 +29,7 @@ public class GameController : MonoBehaviour {
         LoadNutrients();
         LoadFoods();
 
-        initializeNutrientList();
+        InitializeNutrientList();
 	}
 
     private void LoadNutrients() {
@@ -37,7 +40,7 @@ public class GameController : MonoBehaviour {
         foodContainer = FoodContainer.LoadFromXML("XML/Foods");
     }
 
-    private void initializeNutrientList() {
+    private void InitializeNutrientList() {
         foreach (Nutrient nutrient in nutrientContainer.nutrients) {
             GameObject nutrientItem = Instantiate(nutrientPrefab);
             nutrientItem.transform.SetParent(nutrientListContent);
@@ -56,10 +59,10 @@ public class GameController : MonoBehaviour {
                 }
             }
 
-            // Sets the nutrients onclick method to call the displayNutrientView method with the foods name
+            // Sets the nutrients onclick methods
             nutrientItem.GetComponent<Button>().onClick.AddListener(delegate {
                 Navigate(nutrientList, nutrientView);
-                initializeNutrientView(nutrient);
+                InitializeNutrientView(nutrient);
             });
         }
     }
@@ -68,8 +71,79 @@ public class GameController : MonoBehaviour {
         current.GetComponent<UIWindow>().Navigate(destination);
     }
 
-    private void initializeNutrientView(Nutrient nutrient) {
-        
-        // Populate nutrient view based upon 
+    private void InitializeNutrientView(Nutrient nutrient) {
+        // Wipe existing content in food list
+        foreach (Transform child in nutrientViewContent) {
+            Destroy(child.gameObject);
+        }
+
+        Text[] nutrientText = nutrientInfo.GetComponentsInChildren<Text>();
+
+        // Sets the nutrient name in uppercase
+        nutrientText[0].text = nutrient.name.ToUpper();
+
+        // Sets the nutrient description
+        nutrientText[1].text = nutrient.description;
+
+        foreach (string foodName in nutrient.foods) {
+            GameObject foodItem = Instantiate(foodPrefab);
+            foodItem.transform.SetParent(nutrientViewContent);
+
+            // Find food by name in foodContainer
+            Food food = FindFoodByName(foodName);
+
+            // Set foods icon
+            Image icon = foodItem.GetComponentsInChildren<Image>()[1];
+            icon.sprite = Resources.Load<Sprite>("Foods/" + food.foodIcon);
+
+            // Set foods name and nutritional information
+            Text[] foodText = foodItem.GetComponentsInChildren<Text>();
+
+            foodText[0].text = food.name;
+            foodText[1].text = food.per100g;
+            foodText[2].text = food.perServe;
+            foodText[3].text = food.RDI;
+
+            // Sets the foods onclick methods
+            foodItem.GetComponent<Button>().onClick.AddListener(delegate {
+                Navigate(nutrientView, foodView);
+                InitializeFoodView(food);
+            });
+        }
+    }
+
+    private Food FindFoodByName(string name) {
+        foreach (Food food in foodContainer.foods) {
+            if (name.Equals(food.name)) {
+                return food;
+            }
+        }
+
+        return null;
+    }
+
+    private void InitializeFoodView(Food food) {
+        // Sets the foods name and description
+        Text[] foodText = foodView.GetComponentsInChildren<Text>();
+
+        foodText[0].text = food.name.ToUpper();
+        foodText[1].text = food.description;
+
+        // Sets the foods icon
+        Image icon = foodView.GetComponentsInChildren<Image>()[2];
+        icon.sprite = Resources.Load<Sprite>("Foods/" + food.foodIcon);
+
+        // Sets the onclick method for the back button
+        Button[] foodButtons = foodView.GetComponentsInChildren<Button>();
+
+        Button backButton = foodButtons[0];
+        backButton.onClick.AddListener(delegate {
+            Navigate(foodView, nutrientView);
+        });
+
+        Button chooseButton = foodButtons[1];
+        chooseButton.onClick.AddListener(delegate {
+            // Add food seeds to the players inventory
+        });
     }
 }

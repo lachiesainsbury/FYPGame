@@ -6,12 +6,29 @@
       <Functions>
         <Function>Good for eyesight</Function>
         <Function>Improves seeing in the dark</Function>
+        <Function>Good growth in children</Function>
+        <Function>Good for immunity</Function>
       </Functions>
       
-      <Description>Vitamin A is a fat-soluble vitamin, meaning you can store it in your body! So if your body needs some later, but not getting it from what you eat, it can use the vitamin A it stored.</Description>
+      <Description>Vitamin A is a fat-soluble vitamin, meaning you can store it in your body! So if your body needs some later, but not getting it from what you eat, it can use the vitamin A it has stored.</Description>
 
       <Foods>
         <Food>Carrot</Food>
+      </Foods>
+    </Nutrient>
+
+    <Nutrient name="Vitamin B">
+      <Functions>
+        <Function>Convert food into fuel for your body and brain</Function>
+        <Function>Production of red blood cells</Function>
+        <Function>Keep your nervous system healthy</Function>
+        <Function>Keep you skin and eyes healthy</Function>
+      </Functions>
+
+      <Description>The group vitamin B is actually made up of 8 different vitamins! There is vitamin B1, B2, B3, B5, B6, B7, B9 and B12. They all have different functions in the body.</Description>
+
+      <Foods>
+        <Food>Broccoli</Food>
       </Foods>
     </Nutrient>
   </Nutrients>
