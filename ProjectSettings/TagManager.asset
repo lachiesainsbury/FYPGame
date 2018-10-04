@@ -7,6 +7,9 @@ TagManager:
   - Fader
   - DialogueBox
   - ActionButton
+  - NutrientList
+  - NutrientView
+  - FoodView
   layers:
   - Default
   - TransparentFX

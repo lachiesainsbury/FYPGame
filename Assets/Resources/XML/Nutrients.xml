@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<NutrientCollection>
+  <Nutrients>
+    <Nutrient name="Vitamin A">
+      <Functions>
+        <Function>Good for eyesight</Function>
+        <Function>Improves seeing in the dark</Function>
+      </Functions>
+      
+      <Description>Vitamin A is a fat-soluble vitamin, meaning you can store it in your body! So if your body needs some later, but not getting it from what you eat, it can use the vitamin A it stored.</Description>
+
+      <Foods>
+        <Food>Carrot</Food>
+      </Foods>
+    </Nutrient>
+  </Nutrients>
+</NutrientCollection>

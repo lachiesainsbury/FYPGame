@@ -8,6 +8,7 @@ public class InventorySlot : MonoBehaviour {
     [SerializeField]
     private Image icon;
 
+    /*
     private Item item;
 
 	// Use this for initialization
@@ -33,5 +34,5 @@ public class InventorySlot : MonoBehaviour {
             icon.sprite = item.GetIcon();
             icon.color += new Color(0, 0, 0, 255);
         }
-    }
+    }*/
 }

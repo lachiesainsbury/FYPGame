@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FoodCollection>
+  <Foods>
+    <Food name="Carrot">
+      <FoodIcon>carrot</FoodIcon>
+      <SeedIcon>carrot_seeds</SeedIcon>
+
+      <!--<NutritionalInfo>
+        
+      </NutritionalInfo>-->
+
+      <Description>The carrot is a root vegetable, usually orange in colour but also a red-white blend, with a crisp texture when fresh. Carrots make a satisfying snack eaten raw and a tasty addition to a variety of cooked dishes.</Description>
+    </Food>
+  </Foods>
+</FoodCollection>
