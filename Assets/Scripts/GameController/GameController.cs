@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour {
     /* UI WINDOWS */
     [SerializeField]
-    private GameObject nutrientList, nutrientView, foodView;
+    private GameObject nutrientList, nutrientView, foodView, inventory;
 
     /* NUTRIENT LIST */
     [SerializeField]
@@ -135,15 +135,21 @@ public class GameController : MonoBehaviour {
 
         // Sets the onclick method for the back button
         Button[] foodButtons = foodView.GetComponentsInChildren<Button>();
-
         Button backButton = foodButtons[0];
+        Button chooseButton = foodButtons[1];
+        Button exitButton = foodButtons[2];
+
         backButton.onClick.AddListener(delegate {
             Navigate(foodView, nutrientView);
+            chooseButton.onClick.RemoveAllListeners();
         });
 
-        Button chooseButton = foodButtons[1];
         chooseButton.onClick.AddListener(delegate {
-            // Add food seeds to the players inventory
+            inventory.GetComponent<Inventory>().AddFood(food);
+        });
+
+        exitButton.onClick.AddListener(delegate {
+            chooseButton.onClick.RemoveAllListeners();
         });
     }
 }

@@ -8,31 +8,27 @@ public class InventorySlot : MonoBehaviour {
     [SerializeField]
     private Image icon;
 
-    /*
-    private Item item;
+    private Food food;
 
-	// Use this for initialization
-	void Start () {
-        AddItem(new Carrot());
-    }
-
-    public void AddItem(Item newItem) {
-        item = newItem;
-        updateIcon();
+    public void AddFood(Food newFood) {
+        food = newFood;
+        UpdateIcon();
     }
 
     public void ClearSlot() {
-        // Remove the current item and icon, and reset the alpha to 0.
-        item = null;
+        // Remove the current item and icon, and reset the alpha to 0
+        food = null;
         icon.sprite = null;
         icon.color += new Color(0, 0, 0, -255);
     }
 
-    private void updateIcon() {
+    private void UpdateIcon() {
         // If item has a sprite, set that sprite to the icon and maximise the alpha.
-        if (item.GetIcon() != null) {
-            icon.sprite = item.GetIcon();
-            icon.color += new Color(0, 0, 0, 255);
-        }
-    }*/
+        icon.sprite = Resources.Load<Sprite>("Foods/" + food.seedIcon);
+        icon.color += new Color(0, 0, 0, 255);
+    }
+
+    public Food GetFood() {
+        return food;
+    }
 }
