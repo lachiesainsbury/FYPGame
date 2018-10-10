@@ -10,10 +10,11 @@
         <Function>Good for immunity</Function>
       </Functions>
       
-      <Description>Vitamin A is a fat-soluble vitamin, meaning you can store it in your body! So if your body needs some later, but not getting it from what you eat, it can use the vitamin A it has stored.</Description>
+      <Description>Vitamin A is a fat-soluble vitamin, meaning you can store it in your body and use it later! Vitamin A is important for the tissues in your body, such as your eyes, skin and other organs.</Description>
 
       <Foods>
         <Food>Carrot</Food>
+        <Food>Tomato</Food>
       </Foods>
     </Nutrient>
 
@@ -22,13 +23,43 @@
         <Function>Convert food into fuel for your body and brain</Function>
         <Function>Production of red blood cells</Function>
         <Function>Keep your nervous system healthy</Function>
-        <Function>Keep you skin and eyes healthy</Function>
+        <Function>Important for growth in children</Function>
       </Functions>
 
-      <Description>The group vitamin B is actually made up of 8 different vitamins! There is vitamin B1, B2, B3, B5, B6, B7, B9 and B12. They all have different functions in the body.</Description>
+      <Description>Vitamin B is actually made up of 8 different vitamins! There is vitamin B1, B2, B3, B5, B6, B7, B9 and B12. They all have different functions in the body. The vitamins B can mostly be found in animals products (fish, meat, eggs, dairy), leafy green vegetables, beans and peas.</Description>
+
+      <Foods>
+        
+      </Foods>
+    </Nutrient>
+
+    <Nutrient name="Vitamin C">
+      <Functions>
+        <Function>Needed for good immune function</Function>
+        <Function>Healthy skin</Function>
+        <Function>Needed to absorb iron</Function>
+        <Function>Wound healing and fishting infection</Function>
+      </Functions>
+
+      <Description>Vitamin C is sometimes also called the 'immunity vitamin'. This is because vitamin C is very important for your body to fight off virussus and bacteria that can make you sick.</Description>
 
       <Foods>
         <Food>Broccoli</Food>
+        <Food>Potato</Food>
+        <Food>Strawberry</Food>
+      </Foods>
+    
+    </Nutrient>
+
+    <Nutrient name="Vitamin D">
+      <Functions>
+        <Function>Needed to absorb calcium</Function>
+      </Functions>
+
+      <Description>Vitamin D exists in two forms: 'vitamin D3' which comes from the sun and your skin can absorb; and 'vitamin D2' can be found in some foods like egg yolk, mushrooms, beef liver and fatty fishes such as salmon, tuna or mackerel.</Description>
+
+      <Foods>
+        
       </Foods>
     </Nutrient>
   </Nutrients>

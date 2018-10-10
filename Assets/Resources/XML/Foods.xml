@@ -20,11 +20,11 @@
         <GrowthTile>plants_30</GrowthTile>
       </GrowthStageFour>
       
-      <Per100g>16706 IU</Per100g>
-      <PerServe>12530 IU</PerServe>
+      <kJPer100g>172</kJPer100g>
+      <ContentPerServe>2250mcg</ContentPerServe>
       <RDI>375%</RDI>
 
-       <Description>The carrot is a root vegetable, usually orange in colour but also a red-white blend, with a crisp texture when fresh. Carrots make a satisfying snack eaten raw and a tasty addition to a variety of cooked dishes.</Description>
+       <Description>Carrots are root vegetables and they are a great source of vitamin A. They have many health benefits and are great to eat as a snack, in a salad or steamed with your dinner.</Description>
     </Food>
 
     <Food name="Broccoli">
@@ -45,11 +45,90 @@
         <GrowthTile>plants_31</GrowthTile>
       </GrowthStageFour>
       
-      <Per100g>0.195 mcg</Per100g>
-      <PerServe>0.15 mcg</PerServe>
-      <RDI>22%</RDI>
+      <kJPer100g>142</kJPer100g>
+      <ContentPerServe>66.9mg</ContentPerServe>
+      <RDI>167%</RDI>
 
-      <Description>Broccoli broccoli broccoli</Description>
+      <Description>Broccoli is part of the cabbage family and kind of a superfood. Broccoli has many vitamins and minerals in it  and has high amounts of important fiber as well.</Description>
+    </Food>
+
+    <Food name="Tomato">
+      <FoodIcon>tomato</FoodIcon>
+      <SeedIcon>tomato_seeds</SeedIcon>
+
+      <GrowthStageOne>plants_0</GrowthStageOne>
+    
+      <GrowthStageTwo>
+        <GrowthTile>plants_8</GrowthTile>
+      </GrowthStageTwo>
+
+      <GrowthStageThree>
+        <GrowthTile>plants_15</GrowthTile>
+        <GrowthTile>plants_18</GrowthTile>
+      </GrowthStageThree>
+
+      <GrowthStageFour>
+        <GrowthTile>plants_25</GrowthTile>
+        <GrowthTile>plants_28</GrowthTile>
+      </GrowthStageFour>
+    
+      <kJPer100g>75</kJPer100g>
+      <ContentPerServe>10.3mg</ContentPerServe>
+      <RDI>26%</RDI>
+
+      <Description>Tomatoes come in all shapes and sizes, but are all from the nightshade family, But did you know a tomato is officially a fruit? Doesn't matter: still loaded with good vitamins and minerals!</Description>
+    </Food>
+
+    <Food name="Potato">
+      <FoodIcon>potato</FoodIcon>
+      <SeedIcon>potato_seeds</SeedIcon>
+    
+      <GrowthStageOne>plants_1</GrowthStageOne>
+
+      <GrowthStageTwo>
+        <GrowthTile>plants_9</GrowthTile>
+      </GrowthStageTwo>
+
+      <GrowthStageThree>
+        <GrowthTile>plants_19</GrowthTile>
+      </GrowthStageThree>
+
+      <GrowthStageFour>
+        <GrowthTile>plants_29</GrowthTile>
+      </GrowthStageFour>
+    
+      <kJPer100g>326</kJPer100g>
+      <ContentPerServe>5.2mg</ContentPerServe>
+      <RDI>13%</RDI>
+
+      <Description>Potatoes are part of the nightshade family. While they are very nutritious, they are what we call a 'starchy' vegetable, meaning they are high in calories too.</Description>
+    </Food>
+
+    <Food name="Strawberry">
+      <FoodIcon>strawberry</FoodIcon>
+      <SeedIcon>strawberry_seeds</SeedIcon>
+      
+      <GrowthStageOne>plants_4</GrowthStageOne>
+    
+      <GrowthStageTwo>
+        <GrowthTile>plants_12</GrowthTile>
+      </GrowthStageTwo>
+
+      <GrowthStageThree>
+        <GrowthTile>plants_16</GrowthTile>
+        <GrowthTile>plants_22</GrowthTile>
+      </GrowthStageThree>
+
+      <GrowthStageFour>
+        <GrowthTile>plants_26</GrowthTile>
+        <GrowthTile>plants_32</GrowthTile>
+      </GrowthStageFour>
+    
+      <kJPer100g>134</kJPer100g>
+      <ContentPerServe>87.8mg</ContentPerServe>
+      <RDI>220%</RDI>
+
+      <Description>Strawberries are a fantastic source of vitamin C. They are also delicious to bring as a snack to school or even put in a salad!</Description>
     </Food>
   </Foods>
 </FoodCollection>

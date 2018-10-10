@@ -32,11 +32,11 @@ public class Food {
     [XmlArray("GrowthStageFour"), XmlArrayItem("GrowthTile")]
     public string[] growthStageFourTiles;
 
-    [XmlElement("Per100g")]
-    public string per100g;
+    [XmlElement("kJPer100g")]
+    public string kJPer100g;
 
-    [XmlElement("PerServe")]
-    public string perServe;
+    [XmlElement("ContentPerServe")]
+    public string contentPerServe;
 
     [XmlElement("RDI")]
     public string RDI;

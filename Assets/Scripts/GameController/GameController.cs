@@ -100,8 +100,8 @@ public class GameController : MonoBehaviour {
             Text[] foodText = foodItem.GetComponentsInChildren<Text>();
 
             foodText[0].text = food.name;
-            foodText[1].text = food.per100g;
-            foodText[2].text = food.perServe;
+            foodText[1].text = food.kJPer100g;
+            foodText[2].text = food.contentPerServe;
             foodText[3].text = food.RDI;
 
             // Sets the foods onclick methods
