@@ -4,7 +4,13 @@ using UnityEngine;
 using System.Xml;
 using System.Xml.Serialization;
 
+public enum FoodType {
+    Food, Seeds
+}
+
 public class Food {
+    public FoodType foodType;
+
     [XmlAttribute("name")]
     public string name;
 
@@ -13,6 +19,18 @@ public class Food {
 
     [XmlElement("SeedIcon")]
     public string seedIcon;
+
+    [XmlElement("GrowthStageOne")]
+    public string growthStageOneTile;
+
+    [XmlArray("GrowthStageTwo"), XmlArrayItem("GrowthTile")]
+    public string[] growthStageTwoTiles;
+
+    [XmlArray("GrowthStageThree"), XmlArrayItem("GrowthTile")]
+    public string[] growthStageThreeTiles;
+
+    [XmlArray("GrowthStageFour"), XmlArrayItem("GrowthTile")]
+    public string[] growthStageFourTiles;
 
     [XmlElement("Per100g")]
     public string per100g;

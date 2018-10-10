@@ -19,26 +19,32 @@ public class Inventory : MonoBehaviour {
 
         for (int i=0; i < numberOfInventorySlots; i++) {
             GameObject newInventorySlot = Instantiate(inventorySlotPrefab);
-            newInventorySlot.transform.SetParent(inventorySlotsGroup);
+            newInventorySlot.transform.SetParent(inventorySlotsGroup, false);
 
             inventorySlots[i] = newInventorySlot;
         }
+
+        this.gameObject.SetActive(false);
 	}
 
     public void ToggleWindow() {
         gameObject.SetActive(!gameObject.activeSelf);
     }
 
-    public void AddFood(Food food) {
+    public void AddItem(Food food) {
         foreach (GameObject slot in inventorySlots) {
             InventorySlot inventorySlot = slot.GetComponent<InventorySlot>();
 
-            if (inventorySlot.GetFood() == null) {
-                inventorySlot.AddFood(food);
+            if (!inventorySlot.HasItem()) {
+                inventorySlot.AddItem(food);
                 return;
             }
         }
 
         Debug.Log("Inventory is full.");
+    }
+
+    public GameObject[] GetInventorySlots() {
+        return inventorySlots;
     }
 }

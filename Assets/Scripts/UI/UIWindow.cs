@@ -7,16 +7,6 @@ public class UIWindow : MonoBehaviour {
     [SerializeField]
     private GameObject joystick, actionButton;
 
-    // Use this for initialization
-    void Start () {
-
-    }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
     public void OpenWindow() {
         ToggleJoystickAndActionButton(false);
         this.gameObject.SetActive(true);

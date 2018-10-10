@@ -6,9 +6,23 @@
       <FoodIcon>carrot</FoodIcon>
       <SeedIcon>carrot_seeds</SeedIcon>
 
-       <Per100g>16706 IU</Per100g>
-       <PerServe>12530 IU</PerServe>
-       <RDI>375%</RDI>
+      <GrowthStageOne>plants_2</GrowthStageOne>
+        
+      <GrowthStageTwo>
+        <GrowthTile>plants_10</GrowthTile>
+      </GrowthStageTwo>
+
+      <GrowthStageThree>
+        <GrowthTile>plants_20</GrowthTile>
+      </GrowthStageThree>
+    
+      <GrowthStageFour>
+        <GrowthTile>plants_30</GrowthTile>
+      </GrowthStageFour>
+      
+      <Per100g>16706 IU</Per100g>
+      <PerServe>12530 IU</PerServe>
+      <RDI>375%</RDI>
 
        <Description>The carrot is a root vegetable, usually orange in colour but also a red-white blend, with a crisp texture when fresh. Carrots make a satisfying snack eaten raw and a tasty addition to a variety of cooked dishes.</Description>
     </Food>
@@ -17,6 +31,20 @@
       <FoodIcon>broccoli</FoodIcon>
       <SeedIcon>broccoli_seeds</SeedIcon>
 
+      <GrowthStageOne>plants_3</GrowthStageOne>
+
+      <GrowthStageTwo>
+        <GrowthTile>plants_11</GrowthTile>
+      </GrowthStageTwo>
+
+      <GrowthStageThree>
+        <GrowthTile>plants_21</GrowthTile>
+      </GrowthStageThree>
+
+      <GrowthStageFour>
+        <GrowthTile>plants_31</GrowthTile>
+      </GrowthStageFour>
+      
       <Per100g>0.195 mcg</Per100g>
       <PerServe>0.15 mcg</PerServe>
       <RDI>22%</RDI>

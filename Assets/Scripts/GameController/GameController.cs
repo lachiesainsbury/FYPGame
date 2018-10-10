@@ -43,7 +43,7 @@ public class GameController : MonoBehaviour {
     private void InitializeNutrientList() {
         foreach (Nutrient nutrient in nutrientContainer.nutrients) {
             GameObject nutrientItem = Instantiate(nutrientPrefab);
-            nutrientItem.transform.SetParent(nutrientListContent);
+            nutrientItem.transform.SetParent(nutrientListContent, false);
 
             Text[] nutrientText = nutrientItem.GetComponentsInChildren<Text>();
             // Set nutrients name
@@ -87,7 +87,7 @@ public class GameController : MonoBehaviour {
 
         foreach (string foodName in nutrient.foods) {
             GameObject foodItem = Instantiate(foodPrefab);
-            foodItem.transform.SetParent(nutrientViewContent);
+            foodItem.transform.SetParent(nutrientViewContent, false);
 
             // Find food by name in foodContainer
             Food food = FindFoodByName(foodName);
@@ -145,7 +145,8 @@ public class GameController : MonoBehaviour {
         });
 
         chooseButton.onClick.AddListener(delegate {
-            inventory.GetComponent<Inventory>().AddFood(food);
+            food.foodType = FoodType.Seeds;
+            inventory.GetComponent<Inventory>().AddItem(food);
         });
 
         exitButton.onClick.AddListener(delegate {

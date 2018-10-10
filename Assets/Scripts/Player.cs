@@ -12,6 +12,7 @@ public class Player : MonoBehaviour {
 
     private Animator animator;
     private new Rigidbody2D rigidbody;
+    private ScreenFader screenFader;
     
     private bool isWalking = false;
 
@@ -21,13 +22,14 @@ public class Player : MonoBehaviour {
     void Start () {
         animator = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody2D>();
-	}
+        screenFader = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>();
+    }
 	
 	void Update () {
         isWalking = false;
 
         // Checks if screen fader is not currently active
-        if (!GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>().GetIsFading() && !AreUIWindowsActive()) {
+        if (!screenFader.GetIsFading() && !AreUIWindowsActive()) {
             GetJoystickInput();
         } else {
             rigidbody.velocity = Vector2.zero;
@@ -59,6 +61,25 @@ public class Player : MonoBehaviour {
             return true;
         } else {
             return false;
+        }
+    }
+
+    public Vector3Int GetPlayerDirection() {
+        float x = animator.GetFloat("x");
+        float y = animator.GetFloat("y");
+
+        if (Mathf.Abs(x) >= Mathf.Abs(y)) {
+            if (x > 0) {
+                return Vector3Int.right;
+            } else {
+                return Vector3Int.left;
+            }
+        } else {
+            if (y > 0) {
+                return Vector3Int.up;
+            } else {
+                return Vector3Int.down;
+            }
         }
     }
 }
