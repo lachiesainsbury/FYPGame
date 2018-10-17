@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Quest : MonoBehaviour {
+public class Quest {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private string name;
+    private GameObject NPC;
+    private Food questItem;
+
+    public Quest(string name, GameObject NPC, Food questItem) {
+        this.name = name;
+        this.NPC = NPC;
+        this.questItem = questItem;
+    }
+
+    public string GetName() {
+        return name;
+    }
 }

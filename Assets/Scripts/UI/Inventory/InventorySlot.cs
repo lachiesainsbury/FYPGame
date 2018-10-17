@@ -19,13 +19,19 @@ public class InventorySlot : MonoBehaviour {
         // Remove the current item and icon, and reset the alpha to 0
         item = null;
         icon.sprite = null;
-        icon.color += new Color(0, 0, 0, -255);
+        
+        Color minAlpha = icon.color;
+        minAlpha.a = 0f;
+        icon.color = minAlpha;
     }
 
     private void UpdateIcon() {
         // If item has a sprite, set that sprite to the icon and maximise the alpha.
         icon.sprite = Resources.Load<Sprite>("Foods/" + item.seedIcon);
-        icon.color += new Color(0, 0, 0, 255);
+
+        Color maxAlpha = icon.color;
+        maxAlpha.a = 1f;
+        icon.color = maxAlpha;
     }
 
     public Food GetItem() {

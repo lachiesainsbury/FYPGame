@@ -17,7 +17,7 @@ public class Player : MonoBehaviour {
     private bool isWalking = false;
 
     /* QUESTS */
-    private Quest quest;
+    private Quest activeQuest;
 
     void Start () {
         animator = GetComponent<Animator>();
@@ -80,6 +80,22 @@ public class Player : MonoBehaviour {
             } else {
                 return Vector3Int.down;
             }
+        }
+    }
+
+    public bool HasQuest() {
+        if (activeQuest == null) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public void AddNewQuest(Quest quest) {
+        if (!HasQuest()) {
+            activeQuest = quest;
+        } else {
+            Debug.Log("Player already has a quest.");
         }
     }
 }

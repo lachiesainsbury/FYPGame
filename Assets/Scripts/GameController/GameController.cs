@@ -112,7 +112,7 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    private Food FindFoodByName(string name) {
+    public Food FindFoodByName(string name) {
         foreach (Food food in foodContainer.foods) {
             if (name.Equals(food.name)) {
                 return food;
