@@ -36,8 +36,14 @@ public class FarmTile {
         }
     }
 
-    public void HarvestCrop() {
+    public Food HarvestCrop() {
+        tilemap.SetTile(coordinates, null);
 
+        Food harvest = crop;
+        crop = null;
+        growthStage = 0;
+
+        return harvest;
     }
 
     private Tile GetNextGrowthTile() {
@@ -64,6 +70,14 @@ public class FarmTile {
             return false;
         } else {
             return true;
+        }
+    }
+
+    public bool IsCropFullyGrown() {
+        if (growthStage == 4) {
+            return true;
+        } else {
+            return false;
         }
     }
 }

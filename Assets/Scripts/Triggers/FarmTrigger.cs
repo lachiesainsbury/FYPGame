@@ -40,6 +40,18 @@ public class FarmTrigger : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (playerWithinZone && actionButton.GetClicked()) {
+            /* HARVEST CROPS */
+            if (!inventory.GetComponent<Inventory>().IsFull()) {
+                for (int i = 0; i < farmTiles.Length; i++) {
+                    if (farmTiles[i].HasCrop() && farmTiles[i].IsCropFullyGrown()) {
+                        Food harvest = farmTiles[i].HarvestCrop();
+                        AddHarvestToInventory(harvest);
+
+                        return;
+                    }
+                }
+            }
+
             /* PLANT CROPS */
             for (int i=0; i < farmTiles.Length; i++) {
                 if (!farmTiles[i].HasCrop()) {
@@ -48,17 +60,10 @@ public class FarmTrigger : MonoBehaviour {
 
                     if (food != null) {
                         PlantSeeds(farmTiles[i], food, object1);
+                        return;
                     } else {
                         Debug.Log("No seeds in inventory.");
                     }
-
-                    return;
-                }
-            }
-            /* HARVEST CROPS */
-            for (int i=0; i < farmTiles.Length; i++) {
-                if (farmTiles[i].HasCrop()) {
-                    farmTiles[i].HarvestCrop();
                 }
             }
         }
@@ -80,6 +85,18 @@ public class FarmTrigger : MonoBehaviour {
         }
 
         return null;
+    }
+
+    private void AddHarvestToInventory(Food harvest) {
+        foreach (GameObject slot in inventory.GetComponent<Inventory>().GetInventorySlots()) {
+            InventorySlot inventorySlot = slot.GetComponent<InventorySlot>();
+
+            if (!inventorySlot.HasItem()) {
+                inventorySlot.AddItem(harvest);
+
+                return;
+            }
+        }
     }
 
     private void PlantSeeds(FarmTile farmTile, Food food, Tilemap tilemap) {

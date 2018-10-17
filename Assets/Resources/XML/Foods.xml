@@ -63,13 +63,13 @@
       </GrowthStageTwo>
 
       <GrowthStageThree>
-        <GrowthTile>plants_15</GrowthTile>
         <GrowthTile>plants_18</GrowthTile>
+        <GrowthTile>plants_15</GrowthTile>
       </GrowthStageThree>
 
       <GrowthStageFour>
-        <GrowthTile>plants_25</GrowthTile>
         <GrowthTile>plants_28</GrowthTile>
+        <GrowthTile>plants_25</GrowthTile>
       </GrowthStageFour>
     
       <kJPer100g>75</kJPer100g>
@@ -115,13 +115,13 @@
       </GrowthStageTwo>
 
       <GrowthStageThree>
-        <GrowthTile>plants_16</GrowthTile>
         <GrowthTile>plants_22</GrowthTile>
+        <GrowthTile>plants_16</GrowthTile>
       </GrowthStageThree>
 
       <GrowthStageFour>
-        <GrowthTile>plants_26</GrowthTile>
         <GrowthTile>plants_32</GrowthTile>
+        <GrowthTile>plants_26</GrowthTile>
       </GrowthStageFour>
     
       <kJPer100g>134</kJPer100g>

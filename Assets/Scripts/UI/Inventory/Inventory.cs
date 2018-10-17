@@ -47,4 +47,16 @@ public class Inventory : MonoBehaviour {
     public GameObject[] GetInventorySlots() {
         return inventorySlots;
     }
+
+    public bool IsFull() {
+        foreach (GameObject slot in inventorySlots) {
+            InventorySlot inventorySlot = slot.GetComponent<InventorySlot>();
+
+            if (!inventorySlot.HasItem()) {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
