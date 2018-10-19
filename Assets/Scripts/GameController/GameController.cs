@@ -145,7 +145,7 @@ public class GameController : MonoBehaviour {
         });
 
         chooseButton.onClick.AddListener(delegate {
-            food.foodType = FoodType.Seeds;
+            food.itemType = ItemType.Seeds;
             inventory.GetComponent<Inventory>().AddItem(food);
         });
 

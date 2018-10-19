@@ -27,7 +27,11 @@ public class InventorySlot : MonoBehaviour {
 
     private void UpdateIcon() {
         // If item has a sprite, set that sprite to the icon and maximise the alpha.
-        icon.sprite = Resources.Load<Sprite>("Foods/" + item.seedIcon);
+        if (item.itemType == ItemType.Seeds) {
+            icon.sprite = Resources.Load<Sprite>("Foods/" + item.seedIcon);
+        } else if (item.itemType == ItemType.Food) {
+            icon.sprite = Resources.Load<Sprite>("Foods/" + item.foodIcon);
+        }
 
         Color maxAlpha = icon.color;
         maxAlpha.a = 1f;

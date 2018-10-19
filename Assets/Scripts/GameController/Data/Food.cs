@@ -4,13 +4,7 @@ using UnityEngine;
 using System.Xml;
 using System.Xml.Serialization;
 
-public enum FoodType {
-    Food, Seeds
-}
-
-public class Food {
-    public FoodType foodType;
-
+public class Food : Item {
     [XmlAttribute("name")]
     public string name;
 

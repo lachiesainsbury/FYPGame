@@ -43,7 +43,7 @@ public class FarmTrigger : MonoBehaviour {
             /* HARVEST CROPS */
             if (!inventory.GetComponent<Inventory>().IsFull()) {
                 for (int i = 0; i < farmTiles.Length; i++) {
-                    if (farmTiles[i].HasCrop() && farmTiles[i].IsCropFullyGrown()) {
+                    if (farmTiles[i].IsCropFullyGrown()) {
                         Food harvest = farmTiles[i].HarvestCrop();
                         AddHarvestToInventory(harvest);
 
@@ -60,6 +60,7 @@ public class FarmTrigger : MonoBehaviour {
 
                     if (food != null) {
                         PlantSeeds(farmTiles[i], food, object1);
+
                         return;
                     } else {
                         Debug.Log("No seeds in inventory.");
@@ -76,7 +77,7 @@ public class FarmTrigger : MonoBehaviour {
             if (inventorySlot.HasItem()) {
                 Food food = inventorySlot.GetItem();
 
-                if (food.foodType == FoodType.Seeds) {
+                if (food.itemType == ItemType.Seeds) {
                     inventorySlot.ClearSlot();
 
                     return food;
@@ -87,7 +88,7 @@ public class FarmTrigger : MonoBehaviour {
         return null;
     }
 
-    private void AddHarvestToInventory(Food harvest) {
+    private void AddHarvestToInventory(Food harvest) {     
         foreach (GameObject slot in inventory.GetComponent<Inventory>().GetInventorySlots()) {
             InventorySlot inventorySlot = slot.GetComponent<InventorySlot>();
 

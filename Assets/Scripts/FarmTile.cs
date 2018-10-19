@@ -39,9 +39,13 @@ public class FarmTile {
     public Food HarvestCrop() {
         tilemap.SetTile(coordinates, null);
 
-        Food harvest = crop;
-        crop = null;
+        Food harvest = new Food();
+        harvest = JsonUtility.FromJson<Food>(JsonUtility.ToJson(crop));
+
+        harvest.itemType = ItemType.Food;
+
         growthStage = 0;
+        crop = null;
 
         return harvest;
     }
@@ -74,7 +78,7 @@ public class FarmTile {
     }
 
     public bool IsCropFullyGrown() {
-        if (growthStage == 4) {
+        if (crop != null && growthStage == 4) {
             return true;
         } else {
             return false;
