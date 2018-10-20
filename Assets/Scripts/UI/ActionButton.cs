@@ -16,6 +16,11 @@ public class ActionButton : MonoBehaviour {
     }
 
     public bool GetClicked() {
-        return clicked;
+        if (clicked) {
+            clicked = false;
+            return true;
+        } else {
+            return false;
+        }
     }
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DialogueCollection>
+  <Dialogues>
+    <Dialogue NPC="Sarah">
+      <QuestOffer>Hi! Could you please get me a food with Vitamin A?</QuestOffer>
+
+      <QuestInProgress>How are you going with the quest? Remember I need a food with Vitamin A.</QuestInProgress>
+
+      <QuestHandIn>Thanks for getting that for me!</QuestHandIn>
+    </Dialogue>
+  </Dialogues> 
+</DialogueCollection>

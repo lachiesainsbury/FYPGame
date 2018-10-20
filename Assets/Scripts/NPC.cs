@@ -10,11 +10,27 @@ public class NPC : MonoBehaviour {
 
     private Quest quest;
 
-    public void AssignQuest(GameObject player) {
-        quest = new Quest("Carrots", this.gameObject, gameController.GetComponent<GameController>().FindFoodByName("Carrot"));
+    private Dialogue dialogue;
 
-        player.GetComponent<Player>().AddNewQuest(quest);
+    private void Start() {
+        quest = gameController.GetComponent<GameController>().FindQuestByNPC(this.gameObject.name);
+        quest.questStatus = QuestStatus.NotStarted;
 
-        questBox.GetComponent<Text>().text = quest.GetName();
+        dialogue = gameController.GetComponent<GameController>().FindDialogueByNPC(this.gameObject.name);
+    }
+
+    public void StartQuest(GameObject player) {
+        if (quest != null) {
+            quest.questStatus = QuestStatus.InProgress;
+
+            player.GetComponent<Player>().AddNewQuest(quest);
+            questBox.GetComponent<Text>().text = quest.name;
+        } else {
+            Debug.Log("NPC does not have a quest assigned.");
+        }
+    }
+
+    public void FinishQuest(GameObject player) {
+
     }
 }

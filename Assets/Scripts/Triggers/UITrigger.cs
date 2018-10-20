@@ -9,7 +9,7 @@ public class UITrigger : MonoBehaviour {
 
     private ActionButton actionButton;
 
-    private bool playerWithinZone, windowOpen;
+    private bool playerWithinZone;
 
 	// Use this for initialization
 	void Start () {
@@ -18,8 +18,7 @@ public class UITrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (playerWithinZone && !windowOpen && actionButton.GetClicked()) {
-            windowOpen = true;
+        if (playerWithinZone && actionButton.GetClicked()) {
             UIElement.GetComponent<UIWindow>().OpenWindow();
         }
 	}
@@ -30,6 +29,5 @@ public class UITrigger : MonoBehaviour {
 
     private void OnTriggerExit2D(Collider2D collision) {
         playerWithinZone = false;
-        windowOpen = false;
     }
 }

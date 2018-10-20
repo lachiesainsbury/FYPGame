@@ -23,11 +23,15 @@ public class GameController : MonoBehaviour {
     /* CONTAINERS */
     private NutrientContainer nutrientContainer;
     private FoodContainer foodContainer;
+    private QuestContainer questContainer;
+    private DialogueContainer dialogueContainer;
 
 	// Use this for initialization
 	void Start () {
         LoadNutrients();
         LoadFoods();
+        LoadQuests();
+        LoadDialogue();
 
         InitializeNutrientList();
 	}
@@ -38,6 +42,14 @@ public class GameController : MonoBehaviour {
 
     private void LoadFoods() {
         foodContainer = FoodContainer.LoadFromXML("XML/Foods");
+    }
+
+    private void LoadQuests() {
+        questContainer = QuestContainer.LoadFromXML("XML/Quests");
+    }
+
+    private void LoadDialogue() {
+        dialogueContainer = DialogueContainer.LoadFromXML("XML/Dialogue");
     }
 
     private void InitializeNutrientList() {
@@ -65,10 +77,6 @@ public class GameController : MonoBehaviour {
                 InitializeNutrientView(nutrient);
             });
         }
-    }
-
-    private void Navigate(GameObject current, GameObject destination) {
-        current.GetComponent<UIWindow>().Navigate(destination);
     }
 
     private void InitializeNutrientView(Nutrient nutrient) {
@@ -112,16 +120,6 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    public Food FindFoodByName(string name) {
-        foreach (Food food in foodContainer.foods) {
-            if (name.Equals(food.name)) {
-                return food;
-            }
-        }
-
-        return null;
-    }
-
     private void InitializeFoodView(Food food) {
         // Sets the foods name and description
         Text[] foodText = foodView.GetComponentsInChildren<Text>();
@@ -152,5 +150,39 @@ public class GameController : MonoBehaviour {
         exitButton.onClick.AddListener(delegate {
             chooseButton.onClick.RemoveAllListeners();
         });
+    }
+
+    private void Navigate(GameObject current, GameObject destination) {
+        current.GetComponent<UIWindow>().Navigate(destination);
+    }
+
+    public Food FindFoodByName(string name) {
+        foreach (Food food in foodContainer.foods) {
+            if (name.Equals(food.name)) {
+                return food;
+            }
+        }
+
+        return null;
+    }
+
+    public Quest FindQuestByNPC(string name) {
+        foreach (Quest quest in questContainer.quests) {
+            if (name.Equals(quest.questNPC)) {
+                return quest;
+            }
+        }
+
+        return null;
+    }
+
+    public Dialogue FindDialogueByNPC(string name) {
+        foreach (Dialogue dialogue in dialogueContainer.dialogues) {
+            if (name.Equals(dialogue.NPC)) {
+                return dialogue;
+            }
+        }
+
+        return null;
     }
 }

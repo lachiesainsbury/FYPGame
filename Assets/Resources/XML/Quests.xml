@@ -2,8 +2,12 @@
 
 <QuestCollection>
   <Quests>
-    <Quest name="">
+    <Quest name="Vitamin A">
+      <QuestNPC>Sarah</QuestNPC>
       
+      <QuestItems>
+        <QuestItem>Carrot</QuestItem>
+      </QuestItems>
     </Quest>
   </Quests>
 </QuestCollection>
