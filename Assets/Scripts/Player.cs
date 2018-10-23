@@ -98,4 +98,9 @@ public class Player : MonoBehaviour {
             Debug.Log("Player already has a quest.");
         }
     }
+
+    public void FinishQuest() {
+        activeQuest = null;
+        Debug.Log("Quest completed!");
+    }
 }

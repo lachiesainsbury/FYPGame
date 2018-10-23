@@ -17,8 +17,8 @@ public class Dialogue {
     [XmlElement("QuestHandIn")]
     public string questHandIn;
 
-    public static string questConflict = "You already have a quest. Come see me when you've finished it!";
+    public string questConflict = "You already have a quest. Come see me when you've finished it!";
 
-    public static string questCompleted = "Thanks again for your help! Check in with some other town members" + 
-                                          " and see if they need a hand.";
+    public string questCompleted = "Thanks again for your help! Check in with some other town members" + 
+                                   " and see if they need a hand.";
 }

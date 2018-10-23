@@ -5,7 +5,7 @@ using UnityEngine;
 public class UITrigger : MonoBehaviour {
 
     [SerializeField]
-    private GameObject UIElement;
+    private GameObject UIElement, NPC;
 
     private ActionButton actionButton;
 
@@ -20,6 +20,10 @@ public class UITrigger : MonoBehaviour {
 	void Update () {
         if (playerWithinZone && actionButton.GetClicked()) {
             UIElement.GetComponent<UIWindow>().OpenWindow();
+
+            if (NPC != null) {
+                UIElement.GetComponent<DialogueBox>().UpdateDialogueBox(NPC.GetComponent<NPC>());
+            }
         }
 	}
 
