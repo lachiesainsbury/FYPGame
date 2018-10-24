@@ -2,7 +2,7 @@
 
 <QuestCollection>
   <Quests>
-    <Quest name="Vitamin A">
+    <Quest name="Improve eye sight in the dark">
       <QuestNPC>Sarah</QuestNPC>
       
       <QuestItems>
@@ -15,6 +15,23 @@
 
       <QuestItems>
         <QuestItem>Potato</QuestItem>
+        <QuestItem>Broccoli</QuestItem>
+      </QuestItems>
+    </Quest>
+
+    <Quest name="Strawberries">
+      <QuestNPC>Barry</QuestNPC>
+
+      <QuestItems>
+        <QuestItem>Strawberry</QuestItem>
+      </QuestItems>
+    </Quest>
+
+    <Quest name="Tomatoes">
+      <QuestNPC>Emma</QuestNPC>
+
+      <QuestItems>
+        <QuestItem>Tomato</QuestItem>
       </QuestItems>
     </Quest>
   </Quests>

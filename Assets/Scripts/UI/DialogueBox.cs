@@ -19,7 +19,7 @@ public class DialogueBox : UIWindow {
         dialogueText[0].text = npc.GetNPCName();
         dialogueText[1].text = npc.GetDialogueLine();
 
-        if (npc.GetQuest().questStatus == QuestStatus.NotStarted) {
+        if (npc.GetQuest().questStatus == QuestStatus.NotStarted && !GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().HasQuest()) {
             UpdateDialogueButtons(true);
             dialogueButtons[2].onClick.RemoveAllListeners();
             dialogueButtons[2].onClick.AddListener(delegate {

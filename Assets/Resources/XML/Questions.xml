@@ -23,5 +23,137 @@
         <Option value="Only fatty foods contain vitamin A" response="Incorrect... a food high in vitamin A is not neccesarily high in fat" correct="false"/>
       </Options>
     </Question>
+
+    <Question value="There are only a few foods that contain some vitamin D. Where do you get the most vitamin D?">
+      <Options>
+        <Option value="The sun" response="Correct! Sunlight contains UV light, which our skin can use to make vitamin D. This makes vitamin D one of only 2 vitamins we can make ourselves in our body; all the other vitamins we get through food." correct="true"/>
+
+        <Option value="Moisturizer" response="Incorrect... While moisturizer can be good for dry skin, it contains no vitamin D" correct="false"/>
+
+        <Option value="Water" response="Incorect... While drinking enough water is extremely important, water contains no vitamins." correct="false"/>
+      </Options>
+    </Question>
+
+    <Question value="Once you have cooked some delicious salmon for dinner, where do you keep it if you want to take it for lunch the next day?">
+      <Options>
+        <Option value="Pantry" response="Incorrect... if you keep your salmon in the pantry it will go bad and might make you sick" correct="false"/>
+
+        <Option value="Fridge" response="Correct! You should always keep fish and meat in a fridge or freezer" correct="true"/>
+
+        <Option value="Freezer" response="Correct! You should always keep your fish and meat in the fidge or freezer. In this case, storing it in the fidge might be easier as you are planning on eating your leftovers the next day! " correct="true"/>
+
+        <Option value="Out on the kichen counter" response="Incorrect... if you keep your salmon on the kitchen counter it will go bad and might make you sick" correct="false"/>
+      </Options>
+    </Question>
+
+    <Question value="What is the main function of vitamin D in your body?">
+      <Options>
+        <Option value="We need vitamin D to absorb iron" response="Incorrect... You need vitamin C to absorb iron" correct="false"/>
+        
+        <Option value="We need vitamin D to absorb calcium" response="Correct! Calcium is important for strong bones and teeth, but if you don't get enough vitamin D your bones will never become healthy." correct="true"/>
+        
+        <Option value="We need vitamin D for our eyesight" response="Incorrect... You need vitamin A for good eyesight" correct="false"/>
+      </Options>
+    </Question>
+
+    <Question value="True or false: During an Australian summer, you only need to be in the sun with your face and hand exposed for couple of minutes a day to get enough vitamin D">
+      <Options>
+        <Option value="TRUE" response="Correct! Make sure you don't go out without sunscreen more than that and always use suncreen during the hottest part of the day" correct="true"/>
+
+        <Option value="FALSE" response="Incorrect... You only need a couple of minutes a day. Make sure you don't go out without sunscreen more than that and always use suncreen during the hottest part of the day" correct="false"/>
+      </Options>
+    </Question>
+
+    <Question value="True or false: If you eat enough carrots, you become orange">
+      <Options>
+        <Option value="TRUE" response="Correct! You have to eat very, very many carrots, but your skin will get an orange glow. This is not dangerous but it is important to not only eat carrots, but also other vegetables to make sure you get all the different vitamins and minerals" correct="true"/>
+
+        <Option value="FALSE" response="Incorrect... You have to eat very many carrots, but your skin will get an orange glow. This is not dangerous but it is important to not only eat carrots, but also other vegetables" correct="false"/>
+      </Options>
+    </Question>
+
+    <Question value="Liver is known to contain very high levels of vitamin A (because that is where it is stored). The liver of which animal contains the most vitamin A?">
+      <Options>
+        <Option value="Cow" response="Incorrect... cow livers are also high in vitamin A and many other vitamins and minerals (a superfood!), but there is another animal that has so much vitamin A in their liver, it can be toxic and even deadly to humans" correct="false"/>
+
+        <Option value="Cod (fish)" response="Incorrect... cod livers are also high in vitamin A and many other vitamins and minerals (a superfood!), but there is another animal that has so much vitamin A in their liver, it can be toxic and even deadly to humans" correct="false"/>
+
+        <Option value="Polar bear" response="Correct! Polar bear livers contain so much vitamin A, it can be toxic or even deadly if you eat it. Liver from other animals is actually filled with vitamins and minerals and are very healthy if consumed only once-in-a-while" correct="true"/>
+
+        <Option value="Moose" response="Incorrect... moose livers are also high in vitamin A and many other vitamins and minerals (a superfood!), but there is another animal that has so much vitamin A in their liver, it can be toxic and even deadly to humans" correct="false"/>
+      </Options>
+    </Question>
+
+    <Question value="What is one of the main symptoms of a vitamin A deficiency (not getting enough)?">
+      <Options>
+        <Option value="Night blindness" response="Correct! Other symptoms include: dry skin and eyes, bad growth in children, poor wound healing and acne" correct="true"/>
+
+        <Option value="Joint pain" response="Incorrect... this is a sign of a lack of vitamin C" correct="false"/>
+
+        <Option value="Extreme fatigue" response="Incorrect... this is a symptom of a lack of vitamin B12 or iron" correct="false"/>
+
+        <Option value="Weak bones" response="Incorrect... this is a symptom of a lack of calcium" correct="false"/>
+      </Options>
+    </Question>
+
+    <Question value="What is a common trait for vegetables and fruits high in vitamin A?">
+      <Options>
+        <Option value="They grow undergound" response="Incorrect... for example: carrots grow undergound, but apricots on trees" correct="false"/>
+
+        <Option value="They are often completely orange" response="Correct! With some exceptions (such as spinach and kale), most fruits and vegetables high in vitamin A are completely orange" correct="true"/>
+
+        <Option value="They grow on trees" response="Incorrect... for example: apricots grow on trees, but carrots grow undergound" correct="false"/>
+
+        <Option value="They are all similar in shape" response="Incorrect... Carrots are long and pointy, while apricots and squash are round" correct="false"/>
+      </Options>
+    </Question>
+
+    <Question value="True or false: carrots are not always orange: they come in many other colours">
+      <Options>
+        <Option value="TRUE" response="Correct! While we are most familiar with the orange carrot, there are many more other kinds of carrots that can be red, white, black, yellow or even purple!" correct="true"/>
+
+        <Option value="FALSE" response="Incorrect... While we are most familiar with the orange carrot, there are many more other kinds of carrots that can be red, white, black, yellow or even purple!" correct="false"/>
+      </Options>
+    </Question>
+
+    <Question value="What is the most important function of vitamin B?">
+      <Options>
+        <Option value="Good for immunity" response="Incorrect... this is a function of vitamin C" correct="false"/>
+
+        <Option value="Convert food into fuel for your body" response="Correct! Your body makes energy out of the foods and drinks you consume by using vitamin B" correct="true"/>
+
+        <Option value="Healthy skin" response="Incorrect... this is a function of vitamin C" correct="false"/>
+
+        <Option value="Needed to absorb calcium" response="Incorrect... this is a function of vitamin D" correct="false"/>
+      </Options>
+    </Question>
+
+    <Question value="True or false: there is only one kind of vitamin B">
+      <Options>
+        <Option value="TRUE" response="Incorrect... there are actually 8 different vitamin B's! Vitamin B1, B2, B3, B5, B6, B7, B9 and B12. They all have different functions" correct="false"/>
+
+        <Option value="FALSE" response="Correct! There are actually 8 different vitamin B's! Vitamin B1, B2, B3, B5, B6, B7, B9 and B12. They all have different functions" correct="true"/>
+      </Options>
+    </Question>
+
+    <Question value="Did you know eggs contain all vitamins, except for one! What vitamin can not be found in an egg?">
+      <Options>
+        <Option value="Vitamin A" response="Incorrect... Eating one egg will get you around 64mcg of Vitamin A: that is about 10% of the total vitamin A you need every day!" correct="false"/>
+
+        <Option value="Vitamin B" response="Incorrect... There is vitamin B2 and B12 in eggs: the amount of B12 in one egg is all you need for the day!" correct="false"/>
+
+        <Option value="Vitamin C" response="Correct! Eggs do not contain vitamin C! Vitamin C can be foud mostly in citrus fruits, strawberries, green and red capsicums, potatoes and broccoli" correct="true"/>
+
+        <Option value="Vitamin D" response="Incorrect... One egg yolk has about 32% of the vitamin D you need every day!" correct="false"/>
+      </Options>
+    </Question>
+
+    <Question value="True or false: eggs are a good substitute for meat">
+      <Options>
+        <Option value="TRUE" response="Correct! Because eggs contain an important vitamin called B12, that is mostly found in meats. People who don't eat meat can sometimes not get enough B12, so eating an egg instead of meat is a good idea." correct="true"/>
+
+        <Option value="FALSE" response="Incorrect... Because eggs contain an important vitamin called B12, which is mostly found in meats. People who don't eat meat can sometimes not get enough B12, so eating an egg instead of meat is a good idea." correct="false"/>
+      </Options>
+    </Question>
   </Questions>
 </QuestionCollection>

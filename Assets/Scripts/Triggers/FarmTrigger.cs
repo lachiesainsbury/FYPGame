@@ -154,6 +154,7 @@ public class FarmTrigger : MonoBehaviour {
                     quizBox.GetComponent<UIWindow>().ExitWindow();
                     StartCoroutine(GrowCrops());
                     DisplayFeedback(feedback);
+                    GameObject.FindGameObjectWithTag("TownHealthBar").GetComponent<TownHealthBar>().QuizCorrect();
 
                     Debug.Log("Correct answer.");
                     return;
@@ -163,6 +164,7 @@ public class FarmTrigger : MonoBehaviour {
 
         quizBox.GetComponent<UIWindow>().ExitWindow();
         DisplayFeedback(feedback);
+        GameObject.FindGameObjectWithTag("TownHealthBar").GetComponent<TownHealthBar>().QuizIncorrect();
         Debug.Log("Incorrect answer.");
     }
 

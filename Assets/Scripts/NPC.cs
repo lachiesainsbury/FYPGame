@@ -43,6 +43,8 @@ public class NPC : MonoBehaviour {
 
         questNPCBox.GetComponent<Text>().text = "-";
         questNameBox.GetComponent<Text>().text = "-";
+
+        GameObject.FindGameObjectWithTag("TownHealthBar").GetComponent<TownHealthBar>().QuestCompleted();
     }
 
     public string GetNPCName() {
@@ -52,7 +54,11 @@ public class NPC : MonoBehaviour {
     public string GetDialogueLine() {
         switch (quest.questStatus) {
             case QuestStatus.NotStarted:
-                return dialogue.questOffer;
+                if (GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().HasQuest()) {
+                    return dialogue.questConflict;
+                } else {
+                    return dialogue.questOffer;
+                }
 
             case QuestStatus.InProgress:
                 if (HasPlayerFinishedQuest()) {
