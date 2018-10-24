@@ -8,7 +8,7 @@ public class Inventory : MonoBehaviour {
     private GameObject[] inventorySlots;
 
     [SerializeField]
-    private GameObject inventorySlotPrefab;
+    private GameObject inventorySlotPrefab, questInfo;
 
     [SerializeField]
     private Transform inventorySlotsGroup;
@@ -28,6 +28,10 @@ public class Inventory : MonoBehaviour {
 	}
 
     public void ToggleWindow() {
+        if (questInfo.activeInHierarchy) {
+            questInfo.SetActive(false);
+        }
+
         gameObject.SetActive(!gameObject.activeSelf);
     }
 

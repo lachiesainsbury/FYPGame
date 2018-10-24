@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<QuestionCollection>
+  <Questions>
+    <Question value="What is one of the functions of vitamin A in your body?">
+      <Options>
+        <Option value="Keeping your nervous system healthy" response="Incorrect... this is a function of vitamin B" correct="false"/>
+
+        <Option value="Production of red blood cells" response="Incorrect... this is a function of vitamin B" correct="false"/>
+
+        <Option value="Wound healing" response="Incorrect... this is a function of vitamin C" correct="false"/>
+
+        <Option value="Helps with good eyesight" response="Correct! Vitamin A is essential for seeing in the dark, and even seeing colour!" correct="true"/>
+      </Options>
+    </Question>
+  
+    <Question value="Vitamin A is a fat-soluble vitamin. What does that mean? ">
+      <Options>
+        <Option value="The vitamin is stored in your fat cells and will be used when you loose weight" response="Incorrect... no vitamins are stored in your fat cells" correct="false"/>
+
+        <Option value="The vitamin is stored in your liver and can be used whenever you do not get enough through your diet" response="Correct! Vitamin A, along with vitamin D, E and K, is fat-soluble " correct="true"/>
+
+        <Option value="Only fatty foods contain vitamin A" response="Incorrect... a food high in vitamin A is not neccesarily high in fat" correct="false"/>
+      </Options>
+    </Question>
+  </Questions>
+</QuestionCollection>

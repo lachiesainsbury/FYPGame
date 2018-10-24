@@ -25,6 +25,7 @@ public class GameController : MonoBehaviour {
     private FoodContainer foodContainer;
     private QuestContainer questContainer;
     private DialogueContainer dialogueContainer;
+    private QuestionContainer questionContainer;
 
 	// Use this for initialization
 	void Start () {
@@ -32,6 +33,7 @@ public class GameController : MonoBehaviour {
         LoadFoods();
         LoadQuests();
         LoadDialogue();
+        LoadQuestions();
 
         InitializeNutrientList();
 	}
@@ -50,6 +52,14 @@ public class GameController : MonoBehaviour {
 
     private void LoadDialogue() {
         dialogueContainer = DialogueContainer.LoadFromXML("XML/Dialogue");
+    }
+
+    private void LoadQuestions() {
+        questionContainer = QuestionContainer.LoadFromXML("XML/Questions");
+    }
+
+    public QuestionContainer GetQuestionContainer() {
+        return this.questionContainer;
     }
 
     private void InitializeNutrientList() {

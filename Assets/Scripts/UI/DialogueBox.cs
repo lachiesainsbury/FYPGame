@@ -20,13 +20,25 @@ public class DialogueBox : UIWindow {
         dialogueText[1].text = npc.GetDialogueLine();
 
         if (npc.GetQuest().questStatus == QuestStatus.NotStarted) {
-            UpdateDialogueButtons(dialogueButtons, true);
+            UpdateDialogueButtons(true);
+            dialogueButtons[2].onClick.RemoveAllListeners();
+            dialogueButtons[2].onClick.AddListener(delegate {
+                npc.StartQuest(GameObject.FindGameObjectWithTag("Player"));
+                this.gameObject.GetComponent<UIWindow>().ExitWindow();
+            });
         } else {
-            UpdateDialogueButtons(dialogueButtons, false);
+            UpdateDialogueButtons(false);
         }
     }
 
-    private void UpdateDialogueButtons(Button[] dialogueButtons, bool notStarted) {
+    public void UpdateDialogueBoxFeedback(string feedback) {
+        dialogueText[0].text = "";
+        dialogueText[1].text = feedback;
+
+        UpdateDialogueButtons(false);
+    }
+
+    private void UpdateDialogueButtons(bool notStarted) {
         dialogueButtons[0].gameObject.SetActive(!notStarted);
         dialogueButtons[1].gameObject.SetActive(notStarted);
         dialogueButtons[2].gameObject.SetActive(notStarted);

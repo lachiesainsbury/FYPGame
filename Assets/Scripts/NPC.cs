@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class NPC : MonoBehaviour {
 
     [SerializeField]
-    private GameObject gameController, inventory, questBox;
+    private GameObject gameController, inventory, questNPCBox, questNameBox;
 
     private Quest quest;
 
@@ -25,7 +25,8 @@ public class NPC : MonoBehaviour {
                 quest.questStatus = QuestStatus.InProgress;
 
                 player.GetComponent<Player>().AddNewQuest(quest);
-                questBox.GetComponent<Text>().text = quest.name;
+                questNPCBox.GetComponent<Text>().text = quest.questNPC + ":";
+                questNameBox.GetComponent<Text>().text = quest.name;
             } else {
                 Debug.Log("Player has a quest already or has completed this quest.");
             }
@@ -40,7 +41,8 @@ public class NPC : MonoBehaviour {
         Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         player.FinishQuest();
 
-        questBox.GetComponent<Text>().text = "";
+        questNPCBox.GetComponent<Text>().text = "-";
+        questNameBox.GetComponent<Text>().text = "-";
     }
 
     public string GetNPCName() {

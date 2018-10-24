@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class FarmTrigger : MonoBehaviour {
     [SerializeField]
-    private GameObject inventory;
+    private GameObject inventory, quizBox, dialogueBox;
     [SerializeField]
     private Tilemap object1, foreground;
 
@@ -106,12 +107,68 @@ public class FarmTrigger : MonoBehaviour {
         farmTile.PlantCrop(food, tile, object1);
     }
 
-    public void GrowCrops() {
+    public bool HasCropsToGrow() {
+        foreach (FarmTile farmTile in farmTiles) {
+            if (farmTile.HasCrop() && !farmTile.IsCropFullyGrown()) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public IEnumerator GrowCrops() {
+        ScreenFader screenFader = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>();
+
+        // Call FadeToBlack method and don't move on to the next line of code until method is finished
+        yield return StartCoroutine(screenFader.FadeToBlack());
+
         for (int i=0; i < farmTiles.Length; i++) {
             if (farmTiles[i].HasCrop()) {
                 farmTiles[i].GrowCrop();
             }
         }
+
+        // Call FadeToClear method and don't move on to the next line of code until method is finished
+        yield return StartCoroutine(screenFader.FadeToClear());
+    }
+
+    public void ShowQuiz() {
+        if (HasCropsToGrow()) {
+            quizBox.GetComponent<UIWindow>().OpenWindow();
+            quizBox.GetComponent<QuizBox>().UpdateQuizBox();
+        } else {
+            StartCoroutine(GrowCrops());
+        }
+    }
+
+    public void SubmitQuizAnswer(Button selected) {
+        string selectedAnswer = selected.GetComponentInChildren<Text>().text;
+        string feedback = "";
+
+        foreach (Option option in quizBox.GetComponent<QuizBox>().GetCurrentQuestion().options) {
+            if (option.value.Equals(selectedAnswer)) {
+                feedback = option.response;
+
+                if (option.correct.Equals("true")) {
+                    quizBox.GetComponent<UIWindow>().ExitWindow();
+                    StartCoroutine(GrowCrops());
+                    DisplayFeedback(feedback);
+
+                    Debug.Log("Correct answer.");
+                    return;
+                }
+            }
+        }
+
+        quizBox.GetComponent<UIWindow>().ExitWindow();
+        DisplayFeedback(feedback);
+        Debug.Log("Incorrect answer.");
+    }
+
+    private void DisplayFeedback(string feedback) {
+        dialogueBox.GetComponent<UIWindow>().OpenWindow();
+        dialogueBox.GetComponent<DialogueBox>().UpdateDialogueBoxFeedback(feedback);
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {

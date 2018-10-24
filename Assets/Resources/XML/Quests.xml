@@ -9,5 +9,13 @@
         <QuestItem>Carrot</QuestItem>
       </QuestItems>
     </Quest>
+
+    <Quest name="Vitamin C">
+      <QuestNPC>Aaron</QuestNPC>
+
+      <QuestItems>
+        <QuestItem>Potato</QuestItem>
+      </QuestItems>
+    </Quest>
   </Quests>
 </QuestCollection>
