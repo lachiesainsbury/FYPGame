@@ -155,5 +155,73 @@
         <Option value="FALSE" response="Incorrect... Because eggs contain an important vitamin called B12, which is mostly found in meats. People who don't eat meat can sometimes not get enough B12, so eating an egg instead of meat is a good idea." correct="false"/>
       </Options>
     </Question>
+	
+	<Question value="True or false: Melanin is a natural pigment in the skin that blocks some of the suns' UV rays">
+		<Options>
+			<Option value="TRUE" response="Correct! The more melanin in your skin, the darker your skin colour is. So people with darker skin have more protection from the sun's UV rays. " correct="true"/>
+			
+			<Option value="FALSE" response="Incorrect... the more melanin in your skin, the darker your skin colour is. So people with darker skin have more protection from the sun's UV rays." correct="false"/>
+		</Options>
+	</Question>
+	
+	<Question value="Some people don't like fish, or are vegetarian. What foods rich in vitamin D could you eat if you don't eat fish?">
+		<Options>
+			<Option value="Carrots and spinach" response="Incorrect... carrots and spinach contain many vitamins like vitamin A and vitamin B, but no vitamin D" correct="false"/>
+			
+			<Option value="Carrots and eggs" response="Incorrect... carrots and eggs both contain vitamin B, but only eggs (the yolk) contain vitamin D" correct="false"/>
+			
+			<Option value="Mushrooms and eggs" response="Correct! Mushrooms and eggs both contain vitamin D. In eggs, it is in the egg yolk (the yellow part)." correct="true"/>
+			
+			<Option value="Apples and oranges" response="Incorrect... There are no fruits that contain vitamin D" correct="false"/>
+		</Options>
+	</Question>
+	
+	<Question value="In this game you get to know vitamin A, B, C and D. But what other vitamins are there?">
+		<Options>
+			<Option value="Vitamin X, Y and Z" response="Incorrect... vitamin X, Y and Z all don't exist" correct="false"/>
+			
+			<Option value="Vitamin K and Z" response="Incorrect... only vitamin K is real: it helps your blood clot and can be found in green leavy vegetables (such as spinach)" correct="false"/>
+			
+			<Option value="Vitamin E and F" response="Incorrect... only vitamin E is real: it helps protect your cells and can be found mainly in nuts and vegetable oils" correct="false"/>
+			
+			<Option value="Vitamin K and E" response="Correct! Vitamin K helps your blood clot and can be found in green leavy vegetables (such as spinach) and vitamin E is found in nuts and spinach and helps protect the cells in your body from damage" correct="true"/>
+		</Options>
+	</Question>
+	
+	<Question value="Worldwide, vitamin D deficiency (not getting enough) is the most common deficiency of all vitamins! Why is that?">
+		<Options>
+			<Option value="The sun does not shine long enough and is not strong enough in some countries" response="Incorrect... This is definitely one of the reasons, but not the only one. Some countries that are on high latitudes such as Canada or Norway and Sweden do not get much sun during winter." correct="false"/>
+			
+			<Option value="People using sunscreen all the time or not going outside" response="Incorrect... This is definitely one of the reasons, but not the only one. While using sunscreen is very good in Australia, in some countries the sun does not shine enough and using sunscreen then, can prevent your body from making enough vitamin D" correct="false"/>
+			
+			<Option value="Melanin pigmentation restricts the UV rays being absorbed" response="Incorrect... This is definitely one of the reasons, but not the only one. Dark skinned people, whole have high levels of melanin in their skin, don't absorb as much UV rays and thus make less vitamin D in their body" correct="false"/>
+			
+			<Option value="All of the above" response="Correct! All of the reasons above is why vitamin D deficiency is very common in the world. Because Australia is a very sunny country, the problem is not so bad here." correct="true"/>
+		</Options>
+	</Question>
+	
+	<Question value="True or false: you cannot eat carrots raw">
+		<Options>
+			<Option value="TRUE" response="Incorrect... Carrots are completely fine to eat raw! Even more so, they are delicious and easy to bring as a snack or munch on before dinner" correct="false"/>
+			
+			<Option value="FALSE" response="Correct! Carrots are completely fine to eat raw! Even more so, they are delicious and easy to bring as a snack or munch on before dinner" correct="true"/>
+		</Options>
+	</Question>
+	
+	<Question value="True or false: you can only eat the eggs of chickens">
+		<Options>
+			<Option value="TRUE" response="Incorrect... While we eat chicken eggs most often in Australia, you can also eat the eggs from many other animals such as ducks, geese, emu's and even from fish (known as caviar)!" correct="false"/>
+			
+			<Option value="FALSE" response="Correct! While we eat chicken eggs most often in Australia, you can also eat the eggs from many other animals such as ducks, geese, emu's and even from fish (known as caviar)!" correct="true"/>
+		</Options>
+	</Question>
+	
+	<Question value="A serve of eggs is 83% Recommended Daily Intake (RDI) of vitamin B. What happens if I eat two serves of eggs and get over a 100% RDI?">
+		<Options>
+			<Option value="You should never get over 100% because this can make you sick" response="Incorrect... the RDI is the minimum of what you should get every day. Any extra vitamin B that you eat or drink and your body does not need, leaves your body through your pee." correct="false"/>
+			
+			<Option value="Nothing: it is fine to eat over 100%" response="Correct! The RDI is the minimum of what you should get every day. Any extra vitamin B that you eat or drink and your body does not need, leaves your body through your pee." correct="true"/>
+		</Options>
+	</Question>
   </Questions>
 </QuestionCollection>
