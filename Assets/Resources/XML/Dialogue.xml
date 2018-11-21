@@ -3,15 +3,9 @@
 <DialogueCollection>
   <Dialogues>
     <Dialogue NPC="Sarah">
-      <QuestOffer>
-		G'day farmer! I'm looking for some foods that help me see better in the dark.
-		Could you buy some seeds from the shop and grow some for me?
-	  </QuestOffer>
+      <QuestOffer>G'day farmer! I'm looking for some foods that help me see better in the dark. Could you buy some seeds from the shop and grow some for me?</QuestOffer>
 
-      <QuestInProgress>
-		How are you going with the quest? Remember I need a food that helps me see 
-		better in the dark.
-	  </QuestInProgress>
+      <QuestInProgress>How are you going with the quest? Remember I need a food that helps me see better in the dark.</QuestInProgress>
 
       <QuestHandIn>Thanks for getting that for me!</QuestHandIn>
     </Dialogue>
