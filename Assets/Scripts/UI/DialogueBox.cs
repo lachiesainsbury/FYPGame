@@ -16,6 +16,8 @@ public class DialogueBox : UIWindow {
     }
 
     public void UpdateDialogueBox(NPC npc) {
+        dialogueText[0].fontSize = 46;
+        dialogueText[0].alignment = TextAnchor.UpperLeft;
         dialogueText[0].text = npc.GetNPCName();
         dialogueText[1].text = npc.GetDialogueLine();
 
@@ -32,8 +34,10 @@ public class DialogueBox : UIWindow {
     }
 
     public void UpdateDialogueBoxFeedback(string feedback) {
-        dialogueText[0].text = "";
-        dialogueText[1].text = feedback;
+        dialogueText[0].fontSize = 26;
+        dialogueText[0].alignment = TextAnchor.MiddleLeft;
+        dialogueText[0].text = feedback;
+        dialogueText[1].text = "";
 
         UpdateDialogueButtons(false);
     }

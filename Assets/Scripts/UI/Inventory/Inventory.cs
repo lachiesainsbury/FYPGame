@@ -35,6 +35,14 @@ public class Inventory : MonoBehaviour {
         gameObject.SetActive(!gameObject.activeSelf);
     }
 
+    public void OpenWindow() {
+        if (questInfo.activeInHierarchy) {
+            questInfo.SetActive(false);
+        }
+
+        gameObject.SetActive(true);
+    }
+
     public void AddItem(Food food) {
         foreach (GameObject slot in inventorySlots) {
             InventorySlot inventorySlot = slot.GetComponent<InventorySlot>();
