@@ -11,7 +11,7 @@
     </Dialogue>
 
     <Dialogue NPC="Aaron">
-      <QuestOffer>Hi! Could you please get me a food that contains Vitamin C? Not strawberries though, I have lots of those.</QuestOffer>
+      <QuestOffer>Hi! Could you please grow me a food that contains Vitamin C? Not strawberries though, I have lots of those.</QuestOffer>
 
       <QuestInProgress>How are you going with the quest? Remember I need a food with Vitamin C.</QuestInProgress>
 
@@ -19,7 +19,7 @@
     </Dialogue>
   
     <Dialogue NPC="Barry">
-      <QuestOffer>Hello, could you please get me some strawberries?</QuestOffer>
+      <QuestOffer>Hello, could you please grow me some strawberries?</QuestOffer>
 
       <QuestInProgress>How are you going with the quest? Remember I need some strawberries.</QuestInProgress>
 
@@ -27,7 +27,7 @@
     </Dialogue>
 
     <Dialogue NPC="Emma">
-      <QuestOffer>Hi friend, I'm looking for some tomatoes. Could you get me some?</QuestOffer>
+      <QuestOffer>Hi friend, I'm looking for some tomatoes. Any chance you could grow me some?</QuestOffer>
 
       <QuestInProgress>How are you going with the quest? Remember I need tomatoes.</QuestInProgress>
 
