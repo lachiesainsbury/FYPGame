@@ -8,6 +8,8 @@
       <QuestItems>
         <QuestItem>Carrot</QuestItem>
       </QuestItems>
+
+      <ItemAmount>3</ItemAmount>
     </Quest>
 
     <Quest name="Vitamin C">
@@ -17,6 +19,8 @@
         <QuestItem>Potato</QuestItem>
         <QuestItem>Broccoli</QuestItem>
       </QuestItems>
+    
+      <ItemAmount>2</ItemAmount>
     </Quest>
 
     <Quest name="Strawberries">
@@ -25,6 +29,8 @@
       <QuestItems>
         <QuestItem>Strawberry</QuestItem>
       </QuestItems>
+    
+      <ItemAmount>4</ItemAmount>
     </Quest>
 
     <Quest name="Tomatoes">
@@ -33,6 +39,8 @@
       <QuestItems>
         <QuestItem>Tomato</QuestItem>
       </QuestItems>
+    
+      <ItemAmount>1</ItemAmount>
     </Quest>
   </Quests>
 </QuestCollection>

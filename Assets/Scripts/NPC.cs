@@ -78,6 +78,8 @@ public class NPC : MonoBehaviour {
     private bool HasPlayerFinishedQuest() {
         if (quest != null) {
             GameObject[] inventorySlots = inventory.GetComponent<Inventory>().GetInventorySlots();
+            InventorySlot[] validInventorySlots = new InventorySlot[6];
+            int validItemCount = 0;
 
             foreach (GameObject slot in inventorySlots) {
                 InventorySlot inventorySlot = slot.GetComponent<InventorySlot>();
@@ -85,12 +87,27 @@ public class NPC : MonoBehaviour {
                 foreach (string questItem in quest.questItems) {
                     if (inventorySlot.HasItem()) {
                         if ((inventorySlot.GetItem().name).Equals(questItem) && (inventorySlot.GetItem().itemType == ItemType.Food)) {
-                            inventorySlot.ClearSlot();
-                            FinishQuest();
-                            return true;
+                            for (int i = 0; i < validInventorySlots.Length; i++) {
+                                if (validInventorySlots[i] == null) {
+                                    validInventorySlots[i] = inventorySlot;
+                                    validItemCount++;
+                                    break;
+                                }
+                            }
                         }
                     }
                 }
+            }
+
+            Debug.Log(validItemCount);
+
+            if (validItemCount >= quest.itemAmount) {
+                for (int i = 0; i < quest.itemAmount; i++) {
+                    validInventorySlots[i].ClearSlot();
+                }
+
+                FinishQuest();
+                return true;
             }
         }
 

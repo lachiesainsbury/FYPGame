@@ -21,4 +21,7 @@ public class Quest {
 
     [XmlArray("QuestItems"), XmlArrayItem("QuestItem")]
     public string[] questItems;
+
+    [XmlElement("ItemAmount")]
+    public int itemAmount;
 }

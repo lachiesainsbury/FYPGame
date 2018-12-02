@@ -3,33 +3,33 @@
 <DialogueCollection>
   <Dialogues>
     <Dialogue NPC="Sarah">
-      <QuestOffer>G'day farmer! I'm looking for some foods that help me see better in the dark. Could you buy some seeds from the shop and grow some for me?</QuestOffer>
+      <QuestOffer>G'day farmer! I'm looking for a food that help me see better in the dark. Could you buy some seeds from the shop and grow some for me? I need 3 serves worth.</QuestOffer>
 
-      <QuestInProgress>How are you going with the quest? Remember I need a food that helps me see better in the dark.</QuestInProgress>
+      <QuestInProgress>How are you going with the quest? Remember I need 3 serves of a food that helps me see better in the dark.</QuestInProgress>
 
       <QuestHandIn>Thanks for getting that for me!</QuestHandIn>
     </Dialogue>
 
     <Dialogue NPC="Aaron">
-      <QuestOffer>Hi! Could you please grow me a food that contains Vitamin C? Not strawberries though, I have lots of those.</QuestOffer>
+      <QuestOffer>Hi! Could you please grow 2 serves of a food that contains Vitamin C? Not strawberries though, I have lots of those.</QuestOffer>
 
-      <QuestInProgress>How are you going with the quest? Remember I need a food with Vitamin C.</QuestInProgress>
+      <QuestInProgress>How are you going with the quest? Remember I need 2 serves of a food with Vitamin C.</QuestInProgress>
 
       <QuestHandIn>Thanks for getting that for me!</QuestHandIn>
     </Dialogue>
   
     <Dialogue NPC="Barry">
-      <QuestOffer>Hello, could you please grow me some strawberries?</QuestOffer>
+      <QuestOffer>Hello, could you please grow me 4 serves of strawberries?</QuestOffer>
 
-      <QuestInProgress>How are you going with the quest? Remember I need some strawberries.</QuestInProgress>
+      <QuestInProgress>How are you going with the quest? Remember I need 4 serves of strawberries.</QuestInProgress>
 
       <QuestHandIn>Thanks for getting that for me!</QuestHandIn>
     </Dialogue>
 
     <Dialogue NPC="Emma">
-      <QuestOffer>Hi friend, I'm looking for some tomatoes. Any chance you could grow me some?</QuestOffer>
+      <QuestOffer>Hi neighbour, I'm making a sandwich for lunch but I need a tomato. Any chance you could grow me one?</QuestOffer>
 
-      <QuestInProgress>How are you going with the quest? Remember I need tomatoes.</QuestInProgress>
+      <QuestInProgress>How are you going with the quest? Remember I need 1 tomato.</QuestInProgress>
 
       <QuestHandIn>Thanks for getting that for me!</QuestHandIn>
     </Dialogue>
