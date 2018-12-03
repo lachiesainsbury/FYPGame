@@ -24,11 +24,13 @@ public class UIWindow : MonoBehaviour {
     }
 
     private void ToggleJoystickAndActionButton(bool toggle) {
-        joystick.SetActive(toggle);
-        actionButton.SetActive(toggle);
+        if (joystick != null && actionButton != null) {
+            joystick.SetActive(toggle);
+            actionButton.SetActive(toggle);
 
-        if (!toggle) {
-            joystick.GetComponent<FixedJoystick>().ResetJoystick();
+            if (!toggle) {
+                joystick.GetComponent<FixedJoystick>().ResetJoystick();
+            }
         }
     }
 

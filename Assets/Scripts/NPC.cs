@@ -99,8 +99,6 @@ public class NPC : MonoBehaviour {
                 }
             }
 
-            Debug.Log(validItemCount);
-
             if (validItemCount >= quest.itemAmount) {
                 for (int i = 0; i < quest.itemAmount; i++) {
                     validInventorySlots[i].ClearSlot();
