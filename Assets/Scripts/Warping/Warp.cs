@@ -6,6 +6,8 @@ public class Warp : MonoBehaviour {
 
     [SerializeField]
     private Transform warpTarget;
+    [SerializeField]
+    private bool screenFading;
 
     private ActionButton actionButton;
     private bool playerWithinZone, warping;
@@ -25,17 +27,23 @@ public class Warp : MonoBehaviour {
     }
 
     private IEnumerator WarpPlayer(Player player) {
-        ScreenFader screenFader = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>();
+        if (screenFading) {
+            ScreenFader screenFader = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>();
 
-        // Call FadeToBlack method and don't move on to the next line of code until method is finished
-        yield return StartCoroutine(screenFader.FadeToBlack());
+            // Call FadeToBlack method and don't move on to the next line of code until method is finished
+            yield return StartCoroutine(screenFader.FadeToBlack());
 
-        // Move player and camera objects to the warp target
-        player.gameObject.transform.position = warpTarget.position;
-        Camera.main.transform.position = warpTarget.position;
+            // Move player and camera objects to the warp target
+            player.gameObject.transform.position = warpTarget.position;
+            Camera.main.transform.position = warpTarget.position;
 
-        // Call FadeToClear method and don't move on to the next line of code until method is finished
-        yield return StartCoroutine(screenFader.FadeToClear());
+            // Call FadeToClear method and don't move on to the next line of code until method is finished
+            yield return StartCoroutine(screenFader.FadeToClear());
+        } else {
+            // Move player and camera objects to the warp target
+            player.gameObject.transform.position = warpTarget.position;
+            Camera.main.transform.position = warpTarget.position;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
