@@ -48,11 +48,11 @@
 
     <Question value="What is the main function of vitamin D in your body?">
       <Options>
-        <Option value="We need vitamin D to absorb iron" response="Incorrect... You need vitamin C to absorb iron" correct="false"/>
+        <Option value="We need vitamin D to absorb iron" response="Incorrect... You don't need vitamin C to absorb iron" correct="false"/>
         
         <Option value="We need vitamin D to absorb calcium" response="Correct! Calcium is important for strong bones and teeth, but if you don't get enough vitamin D your bones will never become healthy." correct="true"/>
         
-        <Option value="We need vitamin D for our eyesight" response="Incorrect... You need vitamin A for good eyesight" correct="false"/>
+        <Option value="We need vitamin D for our eyesight" response="Incorrect... You don't need vitamin A for good eyesight" correct="false"/>
       </Options>
     </Question>
 
