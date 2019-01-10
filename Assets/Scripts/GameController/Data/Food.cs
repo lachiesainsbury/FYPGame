@@ -8,6 +8,9 @@ public class Food : Item {
     [XmlAttribute("name")]
     public string name;
 
+    [XmlAttribute("buyable")]
+    public bool buyable;
+
     [XmlElement("FoodIcon")]
     public string foodIcon;
 

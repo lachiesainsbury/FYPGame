@@ -135,7 +135,7 @@ public class GameController : MonoBehaviour {
         Text[] foodText = foodView.GetComponentsInChildren<Text>();
 
         foodText[0].text = food.name.ToUpper();
-        foodText[1].text = food.description;
+        foodText[1].text = food.description.Replace("\\n", "\n");
 
         // Sets the foods icon
         Image icon = foodView.GetComponentsInChildren<Image>()[2];
@@ -147,17 +147,23 @@ public class GameController : MonoBehaviour {
         Button chooseButton = foodButtons[1];
         Button exitButton = foodButtons[2];
 
+        if (food.buyable) {
+            chooseButton.onClick.AddListener(delegate {
+                food.itemType = ItemType.Seeds;
+                inventory.GetComponent<Inventory>().AddItem(food);
+            });
+        } else {
+            chooseButton.gameObject.SetActive(false);
+        }
+
         backButton.onClick.AddListener(delegate {
+            chooseButton.gameObject.SetActive(true);
             Navigate(foodView, nutrientView);
             chooseButton.onClick.RemoveAllListeners();
         });
 
-        chooseButton.onClick.AddListener(delegate {
-            food.itemType = ItemType.Seeds;
-            inventory.GetComponent<Inventory>().AddItem(food);
-        });
-
         exitButton.onClick.AddListener(delegate {
+            chooseButton.gameObject.SetActive(true);
             chooseButton.onClick.RemoveAllListeners();
         });
     }

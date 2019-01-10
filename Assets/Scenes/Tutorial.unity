@@ -362,7 +362,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 39bd9d3193deca64794ee45eee67e2e8, type: 3}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -537,7 +537,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -19}
+  m_AnchoredPosition: {x: 0, y: -19.000122}
   m_SizeDelta: {x: 0, y: -262}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &70099495
@@ -642,7 +642,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -19}
+  m_AnchoredPosition: {x: 0, y: -19.000122}
   m_SizeDelta: {x: 0, y: -262}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &90362139
@@ -701,7 +701,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 39bd9d3193deca64794ee45eee67e2e8, type: 3}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -712,8 +712,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is an NPC (non-player character). The blue dialogue icon means that
-    you can talk to them to receive a quest.
+  m_Text: This is what a villager will look like. If they have the blue dialogue icon
+    over their head, it means you can talk to them and receive a quest or question
+    that earns points towards the healthiness of the town.
 --- !u!222 &90362142
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -778,18 +779,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 39bd9d3193deca64794ee45eee67e2e8, type: 3}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: To move around the world, use the joystick below.
+  m_Text: To move around the village, use the joystick below.
 --- !u!222 &92890908
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -997,6 +998,81 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
   actionButton: {fileID: 0}
+--- !u!1 &179934533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 179934534}
+  - component: {fileID: 179934536}
+  - component: {fileID: 179934535}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &179934534
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 179934533}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1735073361}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: -50}
+  m_SizeDelta: {x: 155, y: 35}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &179934535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 179934533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.87058824, g: 0.91764706, b: 0.85490197, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 39bd9d3193deca64794ee45eee67e2e8, type: 3}
+    m_FontSize: 34
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 150
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Backpack
+--- !u!222 &179934536
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 179934533}
+  m_CullTransparentMesh: 0
 --- !u!1 &215258926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,7 +1274,7 @@ MonoBehaviour:
         m_MethodName: Navigate
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 711404168}
+          m_ObjectArgument: {fileID: 1900846006}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1570,18 +1646,19 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 39bd9d3193deca64794ee45eee67e2e8, type: 3}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 100
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: To interact with objects in-game, use the action button.
+  m_Text: To find out what the villagers want, or to enter/exit a building, walk up
+    to the villager or door and click the action button.
 --- !u!222 &452935929
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1739,6 +1816,81 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 691634310}
   m_CullTransparentMesh: 0
+--- !u!1 &693222730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 693222731}
+  - component: {fileID: 693222733}
+  - component: {fileID: 693222732}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &693222731
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 693222730}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1842212864}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: -50}
+  m_SizeDelta: {x: 155, y: 35}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &693222732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 693222730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.87058824, g: 0.91764706, b: 0.85490197, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 39bd9d3193deca64794ee45eee67e2e8, type: 3}
+    m_FontSize: 34
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 150
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Quest tab
+--- !u!222 &693222733
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 693222730}
+  m_CullTransparentMesh: 0
 --- !u!1 &696054021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,7 +1970,7 @@ MonoBehaviour:
         m_MethodName: Navigate
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1565983381}
+          m_ObjectArgument: {fileID: 2054150324}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2009,7 +2161,7 @@ MonoBehaviour:
         m_MethodName: Navigate
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1900846006}
+          m_ObjectArgument: {fileID: 1193516591}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2332,8 +2484,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -19}
-  m_SizeDelta: {x: 0, y: -262}
+  m_AnchoredPosition: {x: 0, y: -49.00003}
+  m_SizeDelta: {x: 0, y: -262.00006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &750824186
 GameObject:
@@ -2367,7 +2519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -19}
+  m_AnchoredPosition: {x: 0, y: -19.000122}
   m_SizeDelta: {x: 0, y: -262}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &760219000
@@ -2524,7 +2676,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -19}
+  m_AnchoredPosition: {x: 0, y: -19.000122}
   m_SizeDelta: {x: 0, y: -262}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &831490763
@@ -2560,7 +2712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -19}
+  m_AnchoredPosition: {x: 0, y: -19.000122}
   m_SizeDelta: {x: 0, y: -262}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &834201775
@@ -2594,7 +2746,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -19}
+  m_AnchoredPosition: {x: 0, y: -19.000122}
   m_SizeDelta: {x: 0, y: -262}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &893395635
@@ -2698,7 +2850,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -150, y: 0}
+  m_AnchoredPosition: {x: -100, y: 0}
   m_SizeDelta: {x: 192, y: 192}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &966103503
@@ -2876,7 +3028,7 @@ MonoBehaviour:
         m_MethodName: Navigate
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1193516591}
+          m_ObjectArgument: {fileID: 1565983381}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3170,7 +3322,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -30}
   m_SizeDelta: {x: 443, y: 210}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1137367805
@@ -3263,7 +3415,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 39bd9d3193deca64794ee45eee67e2e8, type: 3}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -3274,9 +3426,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is the time skip button. Once a crop is planted, you can skip to the
-    next day by correctly answering a quiz question. Each crop has 3 stages of growth
-    before it can be harvested.
+  m_Text: This is the time skip button. Once a crop is planted, you can press this
+    button to skip to the next day by correctly answering a quiz question. Each crop
+    needs 3 days of growth before it can be harvested.
 --- !u!222 &1149600045
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3416,7 +3568,7 @@ GameObject:
   - component: {fileID: 1193516592}
   - component: {fileID: 1193516593}
   m_Layer: 5
-  m_Name: Page7
+  m_Name: Page4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3437,7 +3589,7 @@ RectTransform:
   - {fileID: 696054022}
   - {fileID: 2096814142}
   m_Father: {fileID: 1674054999}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3524,8 +3676,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'This is an early prototype and more content is still to come. The source
-    code can be found at: github.com/lachiesainsbury/VitaVillage'
+  m_Text: To begin your game, press the play button below.
 --- !u!222 &1246003700
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3566,7 +3717,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 25}
+  m_AnchoredPosition: {x: 0, y: 40}
   m_SizeDelta: {x: 360, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1353222420
@@ -3804,7 +3955,7 @@ MonoBehaviour:
         m_MethodName: Navigate
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2054150324}
+          m_ObjectArgument: {fileID: 1193516591}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3903,7 +4054,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 39bd9d3193deca64794ee45eee67e2e8, type: 3}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -4060,7 +4211,7 @@ GameObject:
   - component: {fileID: 1565983382}
   - component: {fileID: 1565983383}
   m_Layer: 5
-  m_Name: Page6
+  m_Name: Page7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4081,7 +4232,7 @@ RectTransform:
   - {fileID: 725497192}
   - {fileID: 750824187}
   m_Father: {fileID: 1674054999}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4547,10 +4698,10 @@ RectTransform:
   - {fileID: 162404142}
   - {fileID: 1502446331}
   - {fileID: 2054150325}
+  - {fileID: 1193516592}
   - {fileID: 1900846007}
   - {fileID: 1816997478}
   - {fileID: 1565983382}
-  - {fileID: 1193516592}
   - {fileID: 711404169}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -4588,12 +4739,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 893395636}
+  - {fileID: 179934534}
   m_Father: {fileID: 831490764}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -200, y: 0}
+  m_AnchoredPosition: {x: -200, y: 40}
   m_SizeDelta: {x: 122, y: 122}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1735073362
@@ -4762,7 +4914,7 @@ GameObject:
   - component: {fileID: 1816997478}
   - component: {fileID: 1816997479}
   m_Layer: 5
-  m_Name: Page5
+  m_Name: Page6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4783,7 +4935,7 @@ RectTransform:
   - {fileID: 26785138}
   - {fileID: 760219001}
   m_Father: {fileID: 1674054999}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4831,12 +4983,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 699144002}
+  - {fileID: 693222731}
   m_Father: {fileID: 831490764}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 200, y: 0}
+  m_AnchoredPosition: {x: 200, y: 40}
   m_SizeDelta: {x: 122, y: 122}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1842212865
@@ -4929,7 +5082,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 39bd9d3193deca64794ee45eee67e2e8, type: 3}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -4940,8 +5093,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is your farming plot. The magnifying glass icon indicates that you
-    can interact with this zone to plant seeds into the soil.
+  m_Text: This is what your farming plot looks like. This is where you can plant and
+    grow the seeds you got for your quest. Walk up to the blue magnifying glass icon
+    and press A to plant your seeds. You grow and harvest your foods by doing a quiz.
 --- !u!222 &1855745090
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4982,7 +5136,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 30}
   m_SizeDelta: {x: 122, y: 122}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1869976941
@@ -5098,7 +5252,7 @@ MonoBehaviour:
         m_MethodName: Navigate
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1193516591}
+          m_ObjectArgument: {fileID: 711404168}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -5151,7 +5305,7 @@ GameObject:
   - component: {fileID: 1900846007}
   - component: {fileID: 1900846008}
   m_Layer: 5
-  m_Name: Page4
+  m_Name: Page5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5172,7 +5326,7 @@ RectTransform:
   - {fileID: 1430364173}
   - {fileID: 831490764}
   m_Father: {fileID: 1674054999}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5225,7 +5379,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 100, y: 0}
-  m_SizeDelta: {x: 800, y: 458}
+  m_SizeDelta: {x: 825, y: 458}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &2003470411
 MonoBehaviour:
@@ -5248,10 +5402,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 39bd9d3193deca64794ee45eee67e2e8, type: 3}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 0
     m_MaxSize: 100
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -5259,8 +5413,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Welcome to VitaVillage - an educational farming game designed to improve
-    your nutritional knowledge. This is your character on the right.
+  m_Text: 'You play the farmer that has just moved to a town called VitaVillage. The
+    villagers in this town are all quite unhealthy because they have no access to
+    healthy food or don''t know what healthy food is. You, the farmer, will help the
+    villagers with this by growing the healthy food they need.
+
+
+    Click on the arrow below to learn how to do that.'
 --- !u!222 &2003470412
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5486,6 +5645,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -19}
+  m_AnchoredPosition: {x: 0, y: -19.000122}
   m_SizeDelta: {x: 0, y: -262}
   m_Pivot: {x: 0.5, y: 0.5}

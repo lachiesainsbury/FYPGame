@@ -2,7 +2,7 @@
 
 <QuestionCollection>
   <Questions>
-    <Question value="What is one of the functions of vitamin A in your body?">
+    <Question value="What is one of the functions of vitamin A in your body?" category="Vitamin A">
       <Options>
         <Option value="Keeping your nervous system healthy" response="Incorrect... this is a function of vitamin B" correct="false"/>
 
@@ -14,7 +14,7 @@
       </Options>
     </Question>
   
-    <Question value="Vitamin A is a fat-soluble vitamin. What does that mean? ">
+    <Question value="Vitamin A is a fat-soluble vitamin. What does that mean?" category="Vitamin A">
       <Options>
         <Option value="The vitamin is stored in your fat cells and will be used when you loose weight" response="Incorrect... no vitamins are stored in your fat cells" correct="false"/>
 
@@ -24,7 +24,7 @@
       </Options>
     </Question>
 
-    <Question value="There are only a few foods that contain some vitamin D. Where do you get the most vitamin D?">
+    <Question value="There are only a few foods that contain some vitamin D. Where do you get the most vitamin D?" category="Vitamin D">
       <Options>
         <Option value="The sun" response="Correct! Sunlight contains UV light, which our skin can use to make vitamin D. This makes vitamin D one of only 2 vitamins we can make ourselves in our body; all the other vitamins we get through food." correct="true"/>
 
@@ -34,7 +34,7 @@
       </Options>
     </Question>
 
-    <Question value="Once you have cooked some delicious salmon for dinner, where do you keep it if you want to take it for lunch the next day?">
+    <Question value="Once you have cooked some delicious salmon for dinner, where do you keep it if you want to take it for lunch the next day?" category="Vitamin D">
       <Options>
         <Option value="Pantry" response="Incorrect... if you keep your salmon in the pantry it will go bad and might make you sick" correct="false"/>
 
@@ -46,7 +46,7 @@
       </Options>
     </Question>
 
-    <Question value="What is the main function of vitamin D in your body?">
+    <Question value="What is the main function of vitamin D in your body?" category="Vitamin D">
       <Options>
         <Option value="We need vitamin D to absorb iron" response="Incorrect... You don't need vitamin C to absorb iron" correct="false"/>
         
@@ -56,7 +56,7 @@
       </Options>
     </Question>
 
-    <Question value="True or false: During an Australian summer, you only need to be in the sun with your face and hand exposed for couple of minutes a day to get enough vitamin D">
+    <Question value="True or false: During an Australian summer, you only need to be in the sun with your face and hand exposed for couple of minutes a day to get enough vitamin D" category="Vitamin D">
       <Options>
         <Option value="TRUE" response="Correct! Make sure you don't go out without sunscreen more than that and always use suncreen during the hottest part of the day" correct="true"/>
 
@@ -64,7 +64,7 @@
       </Options>
     </Question>
 
-    <Question value="True or false: If you eat enough carrots, you become orange">
+    <Question value="True or false: If you eat enough carrots, you become orange" category="Vitamin A">
       <Options>
         <Option value="TRUE" response="Correct! You have to eat very, very many carrots, but your skin will get an orange glow. This is not dangerous but it is important to not only eat carrots, but also other vegetables to make sure you get all the different vitamins and minerals" correct="true"/>
 
@@ -72,7 +72,7 @@
       </Options>
     </Question>
 
-    <Question value="Liver is known to contain very high levels of vitamin A (because that is where it is stored). The liver of which animal contains the most vitamin A?">
+    <Question value="Liver is known to contain very high levels of vitamin A (because that is where it is stored). The liver of which animal contains the most vitamin A?" category="Vitamin A">
       <Options>
         <Option value="Cow" response="Incorrect... cow livers are also high in vitamin A and many other vitamins and minerals (a superfood!), but there is another animal that has so much vitamin A in their liver, it can be toxic and even deadly to humans" correct="false"/>
 
@@ -84,7 +84,7 @@
       </Options>
     </Question>
 
-    <Question value="What is one of the main symptoms of a vitamin A deficiency (not getting enough)?">
+    <Question value="What is one of the main symptoms of a vitamin A deficiency (not getting enough)?" category="Vitamin A">
       <Options>
         <Option value="Night blindness" response="Correct! Other symptoms include: dry skin and eyes, bad growth in children, poor wound healing and acne" correct="true"/>
 
@@ -96,7 +96,7 @@
       </Options>
     </Question>
 
-    <Question value="What is a common trait for vegetables and fruits high in vitamin A?">
+    <Question value="What is a common trait for vegetables and fruits high in vitamin A?" category="Vitamin A">
       <Options>
         <Option value="They grow undergound" response="Incorrect... for example: carrots grow undergound, but apricots on trees" correct="false"/>
 
@@ -108,7 +108,7 @@
       </Options>
     </Question>
 
-    <Question value="True or false: carrots are not always orange: they come in many other colours">
+    <Question value="True or false: carrots are not always orange: they come in many other colours" category="Vitamin A">
       <Options>
         <Option value="TRUE" response="Correct! While we are most familiar with the orange carrot, there are many more other kinds of carrots that can be red, white, black, yellow or even purple!" correct="true"/>
 
@@ -116,7 +116,7 @@
       </Options>
     </Question>
 
-    <Question value="What is the most important function of vitamin B?">
+    <Question value="What is the most important function of vitamin B?" category="Vitamin B">
       <Options>
         <Option value="Good for immunity" response="Incorrect... this is a function of vitamin C" correct="false"/>
 
@@ -128,7 +128,7 @@
       </Options>
     </Question>
 
-    <Question value="True or false: there is only one kind of vitamin B">
+    <Question value="True or false: there is only one kind of vitamin B" category="Vitamin B">
       <Options>
         <Option value="TRUE" response="Incorrect... there are actually 8 different vitamin B's! Vitamin B1, B2, B3, B5, B6, B7, B9 and B12. They all have different functions" correct="false"/>
 
@@ -136,7 +136,7 @@
       </Options>
     </Question>
 
-    <Question value="Did you know eggs contain all vitamins, except for one! What vitamin can not be found in an egg?">
+    <Question value="Did you know eggs contain all vitamins, except for one! What vitamin can not be found in an egg?" category="Vitamin B">
       <Options>
         <Option value="Vitamin A" response="Incorrect... Eating one egg will get you around 64mcg of Vitamin A: that is about 10% of the total vitamin A you need every day!" correct="false"/>
 
@@ -148,7 +148,7 @@
       </Options>
     </Question>
 
-    <Question value="True or false: eggs are a good substitute for meat">
+    <Question value="True or false: eggs are a good substitute for meat" category="Vitamin B">
       <Options>
         <Option value="TRUE" response="Correct! Because eggs contain an important vitamin called B12, that is mostly found in meats. People who don't eat meat can sometimes not get enough B12, so eating an egg instead of meat is a good idea." correct="true"/>
 
@@ -156,7 +156,7 @@
       </Options>
     </Question>
 	
-	<Question value="True or false: Melanin is a natural pigment in the skin that blocks some of the suns' UV rays">
+	<Question value="True or false: Melanin is a natural pigment in the skin that blocks some of the suns' UV rays" category="Vitamin D">
 		<Options>
 			<Option value="TRUE" response="Correct! The more melanin in your skin, the darker your skin colour is. So people with darker skin have more protection from the sun's UV rays. " correct="true"/>
 			
@@ -164,7 +164,7 @@
 		</Options>
 	</Question>
 	
-	<Question value="Some people don't like fish, or are vegetarian. What foods rich in vitamin D could you eat if you don't eat fish?">
+	<Question value="Some people don't like fish, or are vegetarian. What foods rich in vitamin D could you eat if you don't eat fish?" category="Vitamin D">
 		<Options>
 			<Option value="Carrots and spinach" response="Incorrect... carrots and spinach contain many vitamins like vitamin A and vitamin B, but no vitamin D" correct="false"/>
 			
@@ -176,7 +176,7 @@
 		</Options>
 	</Question>
 	
-	<Question value="In this game you get to know vitamin A, B, C and D. But what other vitamins are there?">
+	<Question value="In this game you get to know vitamin A, B, C and D. But what other vitamins are there?" category="Vitamin D">
 		<Options>
 			<Option value="Vitamin X, Y and Z" response="Incorrect... vitamin X, Y and Z all don't exist" correct="false"/>
 			
@@ -188,7 +188,7 @@
 		</Options>
 	</Question>
 	
-	<Question value="Worldwide, vitamin D deficiency (not getting enough) is the most common deficiency of all vitamins! Why is that?">
+	<Question value="Worldwide, vitamin D deficiency (not getting enough) is the most common deficiency of all vitamins! Why is that?" category="Vitamin D">
 		<Options>
 			<Option value="The sun does not shine long enough and is not strong enough in some countries" response="Incorrect... This is definitely one of the reasons, but not the only one. Some countries that are on high latitudes such as Canada or Norway and Sweden do not get much sun during winter." correct="false"/>
 			
@@ -200,7 +200,7 @@
 		</Options>
 	</Question>
 	
-	<Question value="True or false: you cannot eat carrots raw">
+	<Question value="True or false: you cannot eat carrots raw" category="Vitamin A">
 		<Options>
 			<Option value="TRUE" response="Incorrect... Carrots are completely fine to eat raw! Even more so, they are delicious and easy to bring as a snack or munch on before dinner" correct="false"/>
 			
@@ -208,7 +208,7 @@
 		</Options>
 	</Question>
 	
-	<Question value="True or false: you can only eat the eggs of chickens">
+	<Question value="True or false: you can only eat the eggs of chickens" category="Vitamin B">
 		<Options>
 			<Option value="TRUE" response="Incorrect... While we eat chicken eggs most often in Australia, you can also eat the eggs from many other animals such as ducks, geese, emu's and even from fish (known as caviar)!" correct="false"/>
 			
@@ -216,7 +216,7 @@
 		</Options>
 	</Question>
 	
-	<Question value="A serve of eggs is 83% Recommended Daily Intake (RDI) of vitamin B. What happens if I eat two serves of eggs and get over a 100% RDI?">
+	<Question value="A serve of eggs is 83% Recommended Daily Intake (RDI) of vitamin B. What happens if I eat two serves of eggs and get over a 100% RDI?" category="Vitamin B">
 		<Options>
 			<Option value="You should never get over 100% because this can make you sick" response="Incorrect... the RDI is the minimum of what you should get every day. Any extra vitamin B that you eat or drink and your body does not need, leaves your body through your pee." correct="false"/>
 			

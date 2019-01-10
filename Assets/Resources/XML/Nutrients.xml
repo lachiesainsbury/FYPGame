@@ -29,7 +29,7 @@
       <Description>Vitamin B is actually made up of 8 different vitamins! It can mostly be found in animals products (fish, meat, eggs, dairy), leafy green vegetables, beans and peas.</Description>
 
       <Foods>
-        
+        <Food>Eggs</Food>
       </Foods>
     </Nutrient>
 
@@ -38,7 +38,7 @@
         <Function>Needed for good immune function</Function>
         <Function>Healthy skin</Function>
         <Function>Needed to absorb iron</Function>
-        <Function>Wound healing and fishting infection</Function>
+        <Function>Wound healing and fighting infection</Function>
       </Functions>
 
       <Description>Vitamin C is sometimes also called the 'immunity vitamin'. This is because vitamin C is very important for your body to fight off viruses and bacteria that can make you sick.</Description>
@@ -59,7 +59,34 @@
       <Description>Vitamin D exists in two forms: one from the sun which your skin can absorb; and one which can be found in some foods like egg yolk, mushrooms, beef liver and fatty fishes such as salmon and tuna.</Description>
 
       <Foods>
-        
+        <Food>Salmon</Food>
+      </Foods>
+    </Nutrient>
+  
+    <Nutrient name="Calcium">
+      <Functions>
+        <Function>Good for strong bones and teeth</Function>
+        <Function>Only effective if you also get enough vitamin D</Function>
+      </Functions>
+
+      <Description>Calcium is a mineral and mostly found in dairy foods. It is very important you get enough calcium for your development and growth. But, to make sure it works well, you need to get enough vitamin D too.</Description>
+
+      <Foods>
+        <Food>Milk</Food>
+      </Foods>
+    </Nutrient>
+  
+    <Nutrient name="Dietary fibre">
+      <Functions>
+        <Function>Feel full longer</Function>
+        <Function>Regulate blood sugar levels</Function>
+        <Function>Good for digestion</Function>
+      </Functions>
+
+      <Description>Fibre is a part of the cells in a plant and help us with a healthy gut. It is mostly found in fruits, vegetables, and wholemeal foods.</Description>
+
+      <Foods>
+        <Food>Grains</Food>
       </Foods>
     </Nutrient>
   </Nutrients>

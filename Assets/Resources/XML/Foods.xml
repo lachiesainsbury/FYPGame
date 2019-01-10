@@ -2,7 +2,7 @@
 
 <FoodCollection>
   <Foods>
-    <Food name="Carrot">
+    <Food name="Carrot" buyable="true">
       <FoodIcon>carrot</FoodIcon>
       <SeedIcon>carrot_seeds</SeedIcon>
 
@@ -24,10 +24,10 @@
       <ContentPerServe>2250mcg</ContentPerServe>
       <RDI>375%</RDI>
 
-       <Description>Carrots are root vegetables and they are a great source of vitamin A. They have many health benefits and are great to eat as a snack, in a salad or steamed with your dinner.</Description>
+      <Description>Carrots are root vegetables and they are a great source of vitamin A. They have many health benefits and are great to eat as a snack, in a salad or steamed with your dinner.</Description>
     </Food>
 
-    <Food name="Broccoli">
+    <Food name="Broccoli" buyable="true">
       <FoodIcon>broccoli</FoodIcon>
       <SeedIcon>broccoli_seeds</SeedIcon>
 
@@ -52,7 +52,7 @@
       <Description>Broccoli is part of the cabbage family and kind of a superfood. Broccoli has many vitamins and minerals in it and has high amounts of important fiber as well.</Description>
     </Food>
 
-    <Food name="Tomato">
+    <Food name="Tomato" buyable="true">
       <FoodIcon>tomato</FoodIcon>
       <SeedIcon>tomato_seeds</SeedIcon>
 
@@ -79,7 +79,7 @@
       <Description>Tomatoes come in all shapes and sizes, but are all from the nightshade family, But did you know a tomato is officially a fruit? Doesn't matter: still loaded with good vitamins and minerals!</Description>
     </Food>
 
-    <Food name="Potato">
+    <Food name="Potato" buyable="true">
       <FoodIcon>potato</FoodIcon>
       <SeedIcon>potato_seeds</SeedIcon>
     
@@ -104,7 +104,7 @@
       <Description>Potatoes are part of the nightshade family. While they are very nutritious, they are what we call a 'starchy' vegetable, meaning they are high in calories too.</Description>
     </Food>
 
-    <Food name="Strawberry">
+    <Food name="Strawberry" buyable="true">
       <FoodIcon>strawberry</FoodIcon>
       <SeedIcon>strawberry_seeds</SeedIcon>
       
@@ -129,6 +129,46 @@
       <RDI>220%</RDI>
 
       <Description>Strawberries are a fantastic source of vitamin C. They are also delicious to bring as a snack to school or even put in a salad!</Description>
+    </Food>
+
+    <Food name="Eggs" buyable="false">
+      <FoodIcon>egg</FoodIcon>
+
+      <kJPer100g>589</kJPer100g>
+      <ContentPerServe>1.42mcg</ContentPerServe>
+      <RDI>83%</RDI>
+
+      <Description>Eggs are...\n\nYou can gather eggs from the chicken back on your farm.</Description>
+    </Food>
+
+    <Food name="Milk" buyable="false">
+      <FoodIcon>milk</FoodIcon>
+
+      <kJPer100g>188</kJPer100g>
+      <ContentPerServe>282.5mg</ContentPerServe>
+      <RDI>28%</RDI>
+
+      <Description>Milks is...\n\nYou can collect some milk from the cow back on your farm.</Description>
+    </Food>
+
+    <Food name="Salmon" buyable="false">
+      <FoodIcon>salmon</FoodIcon>
+
+      <kJPer100g>1443</kJPer100g>
+      <ContentPerServe>10mcg</ContentPerServe>
+      <RDI>200%</RDI>
+
+      <Description>Salmon is what we call a 'fatty fish', meaning it is high in healthy fats. It's also extremely nutritious and healthy, easy to cook, and can be used in many different ways.\n\nTo buy some salmon, try visit the fish stall to the south.</Description>
+    </Food>
+
+    <Food name="Grains" buyable="false">
+      <FoodIcon>grains</FoodIcon>
+
+      <kJPer100g>1033</kJPer100g>
+      <ContentPerServe>2.8g</ContentPerServe>
+      <RDI>12%</RDI>
+
+      <Description>Grains are...\n\nTo buy some grains, try visit the grain stall to the south.</Description>
     </Food>
   </Foods>
 </FoodCollection>

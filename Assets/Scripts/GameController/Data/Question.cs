@@ -8,6 +8,9 @@ public class Question {
     [XmlAttribute("value")]
     public string value;
 
+    [XmlAttribute("category")]
+    public string category;
+
     [XmlArray("Options"), XmlArrayItem("Option")]
     public Option[] options;
 }
