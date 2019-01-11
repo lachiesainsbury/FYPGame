@@ -140,10 +140,24 @@ public class FarmTrigger : MonoBehaviour {
     public void ShowQuiz() {
         if (HasCropsToGrow()) {
             quizBox.GetComponent<UIWindow>().OpenWindow();
-            quizBox.GetComponent<QuizBox>().UpdateQuizBox();
+            quizBox.GetComponent<QuizBox>().UpdateQuizBox(GetFarmTileCategories());
         } else {
             StartCoroutine(Grow());
         }
+    }
+
+    private string[] GetFarmTileCategories() {
+        List<string> categories = new List<string>();
+
+        foreach (FarmTile farmTile in farmTiles) {
+            if (farmTile.HasCrop()) {
+                if (!categories.Contains(farmTile.GetCropCategory())) {
+                    categories.Add(farmTile.GetCropCategory());
+                }
+            }
+        }
+
+        return categories.ToArray();
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {

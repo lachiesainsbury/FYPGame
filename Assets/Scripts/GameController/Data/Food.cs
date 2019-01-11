@@ -11,6 +11,9 @@ public class Food : Item {
     [XmlAttribute("buyable")]
     public bool buyable;
 
+    [XmlAttribute("category")]
+    public string category;
+
     [XmlElement("FoodIcon")]
     public string foodIcon;
 

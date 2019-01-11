@@ -2,7 +2,7 @@
 
 <FoodCollection>
   <Foods>
-    <Food name="Carrot" buyable="true">
+    <Food name="Carrot" buyable="true" category="Vitamin A">
       <FoodIcon>carrot</FoodIcon>
       <SeedIcon>carrot_seeds</SeedIcon>
 
@@ -27,7 +27,7 @@
       <Description>Carrots are root vegetables and they are a great source of vitamin A. They have many health benefits and are great to eat as a snack, in a salad or steamed with your dinner.</Description>
     </Food>
 
-    <Food name="Broccoli" buyable="true">
+    <Food name="Broccoli" buyable="true" category="Vitamin C">
       <FoodIcon>broccoli</FoodIcon>
       <SeedIcon>broccoli_seeds</SeedIcon>
 
@@ -52,7 +52,7 @@
       <Description>Broccoli is part of the cabbage family and kind of a superfood. Broccoli has many vitamins and minerals in it and has high amounts of important fiber as well.</Description>
     </Food>
 
-    <Food name="Tomato" buyable="true">
+    <Food name="Tomato" buyable="true" category="Vitamin A">
       <FoodIcon>tomato</FoodIcon>
       <SeedIcon>tomato_seeds</SeedIcon>
 
@@ -79,7 +79,7 @@
       <Description>Tomatoes come in all shapes and sizes, but are all from the nightshade family, But did you know a tomato is officially a fruit? Doesn't matter: still loaded with good vitamins and minerals!</Description>
     </Food>
 
-    <Food name="Potato" buyable="true">
+    <Food name="Potato" buyable="true" category="Vitamin C">
       <FoodIcon>potato</FoodIcon>
       <SeedIcon>potato_seeds</SeedIcon>
     
@@ -104,7 +104,7 @@
       <Description>Potatoes are part of the nightshade family. While they are very nutritious, they are what we call a 'starchy' vegetable, meaning they are high in calories too.</Description>
     </Food>
 
-    <Food name="Strawberry" buyable="true">
+    <Food name="Strawberry" buyable="true" category="Vitamin C">
       <FoodIcon>strawberry</FoodIcon>
       <SeedIcon>strawberry_seeds</SeedIcon>
       
@@ -131,27 +131,27 @@
       <Description>Strawberries are a fantastic source of vitamin C. They are also delicious to bring as a snack to school or even put in a salad!</Description>
     </Food>
 
-    <Food name="Eggs" buyable="false">
+    <Food name="Eggs" buyable="false" category="Vitamin B">
       <FoodIcon>egg</FoodIcon>
 
       <kJPer100g>589</kJPer100g>
       <ContentPerServe>1.42mcg</ContentPerServe>
       <RDI>83%</RDI>
 
-      <Description>Eggs are...\n\nYou can gather eggs from the chicken back on your farm.</Description>
+      <Description>Eggs are very special because they are extremely nutritious. They contain all vitamins, except for vitamin C!\n\nYou can gather eggs from the chicken back on your farm.</Description>
     </Food>
 
-    <Food name="Milk" buyable="false">
+    <Food name="Milk" buyable="false" category="Calcium">
       <FoodIcon>milk</FoodIcon>
 
       <kJPer100g>188</kJPer100g>
       <ContentPerServe>282.5mg</ContentPerServe>
       <RDI>28%</RDI>
 
-      <Description>Milks is...\n\nYou can collect some milk from the cow back on your farm.</Description>
+      <Description>Cow's milk is rich in calcium, which is an important nutrient for growing children.\n\nYou can collect some milk from the cow back on your farm.</Description>
     </Food>
 
-    <Food name="Salmon" buyable="false">
+    <Food name="Salmon" buyable="false" category="Vitamin D">
       <FoodIcon>salmon</FoodIcon>
 
       <kJPer100g>1443</kJPer100g>
@@ -161,14 +161,14 @@
       <Description>Salmon is what we call a 'fatty fish', meaning it is high in healthy fats. It's also extremely nutritious and healthy, easy to cook, and can be used in many different ways.\n\nTo buy some salmon, try visit the fish stall to the south.</Description>
     </Food>
 
-    <Food name="Grains" buyable="false">
+    <Food name="Grains" buyable="false" category="Dietary Fibre">
       <FoodIcon>grains</FoodIcon>
 
       <kJPer100g>1033</kJPer100g>
       <ContentPerServe>2.8g</ContentPerServe>
       <RDI>12%</RDI>
 
-      <Description>Grains are...\n\nTo buy some grains, try visit the grain stall to the south.</Description>
+      <Description>Wholegrain bread contains much more fibre than white bread, making wholegrain bread a very healthy choice. If you put other healthy things on your sandwhich (for example tuna and tomatoes), you have a superhealthy lunch!\n\nTo buy some grains, try visit the grain stall to the south.</Description>
     </Food>
   </Foods>
 </FoodCollection>

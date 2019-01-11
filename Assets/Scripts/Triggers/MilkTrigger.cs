@@ -23,9 +23,11 @@ public class MilkTrigger : MonoBehaviour {
 	}
 
     public void ShowQuiz() {
+        string[] categories = { "Calcium" };
+
         // Display quiz box
         quizBox.GetComponent<UIWindow>().OpenWindow();
-        quizBox.GetComponent<QuizBox>().UpdateQuizBox();
+        quizBox.GetComponent<QuizBox>().UpdateQuizBox(categories);
     }
 
     public void MilkCow() {

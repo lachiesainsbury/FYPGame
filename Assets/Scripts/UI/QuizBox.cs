@@ -25,10 +25,8 @@ public class QuizBox : UIWindow {
         this.gameObject.SetActive(false);
     }
 
-    public void UpdateQuizBox() {
-        questions = gameController.GetComponent<GameController>().GetQuestionContainer().questions;
-
-        currentQuestion = questions[Random.Range(0, questions.Count)];
+    public void UpdateQuizBox(string[] categories) {
+        currentQuestion = SelectQuestion(categories);
 
         questionText.text = currentQuestion.value;
 
@@ -41,6 +39,23 @@ public class QuizBox : UIWindow {
             optionButtons[i].GetComponentInChildren<Text>().text = "";
             optionButtons[i].gameObject.SetActive(false);
         }
+    }
+
+    private Question SelectQuestion(string[] categories) {
+        questions = gameController.GetComponent<GameController>().GetQuestionContainer().questions;
+
+        List<Question> validQuestions = new List<Question>();
+
+        foreach (Question question in questions) {
+            foreach (string category in categories) {
+                if (category.Equals(question.category)) {
+                    validQuestions.Add(question);
+                    break;
+                }
+            }
+        }
+
+        return validQuestions[Random.Range(0, validQuestions.Count)];
     }
 
     public void SubmitQuizAnswer(Button selected) {
