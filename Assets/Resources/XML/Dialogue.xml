@@ -19,19 +19,19 @@
     </Dialogue>
   
     <Dialogue NPC="Barry">
-      <QuestOffer>Hello, could you please grow me 4 serves of strawberries?</QuestOffer>
+      <QuestOffer>Hi there Farmer! I have three young children and it is really important they have strong and healthy bones and teeth! Please help me get 3 serves of an animal product that helps with this.</QuestOffer>
 
-      <QuestInProgress>How are you going with the quest? Remember I need 4 serves of strawberries.</QuestInProgress>
+      <QuestInProgress>How are you going with the quest? Remember I need 3 serves of an animal product for healthy bones and teeth.</QuestInProgress>
 
-      <QuestHandIn>Thanks for getting that for me!</QuestHandIn>
+      <QuestHandIn>Thanks for the milk Farmer!</QuestHandIn>
     </Dialogue>
 
     <Dialogue NPC="Emma">
-      <QuestOffer>Hi neighbour, I'm making a sandwich for lunch but I need a tomato. Any chance you could grow me one?</QuestOffer>
+      <QuestOffer>How are you, Farmer? I need 2 serves of a healthy, sweet snack that I can put in my children's lunchbox. My kids get sick so often, so it needs to be high in vitamin C.</QuestOffer>
 
-      <QuestInProgress>How are you going with the quest? Remember I need 1 tomato.</QuestInProgress>
+      <QuestInProgress>How are you going with the quest? Remember I need you to grow me 2 serves of a snack food high in Vitamin C.</QuestInProgress>
 
-      <QuestHandIn>Thanks for getting that for me!</QuestHandIn>
+      <QuestHandIn>Thanks for getting those strawberries for me!</QuestHandIn>
     </Dialogue>
   </Dialogues> 
 </DialogueCollection>

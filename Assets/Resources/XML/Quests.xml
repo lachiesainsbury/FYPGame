@@ -2,7 +2,7 @@
 
 <QuestCollection>
   <Quests>
-    <Quest name="3 serves of a food that improves eye sight in the dark">
+    <Quest name="A food that improves eye sight in the dark (x3)">
       <QuestNPC>Sarah</QuestNPC>
       
       <QuestItems>
@@ -12,35 +12,36 @@
       <ItemAmount>3</ItemAmount>
     </Quest>
 
-    <Quest name="2 serves of a Vitamin C food (not including strawberries)">
+    <Quest name="A Vitamin C food (not including strawberries) (x2)">
       <QuestNPC>Aaron</QuestNPC>
 
       <QuestItems>
         <QuestItem>Potato</QuestItem>
         <QuestItem>Broccoli</QuestItem>
+        <QuestItem>Tomato</QuestItem>
       </QuestItems>
     
       <ItemAmount>2</ItemAmount>
     </Quest>
 
-    <Quest name="4 serves of strawberries">
+    <Quest name="An animal product for healthy bones and teeth (x3)">
       <QuestNPC>Barry</QuestNPC>
+
+      <QuestItems>
+        <QuestItem>Milk</QuestItem>
+      </QuestItems>
+    
+      <ItemAmount>3</ItemAmount>
+    </Quest>
+
+    <Quest name="A snack food high in Vitamin C (x2)">
+      <QuestNPC>Emma</QuestNPC>
 
       <QuestItems>
         <QuestItem>Strawberry</QuestItem>
       </QuestItems>
     
-      <ItemAmount>4</ItemAmount>
-    </Quest>
-
-    <Quest name="1 serve of tomatoes">
-      <QuestNPC>Emma</QuestNPC>
-
-      <QuestItems>
-        <QuestItem>Tomato</QuestItem>
-      </QuestItems>
-    
-      <ItemAmount>1</ItemAmount>
+      <ItemAmount>2</ItemAmount>
     </Quest>
   </Quests>
 </QuestCollection>

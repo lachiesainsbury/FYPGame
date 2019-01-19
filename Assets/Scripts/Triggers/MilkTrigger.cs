@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MilkTrigger : MonoBehaviour {
     [SerializeField]
-    private GameObject inventory, quizBox;
+    private GameObject inventory, quizBox, gameController;
 
     private ActionButton actionButton;
 
@@ -31,7 +31,11 @@ public class MilkTrigger : MonoBehaviour {
     }
 
     public void MilkCow() {
-        Debug.Log("Milked");
+        Food milk = gameController.GetComponent<GameController>().FindFoodByName("Milk");
+        milk.itemType = ItemType.Food;
+
+        inventory.GetComponent<Inventory>().OpenWindow();
+        inventory.GetComponent<Inventory>().AddItem(milk);
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
