@@ -364,7 +364,7 @@
       </Options>
     </Question>
 
-    <Question value="True or false: wholgrain bread is healthier than white bread only because wholegrain bread contains more fibre" category="Dietary Fibre">
+    <Question value="True or false: wholgrain bread is healthier than white bread only because wholegrain bread contains more fibre" category="Dietary fibre">
       <Options>
         <Option value="TRUE" response="Incorrect... Besides much more fibre, wholegrain bread also contains many more other nutrients" correct="false"/>
 
@@ -372,7 +372,7 @@
       </Options>
     </Question>
 
-    <Question value="Wholemeal bread contains much more fibre than white bread. But why is it important to eat fibre?" category="Dietary Fibre">
+    <Question value="Wholemeal bread contains much more fibre than white bread. But why is it important to eat fibre?" category="Dietary fibre">
       <Options>
         <Option value="Good for immunity" response="Incorrect... this is a function of Vitamin C" correct="false"/>
 
@@ -384,7 +384,7 @@
       </Options>
     </Question>
 
-    <Question value="What other kind of foods contain a lot of fibre?" category="Dietary Fibre">
+    <Question value="What other kind of foods contain a lot of fibre?" category="Dietary fibre">
       <Options>
         <Option value="Fruits and lollies" response="Incorrect... There is lots of fibre in fruits, but not in lollies" correct="false"/>
 
@@ -396,7 +396,7 @@
       </Options>
     </Question>
 
-    <Question value="Wholegrain bread has a dark colour. Is all dark coloured bread equally healthy/filled with fibre?" category="Dietary Fibre">
+    <Question value="Wholegrain bread has a dark colour. Is all dark coloured bread equally healthy/filled with fibre?" category="Dietary fibre">
       <Options>
         <Option value="YES" response="Incorrect... some bread is only dark because it is white bread with dark dye in it. Always read the nutrition information label on the back to see if it is really made with wholemeal wheat" correct="false"/>
 

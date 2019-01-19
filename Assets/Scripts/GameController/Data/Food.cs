@@ -11,8 +11,8 @@ public class Food : Item {
     [XmlAttribute("buyable")]
     public bool buyable;
 
-    [XmlAttribute("category")]
-    public string category;
+    [XmlArray("Categories"), XmlArrayItem("Nutrient")]
+    public string[] categories;
 
     [XmlElement("FoodIcon")]
     public string foodIcon;
@@ -31,15 +31,6 @@ public class Food : Item {
 
     [XmlArray("GrowthStageFour"), XmlArrayItem("GrowthTile")]
     public string[] growthStageFourTiles;
-
-    [XmlElement("kJPer100g")]
-    public string kJPer100g;
-
-    [XmlElement("ContentPerServe")]
-    public string contentPerServe;
-
-    [XmlElement("RDI")]
-    public string RDI;
 
     [XmlElement("Description")]
     public string description;

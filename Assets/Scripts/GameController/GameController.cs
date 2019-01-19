@@ -103,12 +103,12 @@ public class GameController : MonoBehaviour {
         // Sets the nutrient description
         nutrientText[1].text = nutrient.description;
 
-        foreach (string foodName in nutrient.foods) {
+        foreach (NutrientFood nutrientFood in nutrient.foods) {
             GameObject foodItem = Instantiate(foodPrefab);
             foodItem.transform.SetParent(nutrientViewContent, false);
 
             // Find food by name in foodContainer
-            Food food = FindFoodByName(foodName);
+            Food food = FindFoodByName(nutrientFood.name);
 
             // Set foods icon
             Image icon = foodItem.GetComponentsInChildren<Image>()[1];
@@ -117,10 +117,10 @@ public class GameController : MonoBehaviour {
             // Set foods name and nutritional information
             Text[] foodText = foodItem.GetComponentsInChildren<Text>();
 
-            foodText[0].text = food.name;
-            foodText[1].text = food.kJPer100g;
-            foodText[2].text = food.contentPerServe;
-            foodText[3].text = food.RDI;
+            foodText[0].text = nutrientFood.name;
+            foodText[1].text = nutrientFood.kJPer100g;
+            foodText[2].text = nutrientFood.contentPerServe;
+            foodText[3].text = nutrientFood.RDI;
 
             // Sets the foods onclick methods
             foodItem.GetComponent<Button>().onClick.AddListener(delegate {

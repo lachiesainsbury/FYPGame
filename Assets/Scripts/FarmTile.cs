@@ -85,7 +85,7 @@ public class FarmTile {
         }
     }
 
-    public string GetCropCategory() {
-        return crop.category;
+    public string[] GetCropCategories() {
+        return crop.categories;
     }
 }

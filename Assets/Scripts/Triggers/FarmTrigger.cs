@@ -151,8 +151,10 @@ public class FarmTrigger : MonoBehaviour {
 
         foreach (FarmTile farmTile in farmTiles) {
             if (farmTile.HasCrop()) {
-                if (!categories.Contains(farmTile.GetCropCategory())) {
-                    categories.Add(farmTile.GetCropCategory());
+                foreach (string category in farmTile.GetCropCategories()) {
+                    if (!categories.Contains(category)) {
+                        categories.Add(category);
+                    }
                 }
             }
         }

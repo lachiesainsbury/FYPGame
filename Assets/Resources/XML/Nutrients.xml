@@ -13,8 +13,21 @@
       <Description>Vitamin A is a fat-soluble vitamin, meaning you can store it in your body and use it later! Vitamin A is important for the tissues in your body, such as your eyes, skin and other organs.</Description>
 
       <Foods>
-        <Food>Carrot</Food>
-        <Food>Tomato</Food>
+        <Food name="Carrot">
+          <kJPer100g>172</kJPer100g>
+          <ContentPerServe>2250mcg</ContentPerServe>
+          <RDI>375%</RDI>
+        </Food>
+        <Food name="Tomato">
+          <kJPer100g>75</kJPer100g>
+          <ContentPerServe>186mcg</ContentPerServe>
+          <RDI>31%</RDI>
+        </Food>
+        <Food name="Eggs">
+          <kJPer100g>598</kJPer100g>
+          <ContentPerServe>177mcg</ContentPerServe>
+          <RDI>28%</RDI>
+        </Food>
       </Foods>
     </Nutrient>
 
@@ -29,7 +42,16 @@
       <Description>Vitamin B is actually made up of 8 different vitamins! It can mostly be found in animals products (fish, meat, eggs, dairy), leafy green vegetables, beans and peas.</Description>
 
       <Foods>
-        <Food>Eggs</Food>
+        <Food name="Eggs">
+          <kJPer100g>589</kJPer100g>
+          <ContentPerServe>1.42mcg</ContentPerServe>
+          <RDI>83%</RDI>
+        </Food>
+        <Food name="Milk">
+          <kJPer100g>188</kJPer100g>
+          <ContentPerServe>1.08mcg</ContentPerServe>
+          <RDI>60%</RDI>
+        </Food>
       </Foods>
     </Nutrient>
 
@@ -44,11 +66,27 @@
       <Description>Vitamin C is sometimes also called the 'immunity vitamin'. This is because vitamin C is very important for your body to fight off viruses and bacteria that can make you sick.</Description>
 
       <Foods>
-        <Food>Broccoli</Food>
-        <Food>Potato</Food>
-        <Food>Strawberry</Food>
+        <Food name="Broccoli">
+          <kJPer100g>142</kJPer100g>
+          <ContentPerServe>66.9mg</ContentPerServe>
+          <RDI>167%</RDI>
+        </Food>
+        <Food name="Potato">
+          <kJPer100g>326</kJPer100g>
+          <ContentPerServe>5.2mg</ContentPerServe>
+          <RDI>13%</RDI>
+        </Food>
+        <Food name="Strawberry">
+          <kJPer100g>134</kJPer100g>
+          <ContentPerServe>87.8mg</ContentPerServe>
+          <RDI>220%</RDI>  
+        </Food>
+        <Food name="Tomato">
+          <kJPer100g>75</kJPer100g>
+          <ContentPerServe>10.3mg</ContentPerServe>
+          <RDI>26%</RDI>
+        </Food>
       </Foods>
-    
     </Nutrient>
 
     <Nutrient name="Vitamin D">
@@ -59,7 +97,11 @@
       <Description>Vitamin D exists in two forms: one from the sun which your skin can absorb; and one which can be found in some foods like egg yolk, mushrooms, beef liver and fatty fishes such as salmon and tuna.</Description>
 
       <Foods>
-        <Food>Salmon</Food>
+        <Food name="Salmon">
+          <kJPer100g>1443</kJPer100g>
+          <ContentPerServe>10mcg</ContentPerServe>
+          <RDI>200%</RDI>  
+        </Food>
       </Foods>
     </Nutrient>
   
@@ -72,7 +114,11 @@
       <Description>Calcium is a mineral and mostly found in dairy foods. It is very important you get enough calcium for your development and growth. But, to make sure it works well, you need to get enough vitamin D too.</Description>
 
       <Foods>
-        <Food>Milk</Food>
+        <Food name="Milk">
+          <kJPer100g>188</kJPer100g>
+          <ContentPerServe>282.5mg</ContentPerServe>
+          <RDI>28%</RDI>  
+        </Food>
       </Foods>
     </Nutrient>
   
@@ -86,7 +132,16 @@
       <Description>Fibre is a part of the cells in a plant and help us with a healthy gut. It is mostly found in fruits, vegetables, and wholemeal foods.</Description>
 
       <Foods>
-        <Food>Grains</Food>
+        <Food name="Wholemeal Grains">
+          <kJPer100g>1033</kJPer100g>
+          <ContentPerServe>2.8g</ContentPerServe>
+          <RDI>12%</RDI>
+        </Food>
+        <Food name="Carrot">
+          <kJPer100g>172</kJPer100g>
+          <ContentPerServe>2.1g</ContentPerServe>
+          <RDI>9%</RDI>
+        </Food>
       </Foods>
     </Nutrient>
   </Nutrients>

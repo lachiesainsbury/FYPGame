@@ -15,5 +15,19 @@ public class Nutrient {
     public string description;
 
     [XmlArray("Foods"), XmlArrayItem("Food")]
-    public string[] foods;
+    public NutrientFood[] foods;
+}
+
+public class NutrientFood {
+    [XmlAttribute("name")]
+    public string name;
+
+    [XmlElement("kJPer100g")]
+    public string kJPer100g;
+
+    [XmlElement("ContentPerServe")]
+    public string contentPerServe;
+
+    [XmlElement("RDI")]
+    public string RDI;
 }
