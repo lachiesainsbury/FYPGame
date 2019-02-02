@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class QuizBox : UIWindow {
 
     [SerializeField]
-    private GameObject gameController, dialogueBox;
+    private GameObject gameController, dialogueBox, inventory;
 
     // Zones
     [SerializeField]
-    private GameObject farmZone, milkZone;
+    private GameObject farmZone, milkZone, fishZone;
 
     private List<Question> questions;
 
@@ -92,6 +92,12 @@ public class QuizBox : UIWindow {
                 farmTrigger.GrowCrops();
             } else if (milkTrigger.IsPlayerWithinZone()) {
                 milkTrigger.MilkCow();
+            } else if (fishZone.GetComponent<UITrigger>().IsPlayerWithinZone()) {
+                Food salmon = gameController.GetComponent<GameController>().FindFoodByName("Salmon");
+                salmon.itemType = ItemType.Food;
+
+                inventory.GetComponent<Inventory>().OpenWindow();
+                inventory.GetComponent<Inventory>().AddItem(salmon);
             }
         } else {
             townHealthBar.QuizIncorrect();

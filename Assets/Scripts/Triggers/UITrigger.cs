@@ -5,7 +5,7 @@ using UnityEngine;
 public class UITrigger : MonoBehaviour {
 
     [SerializeField]
-    private GameObject UIElement, NPC, Inventory;
+    private GameObject UIElement, NPC, Inventory, Shopkeeper;
 
     private ActionButton actionButton;
 
@@ -28,6 +28,10 @@ public class UITrigger : MonoBehaviour {
             if (Inventory != null) {
                 Inventory.GetComponent<Inventory>().OpenWindow();
             }
+
+            if (Shopkeeper != null) {
+                UIElement.GetComponent<DialogueBox>().UpdateDialogueBoxShopkeeper(Shopkeeper.GetComponent<Shopkeeper>());
+            }
         }
 	}
 
@@ -37,5 +41,9 @@ public class UITrigger : MonoBehaviour {
 
     private void OnTriggerExit2D(Collider2D collision) {
         playerWithinZone = false;
+    }
+
+    public bool IsPlayerWithinZone() {
+        return this.playerWithinZone;
     }
 }
