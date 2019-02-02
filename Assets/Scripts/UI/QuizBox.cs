@@ -10,7 +10,7 @@ public class QuizBox : UIWindow {
 
     // Zones
     [SerializeField]
-    private GameObject farmZone, milkZone, fishZone;
+    private GameObject farmZone, milkZone, fishZone, grainZone;
 
     private List<Question> questions;
 
@@ -98,6 +98,12 @@ public class QuizBox : UIWindow {
 
                 inventory.GetComponent<Inventory>().OpenWindow();
                 inventory.GetComponent<Inventory>().AddItem(salmon);
+            } else if (grainZone.GetComponent<UITrigger>().IsPlayerWithinZone()) {
+                Food wholemealGrains = gameController.GetComponent<GameController>().FindFoodByName("Wholemeal Grains");
+                wholemealGrains.itemType = ItemType.Food;
+
+                inventory.GetComponent<Inventory>().OpenWindow();
+                inventory.GetComponent<Inventory>().AddItem(wholemealGrains);
             }
         } else {
             townHealthBar.QuizIncorrect();

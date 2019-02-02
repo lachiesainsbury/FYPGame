@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shopkeeper : MonoBehaviour {
 
     [SerializeField]
-    private string name, dialogue;
+    private string name, dialogue, category;
 
     public string GetName() {
         return this.name;
@@ -13,5 +13,9 @@ public class Shopkeeper : MonoBehaviour {
 
     public string GetDialogue() {
         return this.dialogue;
+    }
+
+    public string GetCategory() {
+        return this.category;
     }
 }

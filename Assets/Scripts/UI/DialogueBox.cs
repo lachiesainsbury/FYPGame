@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DialogueBox : UIWindow {
 
     [SerializeField]
-    private GameObject QuizBox;
+    private GameObject QuizBox, NutrientList, Inventory;
 
     private Text[] dialogueText;
     private Button[] dialogueButtons;
@@ -63,10 +63,15 @@ public class DialogueBox : UIWindow {
         dialogueButtons[2].onClick.AddListener(delegate {
             this.gameObject.GetComponent<UIWindow>().ExitWindow();
 
-            string[] categories = new string[] { "Vitamin D" };
+            if (shopkeeper.GetCategory() != "") {
+                string[] categories = new string[] { shopkeeper.GetCategory() };
 
-            QuizBox.GetComponent<UIWindow>().OpenWindow();
-            QuizBox.GetComponent<QuizBox>().UpdateQuizBox(categories);
+                QuizBox.GetComponent<UIWindow>().OpenWindow();
+                QuizBox.GetComponent<QuizBox>().UpdateQuizBox(categories);
+            } else {
+                NutrientList.GetComponent<UIWindow>().OpenWindow();
+                Inventory.GetComponent<Inventory>().OpenWindow();
+            }
         });
     }
 }
