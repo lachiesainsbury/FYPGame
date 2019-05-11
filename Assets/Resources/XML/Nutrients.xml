@@ -6,11 +6,11 @@
       <Functions>
         <Function>Good for eyesight</Function>
         <Function>Improves seeing in the dark</Function>
-        <Function>Good growth in children</Function>
+        <Function>Good for growth in children</Function>
         <Function>Good for immunity</Function>
       </Functions>
       
-      <Description>Vitamin A is a fat-soluble vitamin, meaning you can store it in your body and use it later! Vitamin A is important for the tissues in your body, such as your eyes, skin and other organs.</Description>
+      <Description>Vitamin A is a fat-soluble vitamin, meaning you can store it in your body and use it later! It is important for the tissues in your body, such as your eyes, skin, and other organs.</Description>
 
       <Foods>
         <Food name="Carrot">
@@ -33,13 +33,13 @@
 
     <Nutrient name="Vitamin B">
       <Functions>
-        <Function>Convert food into fuel for your body and brain</Function>
+        <Function>Converts food into fuel for your body and brain</Function>
         <Function>Production of red blood cells</Function>
-        <Function>Keep your nervous system healthy</Function>
+        <Function>Keeps your nervous system healthy</Function>
         <Function>Important for growth in children</Function>
       </Functions>
 
-      <Description>Vitamin B is actually made up of 8 different vitamins! It can mostly be found in animals products (fish, meat, eggs, dairy), leafy green vegetables, beans and peas.</Description>
+      <Description>Vitamin B is actually made up of 8 different vitamins! It can mostly be found in animals products (fish, meat, eggs, and dairy), leafy green vegetables, beans, and peas.</Description>
 
       <Foods>
         <Food name="Eggs">
@@ -57,13 +57,13 @@
 
     <Nutrient name="Vitamin C">
       <Functions>
-        <Function>Needed for good immune function</Function>
+        <Function>Needed for a good immune system</Function>
         <Function>Healthy skin</Function>
         <Function>Needed to absorb iron</Function>
         <Function>Wound healing and fighting infection</Function>
       </Functions>
 
-      <Description>Vitamin C is sometimes also called the 'immunity vitamin'. This is because vitamin C is very important for your body to fight off viruses and bacteria that can make you sick.</Description>
+      <Description>Vitamin C is sometimes called the 'immunity vitamin'. This is because vitamin C is very important for your body to fight off viruses and bacteria that can make you sick.</Description>
 
       <Foods>
         <Food name="Broccoli">
@@ -94,7 +94,7 @@
         <Function>Needed to absorb calcium</Function>
       </Functions>
 
-      <Description>Vitamin D exists in two forms: one from the sun which your skin can absorb; and one which can be found in some foods like egg yolk, mushrooms, beef liver and fatty fishes such as salmon and tuna.</Description>
+      <Description>Vitamin D exists in two forms: one from the sun which your skin can absorb, and one which can only be found in foods like egg yolk, mushrooms, beef liver, and fatty fishes such as salmon and tuna.</Description>
 
       <Foods>
         <Food name="Salmon">
@@ -111,7 +111,7 @@
         <Function>Only effective if you also get enough vitamin D</Function>
       </Functions>
 
-      <Description>Calcium is a mineral and mostly found in dairy foods. It is very important you get enough calcium for your development and growth. But, to make sure it works well, you need to get enough vitamin D too.</Description>
+      <Description>Calcium is a mineral and is mostly found in dairy foods. It is very important you get enough calcium for your development and growth. But, to make sure it works well, you need to get enough vitamin D too.</Description>
 
       <Foods>
         <Food name="Milk">
@@ -129,7 +129,7 @@
         <Function>Good for digestion</Function>
       </Functions>
 
-      <Description>Fibre is a part of the cells in a plant and help us with a healthy gut. It is mostly found in fruits, vegetables, and wholemeal foods.</Description>
+      <Description>Fibre is a part of the cells in a plant and helps us maintain a healthy gut. It is mostly found in fruits, vegetables, and wholemeal foods.</Description>
 
       <Foods>
         <Food name="Wholemeal Grains">

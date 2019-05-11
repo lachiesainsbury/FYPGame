@@ -13,15 +13,15 @@ public class TownHealthBar : MonoBehaviour {
     }
 
     public void QuestCompleted() {
-        slider.value += 13;
+        slider.value += 11;
     }
 
     public void QuizCorrect() {
-        slider.value += 4;
+        slider.value += 2;
     }
 
     public void QuizIncorrect() {
-        slider.value -= 4;
+        slider.value -= 2;
     }
 
     public float GetTownHealth() {

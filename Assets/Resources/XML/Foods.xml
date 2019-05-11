@@ -25,7 +25,7 @@
         <GrowthTile>plants_30</GrowthTile>
       </GrowthStageFour>
 
-      <Description>Carrots are root vegetables and they are a great source of vitamin A. They have many health benefits and are great to eat as a snack, in a salad or steamed with your dinner.</Description>
+      <Description>Carrots are root vegetables which are a great source of vitamin A. They have many health benefits and are great to eat as a snack, in a salad, or steamed with your dinner.</Description>
     </Food>
 
     <Food name="Broccoli" buyable="true">
@@ -50,7 +50,7 @@
         <GrowthTile>plants_31</GrowthTile>
       </GrowthStageFour>
 
-      <Description>Broccoli is part of the cabbage family and kind of a superfood. Broccoli has many vitamins and minerals in it and has high amounts of important fiber as well.</Description>
+      <Description>Broccoli is a part of the cabbage family and kind of a superfood. It has many vitamins and minerals in it and has high amounts of important fibre too!</Description>
     </Food>
 
     <Food name="Tomato" buyable="true">
@@ -78,7 +78,7 @@
         <GrowthTile>plants_25</GrowthTile>
       </GrowthStageFour>
 
-      <Description>Tomatoes come in all shapes and sizes, but are all from the nightshade family, But did you know a tomato is officially a fruit? Doesn't matter: still loaded with good vitamins and minerals!</Description>
+      <Description>Tomatoes come in all shapes and sizes, but are all from the nightshade family. Did you know that tomatoes are officially a fruit? Doesn't matter: still loaded with good vitamins and minerals!</Description>
     </Food>
 
     <Food name="Potato" buyable="true">
@@ -103,7 +103,7 @@
         <GrowthTile>plants_29</GrowthTile>
       </GrowthStageFour>
 
-      <Description>Potatoes are part of the nightshade family. While they are very nutritious, they are what we call a 'starchy' vegetable, meaning they are high in calories too.</Description>
+      <Description>Potatoes are a part of the nightshade family. While they are very nutritious, they are what we call a 'starchy' vegetable, meaning they are high in calories too.</Description>
     </Food>
 
     <Food name="Strawberry" buyable="true">
@@ -137,6 +137,7 @@
       <Categories>
         <Nutrient>Vitamin A</Nutrient>
         <Nutrient>Vitamin B</Nutrient>
+        <Nutrient>Vitamin D</Nutrient>
       </Categories>
       
       <FoodIcon>egg</FoodIcon>
@@ -172,7 +173,7 @@
       
       <FoodIcon>grains</FoodIcon>
 
-      <Description>Wholegrain bread contains much more fibre than white bread, making wholegrain bread a very healthy choice. If you put other healthy things on your sandwhich (for example tuna and tomatoes), you have a superhealthy lunch!\n\nTo buy some grains, try visit the grain stall to the south.</Description>
+      <Description>Wholegrain bread contains much more fibre than white bread, making it a very healthy choice. If you put other healthy things on your sandwhich (for example, tuna and tomatoes), you have a super healthy lunch!\n\nTo buy some grains, try visit the grain stall to the south.</Description>
     </Food>
   </Foods>
 </FoodCollection>

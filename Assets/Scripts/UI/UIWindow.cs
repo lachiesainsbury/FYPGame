@@ -24,6 +24,17 @@ public class UIWindow : MonoBehaviour {
     }
 
     private void ToggleJoystickAndActionButton(bool toggle) {
+        // If any other UI windows are active, then don't enable the joystick/action button
+        if (toggle) {
+            UIWindow[] windows = (UIWindow[]) FindObjectsOfType(typeof(UIWindow));
+
+            foreach (UIWindow window in windows) {
+                if (window.IsActive()) {
+                    return;
+                }
+            }
+        }
+
         if (joystick != null && actionButton != null) {
             joystick.SetActive(toggle);
             actionButton.SetActive(toggle);

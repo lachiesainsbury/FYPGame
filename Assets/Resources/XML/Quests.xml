@@ -24,7 +24,7 @@
       <ItemAmount>2</ItemAmount>
     </Quest>
 
-    <Quest name="An animal product for healthy bones and teeth (x3)">
+    <Quest name="A food for healthy bones and teeth (x3)">
       <QuestNPC>Barry</QuestNPC>
 
       <QuestItems>
@@ -42,6 +42,26 @@
       </QuestItems>
     
       <ItemAmount>2</ItemAmount>
+    </Quest>
+
+    <Quest name="A food that is high in Vitamin D (x3)">
+      <QuestNPC>Elizabeth</QuestNPC>
+
+      <QuestItems>
+        <QuestItem>Salmon</QuestItem>
+      </QuestItems>
+
+      <ItemAmount>3</ItemAmount>
+    </Quest>
+
+    <Quest name="Wholemeal grains from the market stall (x4)">
+      <QuestNPC>Fiona</QuestNPC>
+
+      <QuestItems>
+        <QuestItem>Wholemeal Grains</QuestItem>
+      </QuestItems>
+
+      <ItemAmount>4</ItemAmount>
     </Quest>
   </Quests>
 </QuestCollection>

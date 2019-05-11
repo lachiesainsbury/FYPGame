@@ -3,7 +3,7 @@
 <DialogueCollection>
   <Dialogues>
     <Dialogue NPC="Sarah">
-      <QuestOffer>G'day farmer! I'm looking for a food that help me see better in the dark. Could you buy some seeds from the shop and grow some for me? I need 3 serves worth.</QuestOffer>
+      <QuestOffer>G'day farmer! I'm looking for a food that can help me see better in the dark. Could you buy some seeds from the shop and grow some for me? I need 3 serves worth.</QuestOffer>
 
       <QuestInProgress>How are you going with the quest? Remember I need 3 serves of a food that helps me see better in the dark.</QuestInProgress>
 
@@ -19,19 +19,35 @@
     </Dialogue>
   
     <Dialogue NPC="Barry">
-      <QuestOffer>Hi there Farmer! I have three young children and it is really important they have strong and healthy bones and teeth! Please help me get 3 serves of an animal product that helps with this.</QuestOffer>
+      <QuestOffer>Hi there farmer! I have three young children and it is really important they have strong and healthy bones and teeth! Please help me get 3 serves of a food that helps with this.</QuestOffer>
 
-      <QuestInProgress>How are you going with the quest? Remember I need 3 serves of an animal product for healthy bones and teeth.</QuestInProgress>
+      <QuestInProgress>How are you going with the quest? Remember I need 3 serves of a food for healthy bones and teeth.</QuestInProgress>
 
-      <QuestHandIn>Thanks for the milk Farmer!</QuestHandIn>
+      <QuestHandIn>Thanks for the milk farmer!</QuestHandIn>
     </Dialogue>
 
     <Dialogue NPC="Emma">
-      <QuestOffer>How are you, Farmer? I need 2 serves of a healthy, sweet snack that I can put in my children's lunchbox. My kids get sick so often, so it needs to be high in vitamin C.</QuestOffer>
+      <QuestOffer>How are you, farmer? I need 2 serves of a healthy, sweet snack that I can put in my children's lunchbox. My kids get sick so often, so it needs to be high in vitamin C.</QuestOffer>
 
       <QuestInProgress>How are you going with the quest? Remember I need you to grow me 2 serves of a snack food high in Vitamin C.</QuestInProgress>
 
       <QuestHandIn>Thanks for getting those strawberries for me!</QuestHandIn>
+    </Dialogue>
+
+    <Dialogue NPC="Elizabeth">
+      <QuestOffer>Hi there! In winter times I struggle to get enough vitamin D. Could you visit the shop and find me 3 serves of a food that is rich in vitamin D?</QuestOffer>
+
+      <QuestInProgress>How are you going with the quest? Remember I need 3 serves of a food that is high in Vitamin D. You should try talk to the shopkeeper!</QuestInProgress>
+
+      <QuestHandIn>Thankyou for getting those salmon for me!</QuestHandIn>
+    </Dialogue>
+
+    <Dialogue NPC="Fiona">
+      <QuestOffer>Hello farmer, my friend told me that wholegrain bread is much healthier than white bread. Could you get me 4 serves of wholemeal grains so I can bake healthier bread?</QuestOffer>
+
+      <QuestInProgress>How are you going with the quest? Remember I need 4 serves of wholemeal grains. You should try talk to the shopkeeper!</QuestInProgress>
+
+      <QuestHandIn>Thanks for getting those grains farmer!</QuestHandIn>
     </Dialogue>
   </Dialogues> 
 </DialogueCollection>

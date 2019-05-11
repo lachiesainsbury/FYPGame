@@ -4,11 +4,11 @@
   <Questions>
     <Question value="What is one of the functions of vitamin A in your body?" category="Vitamin A">
       <Options>
-        <Option value="Keeping your nervous system healthy" response="Incorrect... this is a function of vitamin B" correct="false"/>
+        <Option value="Keeping your nervous system healthy" response="Incorrect... This is a function of vitamin B." correct="false"/>
 
-        <Option value="Production of red blood cells" response="Incorrect... this is a function of vitamin B" correct="false"/>
+        <Option value="Production of red blood cells" response="Incorrect... This is a function of vitamin B." correct="false"/>
 
-        <Option value="Wound healing" response="Incorrect... this is a function of vitamin C" correct="false"/>
+        <Option value="Wound healing" response="Incorrect... This is a function of vitamin C." correct="false"/>
 
         <Option value="Helps with good eyesight" response="Correct! Vitamin A is essential for seeing in the dark, and even seeing colour!" correct="true"/>
       </Options>
@@ -16,11 +16,11 @@
   
     <Question value="Vitamin A is a fat-soluble vitamin. What does that mean?" category="Vitamin A">
       <Options>
-        <Option value="The vitamin is stored in your fat cells and will be used when you loose weight" response="Incorrect... no vitamins are stored in your fat cells" correct="false"/>
+        <Option value="The vitamin is stored in your fat cells and will be used when you lose weight" response="Incorrect... No vitamins are stored in your fat cells." correct="false"/>
 
-        <Option value="The vitamin is stored in your liver and can be used whenever you do not get enough through your diet" response="Correct! Vitamin A, along with vitamin D, E and K, is fat-soluble " correct="true"/>
+        <Option value="The vitamin is stored in your liver and can be used whenever you do not get enough through your diet" response="Correct! Vitamin A, along with vitamin D, E and K, is fat-soluble." correct="true"/>
 
-        <Option value="Only fatty foods contain vitamin A" response="Incorrect... a food high in vitamin A is not neccesarily high in fat" correct="false"/>
+        <Option value="Only fatty foods contain vitamin A" response="Incorrect... A food high in vitamin A is not neccesarily high in fat." correct="false"/>
       </Options>
     </Question>
 
@@ -28,7 +28,7 @@
       <Options>
         <Option value="The sun" response="Correct! Sunlight contains UV light, which our skin can use to make vitamin D. This makes vitamin D one of only 2 vitamins we can make ourselves in our body; all the other vitamins we get through food." correct="true"/>
 
-        <Option value="Moisturizer" response="Incorrect... While moisturizer can be good for dry skin, it contains no vitamin D" correct="false"/>
+        <Option value="Moisturizer" response="Incorrect... While moisturizer can be good for dry skin, it contains no vitamin D." correct="false"/>
 
         <Option value="Water" response="Incorect... While drinking enough water is extremely important, water contains no vitamins." correct="false"/>
       </Options>
@@ -36,79 +36,79 @@
 
     <Question value="Once you have cooked some delicious salmon for dinner, where do you keep it if you want to take it for lunch the next day?" category="Vitamin D">
       <Options>
-        <Option value="Pantry" response="Incorrect... if you keep your salmon in the pantry it will go bad and might make you sick" correct="false"/>
+        <Option value="Pantry" response="Incorrect... If you keep your salmon in the pantry it will go bad and might make you sick." correct="false"/>
 
-        <Option value="Fridge" response="Correct! You should always keep fish and meat in a fridge or freezer" correct="true"/>
+        <Option value="Fridge" response="Correct! You should always keep fish and meat in a fridge or freezer." correct="true"/>
 
-        <Option value="Freezer" response="Correct! You should always keep your fish and meat in the fidge or freezer. In this case, storing it in the fidge might be easier as you are planning on eating your leftovers the next day! " correct="true"/>
+        <Option value="Freezer" response="Correct! You should always keep your fish and meat in the fidge or freezer. In this case, storing it in the fidge might be easier as you are planning on eating your leftovers the next day!" correct="true"/>
 
-        <Option value="Out on the kichen counter" response="Incorrect... if you keep your salmon on the kitchen counter it will go bad and might make you sick" correct="false"/>
+        <Option value="Out on the kichen counter" response="Incorrect... If you keep your salmon on the kitchen counter it will go bad and might make you sick." correct="false"/>
       </Options>
     </Question>
 
     <Question value="What is the main function of vitamin D in your body?" category="Vitamin D">
       <Options>
-        <Option value="We need vitamin D to absorb iron" response="Incorrect... You don't need vitamin C to absorb iron" correct="false"/>
+        <Option value="We need vitamin D to absorb iron" response="Incorrect... You need vitamin C to absorb iron." correct="false"/>
         
         <Option value="We need vitamin D to absorb calcium" response="Correct! Calcium is important for strong bones and teeth, but if you don't get enough vitamin D your bones will never become healthy." correct="true"/>
         
-        <Option value="We need vitamin D for our eyesight" response="Incorrect... You don't need vitamin A for good eyesight" correct="false"/>
+        <Option value="We need vitamin D for our eyesight" response="Incorrect... You need vitamin A for good eyesight." correct="false"/>
       </Options>
     </Question>
 
-    <Question value="True or false: During an Australian summer, you only need to be in the sun with your face and hand exposed for couple of minutes a day to get enough vitamin D" category="Vitamin D">
+    <Question value="True or false: During an Australian summer, you only need to be in the sun with your face and hands exposed for couple of minutes a day to get enough vitamin D" category="Vitamin D">
       <Options>
-        <Option value="TRUE" response="Correct! Make sure you don't go out without sunscreen more than that and always use suncreen during the hottest part of the day" correct="true"/>
+        <Option value="TRUE" response="Correct! Make sure you don't go out without sunscreen more than that and always use suncreen during the hottest part of the day." correct="true"/>
 
-        <Option value="FALSE" response="Incorrect... You only need a couple of minutes a day. Make sure you don't go out without sunscreen more than that and always use suncreen during the hottest part of the day" correct="false"/>
+        <Option value="FALSE" response="Incorrect... You only need a couple of minutes a day. Make sure you don't go out without sunscreen more than that and always use suncreen during the hottest part of the day." correct="false"/>
       </Options>
     </Question>
 
-    <Question value="True or false: If you eat enough carrots, you become orange" category="Vitamin A">
+    <Question value="True or false: If you eat enough carrots, you'll become orange." category="Vitamin A">
       <Options>
-        <Option value="TRUE" response="Correct! You have to eat very, very many carrots, but your skin will get an orange glow. This is not dangerous but it is important to not only eat carrots, but also other vegetables to make sure you get all the different vitamins and minerals" correct="true"/>
+        <Option value="TRUE" response="Correct! You have to eat A LOT of carrots, but your skin will get an orange glow. This is not dangerous but it is important to not only eat carrots, but also other vegetables to make sure you get all the different vitamins and minerals." correct="true"/>
 
-        <Option value="FALSE" response="Incorrect... You have to eat very many carrots, but your skin will get an orange glow. This is not dangerous but it is important to not only eat carrots, but also other vegetables" correct="false"/>
+        <Option value="FALSE" response="Incorrect... You have to eat A LOT of carrots, but your skin will get an orange glow. This is not dangerous but it is important to not only eat carrots, but also other vegetables." correct="false"/>
       </Options>
     </Question>
 
     <Question value="Liver is known to contain very high levels of vitamin A (because that is where it is stored). The liver of which animal contains the most vitamin A?" category="Vitamin A">
       <Options>
-        <Option value="Cow" response="Incorrect... cow livers are also high in vitamin A and many other vitamins and minerals (a superfood!), but there is another animal that has so much vitamin A in their liver, it can be toxic and even deadly to humans" correct="false"/>
+        <Option value="Cow" response="Incorrect... Cow livers are also high in vitamin A and many other vitamins and minerals (a superfood!), but there is another animal that has so much vitamin A in their liver, it can be toxic and even deadly to humans." correct="false"/>
 
-        <Option value="Cod (fish)" response="Incorrect... cod livers are also high in vitamin A and many other vitamins and minerals (a superfood!), but there is another animal that has so much vitamin A in their liver, it can be toxic and even deadly to humans" correct="false"/>
+        <Option value="Cod (fish)" response="Incorrect... Cod livers are also high in vitamin A and many other vitamins and minerals (a superfood!), but there is another animal that has so much vitamin A in their liver, it can be toxic and even deadly to humans." correct="false"/>
 
-        <Option value="Polar bear" response="Correct! Polar bear livers contain so much vitamin A, it can be toxic or even deadly if you eat it. Liver from other animals is actually filled with vitamins and minerals and are very healthy if consumed only once-in-a-while" correct="true"/>
+        <Option value="Polar bear" response="Correct! Polar bear livers contain so much vitamin A, it can be toxic or even deadly if you eat it. Liver from other animals is actually filled with vitamins and minerals and are very healthy if consumed only once-in-a-while." correct="true"/>
 
-        <Option value="Moose" response="Incorrect... moose livers are also high in vitamin A and many other vitamins and minerals (a superfood!), but there is another animal that has so much vitamin A in their liver, it can be toxic and even deadly to humans" correct="false"/>
+        <Option value="Moose" response="Incorrect... Moose livers are also high in vitamin A and many other vitamins and minerals (a superfood!), but there is another animal that has so much vitamin A in their liver, it can be toxic and even deadly to humans." correct="false"/>
       </Options>
     </Question>
 
     <Question value="What is one of the main symptoms of a vitamin A deficiency (not getting enough)?" category="Vitamin A">
       <Options>
-        <Option value="Night blindness" response="Correct! Other symptoms include: dry skin and eyes, bad growth in children, poor wound healing and acne" correct="true"/>
+        <Option value="Night blindness" response="Correct! Other symptoms include: dry skin and eyes, poor growth in children, poor wound healing and acne." correct="true"/>
 
-        <Option value="Joint pain" response="Incorrect... this is a sign of a lack of vitamin C" correct="false"/>
+        <Option value="Joint pain" response="Incorrect... This is a symptom of a lack of vitamin C." correct="false"/>
 
-        <Option value="Extreme fatigue" response="Incorrect... this is a symptom of a lack of vitamin B12 or iron" correct="false"/>
+        <Option value="Extreme fatigue" response="Incorrect... This is a symptom of a lack of vitamin B12 or iron." correct="false"/>
 
-        <Option value="Weak bones" response="Incorrect... this is a symptom of a lack of calcium" correct="false"/>
+        <Option value="Weak bones" response="Incorrect... This is a symptom of a lack of calcium." correct="false"/>
       </Options>
     </Question>
 
     <Question value="What is a common trait for vegetables and fruits high in vitamin A?" category="Vitamin A">
       <Options>
-        <Option value="They grow undergound" response="Incorrect... for example: carrots grow undergound, but apricots on trees" correct="false"/>
+        <Option value="They grow undergound" response="Incorrect... For example: carrots grow undergound, but apricots grow on trees." correct="false"/>
 
-        <Option value="They are often completely orange" response="Correct! With some exceptions (such as spinach and kale), most fruits and vegetables high in vitamin A are completely orange" correct="true"/>
+        <Option value="They are often completely orange" response="Correct! With some exceptions (such as spinach and kale), most fruits and vegetables high in vitamin A are completely orange." correct="true"/>
 
-        <Option value="They grow on trees" response="Incorrect... for example: apricots grow on trees, but carrots grow undergound" correct="false"/>
+        <Option value="They grow on trees" response="Incorrect... For example: apricots grow on trees, but carrots grow undergound." correct="false"/>
 
-        <Option value="They are all similar in shape" response="Incorrect... Carrots are long and pointy, while apricots and squash are round" correct="false"/>
+        <Option value="They are all similar in shape" response="Incorrect... For example: carrots are long and pointy, while apricots are round." correct="false"/>
       </Options>
     </Question>
 
-    <Question value="True or false: carrots are not always orange: they come in many other colours" category="Vitamin A">
+    <Question value="True or false: carrots are not always orange, they can come in many other colours." category="Vitamin A">
       <Options>
         <Option value="TRUE" response="Correct! While we are most familiar with the orange carrot, there are many more other kinds of carrots that can be red, white, black, yellow or even purple!" correct="true"/>
 
@@ -118,175 +118,175 @@
 
     <Question value="What is the most important function of vitamin B?" category="Vitamin B">
       <Options>
-        <Option value="Good for immunity" response="Incorrect... this is a function of vitamin C" correct="false"/>
+        <Option value="Good for immunity" response="Incorrect... This is a function of vitamin C." correct="false"/>
 
-        <Option value="Convert food into fuel for your body" response="Correct! Your body makes energy out of the foods and drinks you consume by using vitamin B" correct="true"/>
+        <Option value="Convert food into fuel for your body" response="Correct! Your body makes energy out of the foods and drinks you consume by using vitamin B." correct="true"/>
 
-        <Option value="Healthy skin" response="Incorrect... this is a function of vitamin C" correct="false"/>
+        <Option value="Healthy skin" response="Incorrect... This is a function of vitamin C." correct="false"/>
 
-        <Option value="Needed to absorb calcium" response="Incorrect... this is a function of vitamin D" correct="false"/>
+        <Option value="Needed to absorb calcium" response="Incorrect... This is a function of vitamin D." correct="false"/>
       </Options>
     </Question>
 
-    <Question value="True or false: there is only one kind of vitamin B" category="Vitamin B">
+    <Question value="True or false: there is only one kind of vitamin B." category="Vitamin B">
       <Options>
-        <Option value="TRUE" response="Incorrect... there are actually 8 different vitamin B's! Vitamin B1, B2, B3, B5, B6, B7, B9 and B12. They all have different functions" correct="false"/>
+        <Option value="TRUE" response="Incorrect... There are actually 8 different vitamin B's! Vitamin B1, B2, B3, B5, B6, B7, B9 and B12. They all have different functions." correct="false"/>
 
-        <Option value="FALSE" response="Correct! There are actually 8 different vitamin B's! Vitamin B1, B2, B3, B5, B6, B7, B9 and B12. They all have different functions" correct="true"/>
+        <Option value="FALSE" response="Correct! There are actually 8 different vitamin B's! Vitamin B1, B2, B3, B5, B6, B7, B9 and B12. They all have different functions." correct="true"/>
       </Options>
     </Question>
 
-    <Question value="Did you know eggs contain all vitamins, except for one! What vitamin can not be found in an egg?" category="Vitamin B">
+    <Question value="Did you know that eggs contain all vitamins, except for one! What vitamin can not be found in an egg?" category="Vitamin B">
       <Options>
-        <Option value="Vitamin A" response="Incorrect... Eating one egg will get you around 64mcg of Vitamin A: that is about 10% of the total vitamin A you need every day!" correct="false"/>
+        <Option value="Vitamin A" response="Incorrect... Eating one egg will get you around 64mcg of Vitamin A. That is about 10% of the total vitamin A you need every day!" correct="false"/>
 
-        <Option value="Vitamin B" response="Incorrect... There is vitamin B2 and B12 in eggs: the amount of B12 in one egg is all you need for the day!" correct="false"/>
+        <Option value="Vitamin B" response="Incorrect... There is vitamin B2 and B12 in eggs. The amount of B12 in one egg is all you need for the day!" correct="false"/>
 
-        <Option value="Vitamin C" response="Correct! Eggs do not contain vitamin C! Vitamin C can be foud mostly in citrus fruits, strawberries, green and red capsicums, potatoes and broccoli" correct="true"/>
+        <Option value="Vitamin C" response="Correct! Eggs do not contain vitamin C! Vitamin C can be foud mostly in citrus fruits, strawberries, green and red capsicums, potatoes and broccoli." correct="true"/>
 
         <Option value="Vitamin D" response="Incorrect... One egg yolk has about 32% of the vitamin D you need every day!" correct="false"/>
       </Options>
     </Question>
 
-    <Question value="True or false: eggs are a good substitute for meat" category="Vitamin B">
+    <Question value="True or false: eggs are a good substitute for meat." category="Vitamin B">
       <Options>
-        <Option value="TRUE" response="Correct! Because eggs contain an important vitamin called B12, that is mostly found in meats. People who don't eat meat can sometimes not get enough B12, so eating an egg instead of meat is a good idea." correct="true"/>
+        <Option value="TRUE" response="Correct! Eggs contain an important vitamin called B12, which is mostly found in meats. People who don't eat meat can sometimes not get enough B12, so eating an egg instead of meat is a good idea." correct="true"/>
 
-        <Option value="FALSE" response="Incorrect... Because eggs contain an important vitamin called B12, which is mostly found in meats. People who don't eat meat can sometimes not get enough B12, so eating an egg instead of meat is a good idea." correct="false"/>
+        <Option value="FALSE" response="Incorrect... Eggs contain an important vitamin called B12, which is mostly found in meats. People who don't eat meat can sometimes not get enough B12, so eating an egg instead of meat is a good idea." correct="false"/>
       </Options>
     </Question>
 	
-	  <Question value="True or false: Melanin is a natural pigment in the skin that blocks some of the suns' UV rays" category="Vitamin D">
+	  <Question value="True or false: Melanin is a natural pigment in the skin that blocks some of the suns' UV rays." category="Vitamin D">
 		  <Options>
-			  <Option value="TRUE" response="Correct! The more melanin in your skin, the darker your skin colour is. So people with darker skin have more protection from the sun's UV rays. " correct="true"/>
+			  <Option value="TRUE" response="Correct! The more melanin in your skin, the darker your skin colour is. Therefore, people with darker skin have more protection from the sun's UV rays." correct="true"/>
 			
-			  <Option value="FALSE" response="Incorrect... the more melanin in your skin, the darker your skin colour is. So people with darker skin have more protection from the sun's UV rays." correct="false"/>
+			  <Option value="FALSE" response="Incorrect... The more melanin in your skin, the darker your skin colour is. Therefore, people with darker skin have more protection from the sun's UV rays." correct="false"/>
 		  </Options>
 	  </Question>
 	
 	  <Question value="Some people don't like fish, or are vegetarian. What foods rich in vitamin D could you eat if you don't eat fish?" category="Vitamin D">
 		  <Options>
-			  <Option value="Carrots and spinach" response="Incorrect... carrots and spinach contain many vitamins like vitamin A and vitamin B, but no vitamin D" correct="false"/>
+			  <Option value="Carrots and spinach" response="Incorrect... Carrots and spinach contain many vitamins like vitamin A and vitamin B, but no vitamin D." correct="false"/>
 			
-			  <Option value="Carrots and eggs" response="Incorrect... carrots and eggs both contain vitamin B, but only eggs (the yolk) contain vitamin D" correct="false"/>
+			  <Option value="Carrots and eggs" response="Incorrect... Carrots and eggs both contain vitamin B, but only eggs (the yolk) contain vitamin D." correct="false"/>
 			
 			  <Option value="Mushrooms and eggs" response="Correct! Mushrooms and eggs both contain vitamin D. In eggs, it is in the egg yolk (the yellow part)." correct="true"/>
 			
-			  <Option value="Apples and oranges" response="Incorrect... There are no fruits that contain vitamin D" correct="false"/>
+			  <Option value="Apples and oranges" response="Incorrect... There are no fruits that contain vitamin D." correct="false"/>
 		  </Options>
 	  </Question>
 	
 	  <Question value="In this game you get to know vitamin A, B, C and D. But what other vitamins are there?" category="Vitamin D">
 		  <Options>
-			  <Option value="Vitamin X, Y and Z" response="Incorrect... vitamin X, Y and Z all don't exist" correct="false"/>
+			  <Option value="Vitamin X, Y and Z" response="Incorrect... Vitamin X, Y and Z all don't exist." correct="false"/>
 			
-			  <Option value="Vitamin K and Z" response="Incorrect... only vitamin K is real: it helps your blood clot and can be found in green leavy vegetables (such as spinach)" correct="false"/>
+			  <Option value="Vitamin K and Z" response="Incorrect... Only vitamin K is real. It helps your blood clot and can be found in leafy green vegetables (such as spinach)." correct="false"/>
 			
-			  <Option value="Vitamin E and F" response="Incorrect... only vitamin E is real: it helps protect your cells and can be found mainly in nuts and vegetable oils" correct="false"/>
+			  <Option value="Vitamin E and F" response="Incorrect... Only vitamin E is real. It helps protect your cells and can be found mainly in nuts and vegetable oils." correct="false"/>
 			
-			  <Option value="Vitamin K and E" response="Correct! Vitamin K helps your blood clot and can be found in green leavy vegetables (such as spinach) and vitamin E is found in nuts and spinach and helps protect the cells in your body from damage" correct="true"/>
+			  <Option value="Vitamin K and E" response="Correct! Vitamin K helps your blood clot and can be found in leafy green vegetables (such as spinach), and vitamin E is found in nuts and helps protect the cells in your body from damage." correct="true"/>
 		  </Options>
 	  </Question>
 	
 	  <Question value="Worldwide, vitamin D deficiency (not getting enough) is the most common deficiency of all vitamins! Why is that?" category="Vitamin D">
 		  <Options>
-			  <Option value="The sun does not shine long enough and is not strong enough in some countries" response="Incorrect... This is definitely one of the reasons, but not the only one. Some countries that are on high latitudes such as Canada or Norway and Sweden do not get much sun during winter." correct="false"/>
+			  <Option value="The sun does not shine long enough and is not strong enough in some countries" response="Incorrect... This is definitely one of the reasons, but not the only one. Some countries that are on high latitudes, such as Canada, Norway or Sweden, do not get much sun during winter." correct="false"/>
 			
-			  <Option value="People using sunscreen all the time or not going outside" response="Incorrect... This is definitely one of the reasons, but not the only one. While using sunscreen is very good in Australia, in some countries the sun does not shine enough and using sunscreen then, can prevent your body from making enough vitamin D" correct="false"/>
+			  <Option value="People using sunscreen all the time or not going outside" response="Incorrect... This is definitely one of the reasons, but not the only one. While using sunscreen is very good in Australia, in some countries the sun does not shine enough and using sunscreen can prevent your body from making enough vitamin D." correct="false"/>
 			
-			  <Option value="Melanin pigmentation restricts the UV rays being absorbed" response="Incorrect... This is definitely one of the reasons, but not the only one. Dark skinned people, whole have high levels of melanin in their skin, don't absorb as much UV rays and thus make less vitamin D in their body" correct="false"/>
+			  <Option value="Melanin pigmentation restricts the UV rays being absorbed" response="Incorrect... This is definitely one of the reasons, but not the only one. Dark skinned people, who have high levels of melanin in their skin, don't absorb as much UV rays and therefore, make less vitamin D in their body." correct="false"/>
 			
-			  <Option value="All of the above" response="Correct! All of the reasons above is why vitamin D deficiency is very common in the world. Because Australia is a very sunny country, the problem is not so bad here." correct="true"/>
+			  <Option value="All of the above" response="Correct! All of the reasons above is why vitamin D deficiency is very common in the world. As Australia is a very sunny country, the problem is not so bad here." correct="true"/>
 		  </Options>
 	  </Question>
 	
-	  <Question value="True or false: you cannot eat carrots raw" category="Vitamin A">
+	  <Question value="True or false: you cannot eat carrots raw." category="Vitamin A">
 		  <Options>
-			  <Option value="TRUE" response="Incorrect... Carrots are completely fine to eat raw! Even more so, they are delicious and easy to bring as a snack or munch on before dinner" correct="false"/>
+			  <Option value="TRUE" response="Incorrect... Carrots are completely fine to eat raw! Even more so, they are delicious and easy to bring as a snack or munch on before dinner." correct="false"/>
 			
-			  <Option value="FALSE" response="Correct! Carrots are completely fine to eat raw! Even more so, they are delicious and easy to bring as a snack or munch on before dinner" correct="true"/>
+			  <Option value="FALSE" response="Correct! Carrots are completely fine to eat raw! Even more so, they are delicious and easy to bring as a snack or munch on before dinner." correct="true"/>
 		  </Options>
 	  </Question>
 	
-	  <Question value="True or false: you can only eat the eggs of chickens" category="Vitamin B">
+	  <Question value="True or false: you can only eat the eggs of chickens." category="Vitamin B">
 		  <Options>
-			  <Option value="TRUE" response="Incorrect... While we eat chicken eggs most often in Australia, you can also eat the eggs from many other animals such as ducks, geese, emu's and even from fish (known as caviar)!" correct="false"/>
+			  <Option value="TRUE" response="Incorrect... While we eat chicken eggs most often in Australia, you can also eat the eggs from many other animals such as ducks, geese, emu's, and even from fish (known as caviar)!" correct="false"/>
 			
-			  <Option value="FALSE" response="Correct! While we eat chicken eggs most often in Australia, you can also eat the eggs from many other animals such as ducks, geese, emu's and even from fish (known as caviar)!" correct="true"/>
+			  <Option value="FALSE" response="Correct! While we eat chicken eggs most often in Australia, you can also eat the eggs from many other animals such as ducks, geese, emu's, and even from fish (known as caviar)!" correct="true"/>
 		  </Options>
 	  </Question>
 	
-	  <Question value="A serve of eggs is 83% Recommended Daily Intake (RDI) of vitamin B. What happens if I eat two serves of eggs and get over a 100% RDI?" category="Vitamin B">
+	  <Question value="A serve of eggs is 83% of the Recommended Daily Intake (RDI) of vitamin B. What happens if I eat two serves of eggs and get over a 100% RDI?" category="Vitamin B">
 		  <Options>
-			  <Option value="You should never get over 100% because this can make you sick" response="Incorrect... the RDI is the minimum of what you should get every day. Any extra vitamin B that you eat or drink and your body does not need, leaves your body through your pee." correct="false"/>
+			  <Option value="You should never get over 100% because this can make you sick" response="Incorrect... the RDI is the minimum of what you should get every day. Any extra vitamin B that you eat or drink and your body does not need, leaves your body through your urine." correct="false"/>
 			
-			  <Option value="Nothing: it is fine to eat over 100%" response="Correct! The RDI is the minimum of what you should get every day. Any extra vitamin B that you eat or drink and your body does not need, leaves your body through your pee." correct="true"/>
+			  <Option value="Nothing: it is fine to eat over 100%" response="Correct! The RDI is the minimum of what you should get every day. Any extra vitamin B that you eat or drink and your body does not need, leaves your body through your urine." correct="true"/>
 		  </Options>
 	  </Question>
 
     <Question value="What is the most important function of vitamin C?" category ="Vitamin C">
       <Options>
-        <Option value="Good for immunity" response="Correct! One thing that vitamin C helps with is fight off virusses and bacteria that make you sick." correct="true"/>
+        <Option value="Good for immunity" response="Correct! One thing that vitamin C helps with is fighting off viruses and bacteria that make you sick." correct="true"/>
 
-        <Option value="Convert food into fuel for your body" response="Incorrect... this is a function of Vitamin B" correct="false"/>
+        <Option value="Convert food into fuel for your body" response="Incorrect... this is a function of Vitamin B." correct="false"/>
 
-        <Option value="Strong bones and teeth" response="Incorrect... this is a function of calcium" correct="false"/>
+        <Option value="Strong bones and teeth" response="Incorrect... this is a function of calcium." correct="false"/>
 
-        <Option value="Needed to absorb calcium" response="Incorrect... this is a function of vitamin D" correct="false"/>
+        <Option value="Needed to absorb calcium" response="Incorrect... this is a function of vitamin D." correct="false"/>
       </Options>
     </Question>
 
     <Question value="Besides strawberries, what other foods are very high in vitamin C?" category ="Vitamin C">
       <Options>
-        <Option value="Eggs and red meat" response="Incorrect... eggs contain no vitamin C and red meat is mostly high in iron" correct="false"/>
+        <Option value="Eggs and red meat" response="Incorrect... eggs contain no vitamin C and red meat is mostly high in iron." correct="false"/>
 
-        <Option value="Capsicum and oranges" response="Correct! Especially red campsicum is loaded with vitamin C" correct="true"/>
+        <Option value="Capsicum and oranges" response="Correct! Red capsicum especially is loaded with vitamin C." correct="true"/>
 
-        <Option value="Cucumber and lettuce" response="Incorrect... both cucumber and lettuce contain only a little vitamin C" correct="false"/>
+        <Option value="Cucumber and lettuce" response="Incorrect... Both cucumber and lettuce contain only a little vitamin C." correct="false"/>
 
-        <Option value="Green beans and corn" response="Incorrect... both green beens and corn only contain a little vitamin C" correct="false"/>
+        <Option value="Green beans and corn" response="Incorrect... both green beans and corn only contain a little vitamin C." correct="false"/>
       </Options>
     </Question>
 
-    <Question value="True of false: fruit juice is as healthy a source of vitamins as whole fruits are" category ="Vitamin C">
+    <Question value="True of false: fruit juice is as healthy a source of vitamins as whole fruits are." category ="Vitamin C">
       <Options>
-        <Option value="TRUE" response="Incorrect... When a whole fruit is pressed or squeezed to make juice, some of the nutrients, such as fiber and vitamins, are lost in the process." correct="false"/>
+        <Option value="TRUE" response="Incorrect... When a whole fruit is pressed or squeezed to make juice, some of the nutrients, such as fibre and vitamins, are lost in the process." correct="false"/>
 
-        <Option value="FALSE" response="Correct! When a whole fruit is pressed or squeezed to make juice, some of the nutrients, such as fiber and vitamins, are lost in the process." correct="true"/>
+        <Option value="FALSE" response="Correct! When a whole fruit is pressed or squeezed to make juice, some of the nutrients, such as fibre and vitamins, are lost in the process." correct="true"/>
       </Options>
     </Question>
 
     <Question value="What is one serve of strawberries?" category ="Vitamin C">
       <Options>
-        <Option value="A handful" response="Incorrect...  one serve of fruits is around 150grams or one cup" correct="false"/>
+        <Option value="A handful" response="Incorrect... One serve of fruit is around 150 grams or one cup." correct="false"/>
 
-        <Option value="75 grams" response="Incorrect... one serve of fruits is around 150grams or one cup" correct="false"/>
+        <Option value="75 grams" response="Incorrect... One serve of fruit is around 150 grams or one cup." correct="false"/>
 
-        <Option value="1/2 cup" response="Incorrect... one serve of strawberries is around 150grams or one cup" correct="false"/>
+        <Option value="1/2 cup" response="Incorrect... One serve of strawberries is around 150 grams or one cup." correct="false"/>
 
-        <Option value="1 cup" response="Correct! one serve of strawberries is 1 cup or 150 grams" correct="true"/>
+        <Option value="1 cup" response="Correct! One serve of strawberries is around 1 cup or 150 grams." correct="true"/>
       </Options>
     </Question>
 
-    <Question value="True of false: broccoli is very high in vitamin C" category ="Vitamin C">
+    <Question value="True of false: broccoli is very high in vitamin C." category ="Vitamin C">
       <Options>
         <Option value="TRUE" response="Correct! By eating only one serve of broccoli you'll get enough vitamin C for the day!" correct="true"/>
 
-        <Option value="FALSE" response="Incorrect... by eating only one serve of broccoli you'll get enough vitamin C for the day!" correct="false"/>
+        <Option value="FALSE" response="Incorrect... By eating only one serve of broccoli you'll get enough vitamin C for the day!" correct="false"/>
       </Options>
     </Question>
 
     <Question value="What is the best place to store strawberries?" category ="Vitamin C">
       <Options>
-        <Option value="The pantry (or fruitbowl)" response="All the answers are correct! You can keep strawberries in the pantry, fidge or freezer. Just keep in mind that keeping them in the pantry or fruitbowl, they will go bad quicker than in the fridge or freezer." correct="true"/>
+        <Option value="The pantry (or fruitbowl)" response="All the answers are correct! You can keep strawberries in the pantry, fridge or freezer. Just keep in mind that by keeping them in the pantry or fruitbowl, they will go bad quicker than in the fridge or freezer." correct="true"/>
 
-        <Option value="The freezer" response="All the answers are correct! You can keep strawberries in the pantry, fidge or freezer. Cutting them and freezing them is ideal if you like to make fresh juices or smoothies! And they will not go bad for a couple of weeks." correct="true"/>
+        <Option value="The freezer" response="All the answers are correct! You can keep strawberries in the pantry, fridge or freezer. Cutting them and freezing them is ideal if you like to make fresh juices or smoothies, and they will not go bad for a couple of weeks." correct="true"/>
 
-        <Option value="The fridge" response="All the answers are correct! You can keep strawberries in the pantry, fidge or freezer. Keeping them in the fridge keeps them fresh longer than outside of the fridge. Put them in a fresh smoothie, or in your yoghurt for a little bit of sweetness!" correct="true"/>
+        <Option value="The fridge" response="All the answers are correct! You can keep strawberries in the pantry, fridge or freezer. Keeping them in the fridge keeps them fresh longer than outside of the fridge. Put them in a fresh smoothie, or in your yoghurt for a little bit of sweetness!" correct="true"/>
       </Options>
     </Question>
 
-    <Question value="True or false: vitamin D is needed to absorb calcium in to your body" category ="Calcium">
+    <Question value="True or false: vitamin D is needed to absorb calcium in your body." category ="Calcium">
       <Options>
         <Option value="TRUE" response="Correct! Calcium can only be used by your body to make strong bones and teeth if you have enough vitamin D. So also make sure you get enough vitamin D." correct="true"/>
 
@@ -296,35 +296,35 @@
 
     <Question value="What is the difference between full cream milk, skim milk and low fat milk?" category ="Calcium">
       <Options>
-        <Option value="Full milk contains the most fat, low fat milk contains less fat and skim milk contains almost now fat. " response="Correct! The difference is the fat content. But all milks contains the same amount of nutrients like calcium" correct="true"/>
+        <Option value="Full milk contains the most fat, low fat milk contains less fat, and skim milk contains almost no fat." response="Correct! The difference is the fat content. But all milks contain the same amount of nutrients like calcium." correct="true"/>
 
-        <Option value="Full cream milk contains all nutrients like calcium, but skim and low fat milk contain less" response="Incorrect... The difference is the fat content. But all milks contains the same amount of nutrients like calcium" correct="false"/>
+        <Option value="Full cream milk contains all nutrients like calcium, but skim and low fat milk contain less." response="Incorrect... The difference is the fat content. But all milks contain the same amount of nutrients like calcium." correct="false"/>
 
-        <Option value="They are made from the milk of different breeds of cows" response="Incorrect... The difference is the fat content. But all milks contains the same amount of nutrients like calcium. " correct="false"/>
+        <Option value="They are made from the milk of different breeds of cows." response="Incorrect... The difference is the fat content. But all milks contain the same amount of nutrients like calcium." correct="false"/>
       </Options>
     </Question>
 
     <Question value="Calcium is a..." category ="Calcium">
       <Options>
-        <Option value="Vitamin" response="Incorrect... Calcium is a mineral " correct="false"/>
+        <Option value="Vitamin" response="Incorrect... Calcium is a mineral." correct="false"/>
 
-        <Option value="Mineral" response="Correct! Calcium is a mineral" correct="true"/>
+        <Option value="Mineral" response="Correct! Calcium is a mineral." correct="true"/>
       </Options>
     </Question>
 
     <Question value="Why do you need calcium?" category ="Calcium">
       <Options>
-        <Option value="For healhty skin" response="Incorrect... this is a function of vitamin A and C" correct="false"/>
+        <Option value="For healhty skin" response="Incorrect... This is a function of vitamin A and C." correct="false"/>
 
-        <Option value="To convert food into fuel for your body" response="Incorrect... this is a function of vitamin B" correct="false"/>
+        <Option value="To convert food into fuel for your body" response="Incorrect... This is a function of vitamin B." correct="false"/>
 
-        <Option value="To fight off infections and virusses" response="Incorrect... this is a function of vitamin C" correct="false"/>
+        <Option value="To fight off infections and virusses" response="Incorrect... This is a function of vitamin C." correct="false"/>
 
-        <Option value="For strong bones and teeth" response="Correct! Calcium is stored in your bones and teeth, making them nice and strong so you can play outside and play sports." correct="true"/>
+        <Option value="For strong bones and teeth" response="Correct! Calcium is stored in your bones and teeth, making them nice and strong." correct="true"/>
       </Options>
     </Question>
 
-    <Question value="True or false: a cow has 4 stomachs that she needs to digest grass. " category ="Calcium">
+    <Question value="True or false: a cow has 4 stomachs that it needs to digest grass." category ="Calcium">
       <Options>
         <Option value="TRUE" response="Correct! It is very difficult to digest grass, so the cow needs 4 stomachs to do it." correct="true"/>
 
@@ -334,73 +334,73 @@
 
     <Question value="What does it mean if someone is 'lactose intolerant'?" category ="Calcium">
       <Options>
-        <Option value="Their body can not digest milk, so they become sick. But only with milk." response="Incorrect... Not only milk: lactose is a component of many milk products, so people will also get sick from yoghurt or some cheeses" correct="false"/>
+        <Option value="Their body can not digest milk, so they become sick, but only with milk." response="Incorrect... Not only milk: lactose is a component of many milk products, so people will also get sick from yoghurt or some cheeses." correct="false"/>
 
-        <Option value="They do not like milk." response="Incorrect... It means heir body can not digest milk products and they become sick when they drink milk but also when they eat cheese or yoghurt." correct="false"/>
+        <Option value="They do not like milk." response="Incorrect... It means their body can not digest milk products and they become sick when they drink milk but also when they eat cheese or yoghurt." correct="false"/>
 
         <Option value="Their body can not digest milk products and they become sick when they eat milk, cheese, or yoghurt." response="Correct! Lactose is a component of all dairy products, so beside milk, yoghurt and some cheeses can make lactose intolerent poeple sick." correct="true"/>
       </Options>
     </Question>
 
-    <Question value="Calcium is often found in 'dairy products'. That means products made from milk. What are other foods considered 'dairy products'?" category ="Calcium">
+    <Question value="Calcium is often found in 'dairy products', which are foods made from milk. What are other foods considered 'dairy products'?" category ="Calcium">
       <Options>
-        <Option value="Yoghurt, cheese and butter" response="Correct! All made from milk. Even ice-cream is a dairy product because it is made from milk!" correct="true"/>
+        <Option value="Yoghurt, cheese and butter" response="Correct! All are made from milk. Even ice-cream is a dairy product because it is made from milk!" correct="true"/>
 
-        <Option value="Yoghurt, cheese and peanut butter" response="Incorrect... Yoghurt and cheese are dairy products. Butter as well, but peanut butter is not actually made from butter." correct="false"/>
+        <Option value="Yoghurt, cheese and peanut butter" response="Incorrect... Yoghurt and cheese are dairy products. Butter is too, however, peanut butter is not actually made from butter." correct="false"/>
 
-        <Option value="Steak, cheese and soy milk" response="Incorrect... both steak and soy milk are not made from milk." correct="false"/>
+        <Option value="Steak, cheese and soy milk" response="Incorrect... Both steak and soy milk are not made from milk." correct="false"/>
 
-        <Option value="Cheese, nuts and butter" response="Incorrect... nuts are often used to make ' fake milk' (almond milk, soy milk, etc) but only cheese and butter are actually made of milk." correct="false"/>
+        <Option value="Cheese, nuts and butter" response="Incorrect... Nuts are often used to make 'fake milk' (such as almond milk or soy milk), but only cheese and butter are actually made from milk." correct="false"/>
       </Options>
     </Question>
 
-    <Question value="Not only dairy products contain lots of calcium. What other foods contain a lot of calcium?" category ="Calcium">
+    <Question value="Dairy products are not the only foods that contain a lot of calcium. What other foods contain a lot of calcium?" category ="Calcium">
       <Options>
-        <Option value="Capsicum, eggs and oranges" response="Incorrect... There is only a little bit of calcium in these foods" correct="false"/>
+        <Option value="Capsicum, eggs and oranges" response="Incorrect... There is only a little bit of calcium in these foods." correct="false"/>
 
-        <Option value="Beans, carrots and strawberries" response="Incorrect... Only beans contain high amounts of calcium" correct="false"/>
+        <Option value="Beans, carrots and strawberries" response="Incorrect... Only beans contain high amounts of calcium." correct="false"/>
 
-        <Option value="Seeds/nuts, beans and spinach" response="Correct! All these foods are excellent sources of calcium!" correct="true"/>
+        <Option value="Seeds/nuts, beans and spinach" response="Correct! All these foods are excellent sources of calcium." correct="true"/>
       </Options>
     </Question>
 
-    <Question value="True or false: wholgrain bread is healthier than white bread only because wholegrain bread contains more fibre" category="Dietary fibre">
+    <Question value="True or false: wholegrain bread is healthier than white bread only because it contains more fibre." category="Dietary fibre">
       <Options>
-        <Option value="TRUE" response="Incorrect... Besides much more fibre, wholegrain bread also contains many more other nutrients" correct="false"/>
+        <Option value="TRUE" response="Incorrect... Besides much more fibre, wholegrain bread also contains many other nutrients." correct="false"/>
 
-        <Option value="FALSE" response="Correct! Besides much more fibre, wholegrain bread also contains many more other nutrients" correct="true"/>
+        <Option value="FALSE" response="Correct! Besides much more fibre, wholegrain bread also contains many other nutrients." correct="true"/>
       </Options>
     </Question>
 
-    <Question value="Wholemeal bread contains much more fibre than white bread. But why is it important to eat fibre?" category="Dietary fibre">
+    <Question value="Wholegrain bread contains much more fibre than white bread. But why is it important to eat fibre?" category="Dietary fibre">
       <Options>
-        <Option value="Good for immunity" response="Incorrect... this is a function of Vitamin C" correct="false"/>
+        <Option value="Good for immunity" response="Incorrect... This is a function of Vitamin C." correct="false"/>
 
-        <Option value="Good for strong bones and teeth" response="Incorrect... this is a function of calcium" correct="false"/>
+        <Option value="Good for strong bones and teeth" response="Incorrect... This is a function of calcium." correct="false"/>
 
         <Option value="Good for a healthy gut" response="Correct! Eating enought fibre keeps your gut healthy, so it can absorb all the nutrients you need!" correct="true"/>
 
-        <Option value="To convert food into fuel for your body" response="Incorrect... this is a function of vitamin B" correct="false"/>
+        <Option value="To convert food into fuel for your body" response="Incorrect... This is a function of vitamin B." correct="false"/>
       </Options>
     </Question>
 
     <Question value="What other kind of foods contain a lot of fibre?" category="Dietary fibre">
       <Options>
-        <Option value="Fruits and lollies" response="Incorrect... There is lots of fibre in fruits, but not in lollies" correct="false"/>
+        <Option value="Fruits and lollies" response="Incorrect... There is lots of fibre in fruits, but not in lollies." correct="false"/>
 
-        <Option value="Chips and vegetables" response="Incorrect... There is lots of fibre in some vegetables, but not in chips" correct="false"/>
+        <Option value="Chips and vegetables" response="Incorrect... There is lots of fibre in some vegetables, but not in chips." correct="false"/>
 
-        <Option value="Vegetables and biscuits" response="Incorrect... There is lots of fibre in some vegetables, but not in vegetables" correct="false"/>
+        <Option value="Vegetables and biscuits" response="Incorrect... There is lots of fibre in some vegetables, but not in biscuits." correct="false"/>
 
-        <Option value="Fruits and vegetables" response="Correct! Most fruits and vegetables contain a lot of fibre" correct="true"/>
+        <Option value="Fruits and vegetables" response="Correct! Most fruits and vegetables contain a lot of fibre." correct="true"/>
       </Options>
     </Question>
 
     <Question value="Wholegrain bread has a dark colour. Is all dark coloured bread equally healthy/filled with fibre?" category="Dietary fibre">
       <Options>
-        <Option value="YES" response="Incorrect... some bread is only dark because it is white bread with dark dye in it. Always read the nutrition information label on the back to see if it is really made with wholemeal wheat" correct="false"/>
+        <Option value="YES" response="Incorrect... Some bread is only dark because it is white bread with dark dye in it. Always read the nutrition information label on the back to see if it is really made with wholemeal wheat." correct="false"/>
 
-        <Option value="NO" response="Correct! Some bread is only dark because it is white bread with dark dye in it. Always read the nutrition information label on the back to see if it is really made with wholemeal wheat" correct="true"/>
+        <Option value="NO" response="Correct! Some bread is only dark because it is white bread with dark dye in it. Always read the nutrition information label on the back to see if it is really made with wholemeal wheat." correct="true"/>
       </Options>
     </Question>
   </Questions>

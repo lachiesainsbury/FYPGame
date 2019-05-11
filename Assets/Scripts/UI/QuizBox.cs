@@ -17,6 +17,7 @@ public class QuizBox : UIWindow {
     private Text questionText;
     private Button[] optionButtons;
     private Question currentQuestion;
+    private Question previousQuestion;
 
     void Start() {
         questionText = this.gameObject.GetComponentInChildren<Text>();
@@ -55,7 +56,20 @@ public class QuizBox : UIWindow {
             }
         }
 
-        return validQuestions[Random.Range(0, validQuestions.Count)];
+        Question selectedQuestion = validQuestions[Random.Range(0, validQuestions.Count)];
+
+        // Attempt to get a question that is different from the most recent one (max. 100 attempts)
+        for (int i = 0; i < 100; i++) {
+            if (selectedQuestion == previousQuestion) {
+                selectedQuestion = validQuestions[Random.Range(0, validQuestions.Count)];
+            }
+            else {
+                previousQuestion = selectedQuestion;
+                break;
+            }
+        }
+
+        return selectedQuestion;
     }
 
     public void SubmitQuizAnswer(Button selected) {
